@@ -25,7 +25,7 @@ namespace DiplomaProject
         public string schedulePath = "Schedule.xlsx";
         public string workloadPath = "Workload.xlsx";
         public Regex validator = new Regex("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&].{8,15}$");
-
+        #region[Lists&Dictionaties]
         List<DayOfWeek> dayOfWeeks = new List<DayOfWeek>()
         {
             DayOfWeek.Monday,
@@ -65,6 +65,7 @@ namespace DiplomaProject
         };
 
         List<TimeSpan> timeOfLessons;
+        #endregion
 
         public MainForm(int id, DiplomaBDContext context)
         {
@@ -295,6 +296,7 @@ namespace DiplomaProject
         }
         private void addPlaceOfLessonButton_Click(object sender, EventArgs e)
         {
+            addInfoLabel.Text = "";
             PlaceOfLesson placeOfLesson = new PlaceOfLesson()
             {
                 User = GetUserById(userID),
@@ -304,11 +306,12 @@ namespace DiplomaProject
             db.SaveChanges();
             deletePlaceOfLessonComboBox.Items.Clear();
             AddUpdatePlace();
+            addInfoLabel.Text = $"Место занятия {placeOfLesson.Place} было добавлено";
         }
 
         private void addDisciplineButton_Click(object sender, EventArgs e)
         {
-
+            addInfoLabel.Text = "";
             Discipline discipline = new Discipline()
             {
                 User = GetUserById(userID),
@@ -318,11 +321,12 @@ namespace DiplomaProject
             db.SaveChanges();
             deleteDisciplineComboBox.Items.Clear();
             AddUpdateDiscipline();
+            addInfoLabel.Text = $"Дисциплина {discipline.NameOfDiscipline} была добавлена";
         }
 
         private void addGroupButton_Click(object sender, EventArgs e)
         {
-
+            addInfoLabel.Text = "";
             Model.Group group = new Model.Group()
             {
                 User = GetUserById(userID),
@@ -332,19 +336,23 @@ namespace DiplomaProject
             db.SaveChanges();
             deleteGroupComboBox.Items.Clear();
             AddUpdateGroup();
+            addInfoLabel.Text = $"Группа {group.GroupNumber} была добавлена";
         }
         #endregion
 
         #region[ComboBoxForDelete]
         private void deleteGroupButton_Click(object sender, EventArgs e)
         {
+            deleteInfoLabel.Text = "";
             if (deleteGroupComboBox.SelectedItem != null)
             {
                 db.Groups.Remove(db.Groups.FirstOrDefault(g => g.UserId == userID && g.GroupNumber == deleteGroupComboBox.SelectedItem));
             }
             db.SaveChanges();
+            deleteInfoLabel.Text = $"Группа {deleteGroupComboBox.SelectedItem} была удалена";
             deleteGroupComboBox.Items.Clear();
             AddUpdateGroup();
+            
         }
 
         private void deleteDisciplineButton_Click(object sender, EventArgs e)
@@ -354,6 +362,7 @@ namespace DiplomaProject
                 db.Disciplines.Remove(db.Disciplines.FirstOrDefault(g => g.UserId == userID && g.NameOfDiscipline == deleteDisciplineComboBox.SelectedItem));
             }
             db.SaveChanges();
+            deleteInfoLabel.Text = $"Дисциплина {deleteDisciplineComboBox.SelectedItem} была удалена";
             deleteDisciplineComboBox.Items.Clear();
             AddUpdateDiscipline();
         }
@@ -365,6 +374,7 @@ namespace DiplomaProject
                 db.PlaceOfLessons.Remove(db.PlaceOfLessons.FirstOrDefault(g => g.UserId == userID && g.Place == deletePlaceOfLessonComboBox.SelectedItem));
             }
             db.SaveChanges();
+            deleteInfoLabel.Text = $"Место занятия {deletePlaceOfLessonComboBox.SelectedItem} было удалена";
             deletePlaceOfLessonComboBox.Items.Clear();
             AddUpdatePlace();
         }
@@ -623,11 +633,6 @@ namespace DiplomaProject
         }
         #endregion
 
-        private void viewScheduleButton_Click(object sender, EventArgs e)
-        {
-            CreateScheduleOnExcel();
-        }
-        //переделать
         public List<Lesson> GetLessons()
         {
             var sortedData = db.Lessons
@@ -698,11 +703,7 @@ namespace DiplomaProject
             scheduleDataGridView.DataSource = finalList;
         }
 
-        public class DayOfWeekItem
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-        }
+        
 
         private void createFillingFromScheduleButton_Click(object sender, EventArgs e)
         {
@@ -711,7 +712,7 @@ namespace DiplomaProject
             firstFillingGratsLabel.Text = "Перенос расписания на нагрузку был успешен";
             firstFillingGratsLabel.Visible = true;
         }
-        //доработать
+
         public void FillWorkLoadTable(List<Lesson> lessons)
         {
             foreach (var lesson in lessons)
@@ -765,26 +766,19 @@ namespace DiplomaProject
 
         private void updateWorkloadButton_Click(object sender, EventArgs e)
         {
+            workloadGratsLabel.Text = "";
             List<Lesson> lessons = db.Lessons.Where(l => l.UserId == userID).ToList();
 
             var oldWorloads = db.Workloads.Where(w => lessons.Contains(w.Lesson)).ToList();
             db.Workloads.RemoveRange(oldWorloads);
             FillWorkLoadTable(lessons);
-            FillWorkloadView(GetWorkload());
+            FillWorkloadView(SortWorkload());
+            
+            workloadGratsLabel.Text = "Нагрузка была успешно обновлена";
+            workloadGratsLabel.Visible = true;
         }
 
-        private void watchScheduleButton_Click(object sender, EventArgs e)
-        {
-            ScheduleForm form = new ScheduleForm(db, userID);
-            form.Show();
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        #region[ExcelScheduleLogic]
+        #region[Schedule&Excel]
 
         public void CreateScheduleOnExcel()
         {
@@ -879,7 +873,7 @@ namespace DiplomaProject
 
             package.Save();
         }
-        #endregion
+        
         public List<Lesson> GetLessonsForTimeSpans()
         {
             return db.Lessons.Where(l => l.UserId == userID).ToList();
@@ -905,27 +899,9 @@ namespace DiplomaProject
             firstFillingGratsLabel.Text = "Файл Excel был успешно заполнен";
             firstFillingGratsLabel.Visible = true;
         }
-
-        private void openScheduleButton_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo excel = new ProcessStartInfo();
-            excel.UseShellExecute = true;
-            excel.FileName = "EXCEL.EXE";
-            var directory = Directory.GetCurrentDirectory();
-            excel.Arguments = $"{directory}\\{schedulePath}";
-            Process.Start(excel);
-        }
-
-        private void openWorkloadButton_Click(object sender, EventArgs e)
-        {
-            ProcessStartInfo excel = new ProcessStartInfo();
-            excel.UseShellExecute = true;
-            excel.FileName = "EXCEL.EXE";
-            var directory = Directory.GetCurrentDirectory();
-            excel.Arguments = $"{directory}\\{workloadPath}";
-            Process.Start(excel);
-        }
-
+        #endregion
+        
+        #region[Workload&Excel]
         public void CreateTemplateWorkload()
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -950,19 +926,16 @@ namespace DiplomaProject
             package.SaveAs(new FileInfo(workloadPath));
         }
 
-        public class WorkloadCell
-        {
-            public int? Hours;
-            public string TypeOfLesson;
-            public int Day;
-        }
         public List<WorkloadCell> GetWorkloadCells(List<Workload> workloads)
         {
             var workloadCells = workloads.GroupBy((wl) => wl.TypeOfLesson + wl.Day).Select((wlGroup) => wlGroup.Aggregate(new WorkloadCell(), (cell, wl) =>
             {
                 cell.TypeOfLesson = wl.TypeOfLesson;
                 cell.Day = wl.Day;
+                
                 var hours = cell.Hours == null ? wl.Hours : cell.Hours + wl.Hours;
+                var disciplines = cell.Discipline == null ? wl.Disciplenes : cell.Discipline + ", " + wl.Disciplenes;
+                cell.Discipline = disciplines;
                 cell.Hours = hours;
                 return cell;
             })).ToList();
@@ -1038,6 +1011,9 @@ namespace DiplomaProject
                 var col = getCol(cell);
                 var row = getRow(cell);
                 worksheet.Cells[DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + startRow, col].Value = totalHours[cell.TypeOfLesson];
+                //Наименование дисциплины заполнение;
+                worksheet.Cells[row, typeOfLessons.Count + startCol].Value += $"{cell.Discipline}";
+                worksheet.Cells[DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + startRow, typeOfLessons.Count + startCol].Value = totalHours.Values.Sum();
                 if (col != -1 && row != -1)
                 {
                     worksheet.Cells[row, col].Value = cell.Hours;
@@ -1049,13 +1025,58 @@ namespace DiplomaProject
 
         private void createWorkloadTemplateButton_Click(object sender, EventArgs e)
         {
+            workloadGratsLabel.Text = "";
             CreateTemplateWorkload();
+            workloadGratsLabel.Text = "Шаблон нагрузки был успешно создан";
+            workloadGratsLabel.Visible = true;
         }
 
         private void fillWorkloadButton_Click(object sender, EventArgs e)
         {
+            workloadGratsLabel.Text = "";
             FillDataInWorkload();
+            workloadGratsLabel.Text = "Перенос данных в файл Excel был успешен";
+            workloadGratsLabel.Visible = true;
         }
+        #endregion
+
+        #region[OpenExcelFiles]
+        private void openScheduleButton_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo excel = new ProcessStartInfo();
+            excel.UseShellExecute = true;
+            excel.FileName = "EXCEL.EXE";
+            var directory = Directory.GetCurrentDirectory();
+            excel.Arguments = $"{directory}\\{schedulePath}";
+            Process.Start(excel);
+        }
+
+        private void openWorkloadButton_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo excel = new ProcessStartInfo();
+            excel.UseShellExecute = true;
+            excel.FileName = "EXCEL.EXE";
+            var directory = Directory.GetCurrentDirectory();
+            excel.Arguments = $"{directory}\\{workloadPath}";
+            Process.Start(excel);
+        }
+        #endregion
+
+        #region[Classes]
+        public class WorkloadCell
+        {
+            public int? Hours;
+            public string TypeOfLesson;
+            public int Day;
+            public string Discipline;
+        }
+
+        public class DayOfWeekItem
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
+        }
+        #endregion
     }
 
 }
