@@ -97,5 +97,10 @@ namespace DiplomaProject
                 return;
             }
         }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

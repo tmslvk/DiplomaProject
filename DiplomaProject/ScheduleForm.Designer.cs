@@ -33,10 +33,13 @@
             // 
             // reportViewer1
             // 
+            reportViewer1.LocalReport.DisplayName = "Schedule";
+            reportViewer1.LocalReport.ReportEmbeddedResource = "Schedule.rdlc";
+            reportViewer1.LocalReport.ReportPath = "C:\\\\Users\\\\Тима\\\\source\\\\repos\\\\DiplomaProject\\\\DiplomaProject\\\\Schedule.rdlc";
             reportViewer1.Location = new Point(0, 0);
-            reportViewer1.Name = "ReportViewer";
+            reportViewer1.Name = "reportViewer1";
             reportViewer1.ServerReport.BearerToken = null;
-            reportViewer1.Size = new Size(396, 246);
+            reportViewer1.Size = new Size(800, 450);
             reportViewer1.TabIndex = 0;
             // 
             // ScheduleForm

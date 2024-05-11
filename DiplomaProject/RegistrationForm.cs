@@ -95,32 +95,29 @@ namespace DiplomaProject
             }
             else
             {
-                using (db)
+                User newUser = new User()
                 {
-                    User newUser = new User()
-                    {
-                        Fullname = $"{lastnameTextBox.Text} {firstnameTextBox.Text} {middlenameTextBox.Text}",
-                        JobPost = jobPostTextBox.Text,
-                        Departmant = departmentTextBox.Text,
-                        University = universityTextBox.Text,
-                        Login = loginTextBox.Text,
-                        Password = passwordTextBox.Text,
-                    };
-                    if (!CheckLogin(newUser.Login))
-                    {
-                        db.Users.Add(newUser);
-                        db.SaveChanges();
-                        gratsLabel.Visible = true;
+                    Fullname = $"{lastnameTextBox.Text} {firstnameTextBox.Text} {middlenameTextBox.Text}",
+                    JobPost = jobPostTextBox.Text,
+                    Departmant = departmentTextBox.Text,
+                    University = universityTextBox.Text,
+                    Login = loginTextBox.Text,
+                    Password = passwordTextBox.Text,
+                };
+                if (!CheckLogin(newUser.Login))
+                {
+                    db.Users.Add(newUser);
+                    db.SaveChanges();
+                    gratsLabel.Visible = true;
 
-                        MainForm form = new MainForm(FindIdByLogin(), db);
-                        this.Hide();
-                        form.Show();
-                    }
-                    else
-                    {
-                        loginErrorLabel.Visible = true;
-                        loginTextBox.BorderColor = Color.Red;
-                    }
+                    MainForm form = new MainForm(FindIdByLogin(), db);
+                    this.Hide();
+                    form.Show();
+                }
+                else
+                {
+                    loginErrorLabel.Visible = true;
+                    loginTextBox.BorderColor = Color.Red;
                 }
             }
         }
@@ -210,5 +207,10 @@ namespace DiplomaProject
             if (validator.IsMatch(passwordTextBox.Text)) { progressBar.Value += 15; }
         }
         #endregion
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

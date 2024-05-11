@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DiplomaProject.Migrations
 {
-    public partial class remakeOfDb : Migration
+    public partial class fixConnections1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -41,31 +41,6 @@ namespace DiplomaProject.Migrations
                     table.PrimaryKey("PK_Disciplines", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Disciplines_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Fillings",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Day = table.Column<int>(type: "int", nullable: false),
-                    Month = table.Column<int>(type: "int", nullable: false),
-                    Year = table.Column<int>(type: "int", nullable: false),
-                    Hours = table.Column<int>(type: "int", nullable: false),
-                    Disciplenes = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TypeOfLesson = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Fillings", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Fillings_Users_UserId",
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id",
@@ -146,13 +121,39 @@ namespace DiplomaProject.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LessonId = table.Column<int>(type: "int", nullable: false),
-                    TimeOfChange = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    NextLessonTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ExpireDateTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_BackupLessons", x => x.Id);
                     table.ForeignKey(
                         name: "FK_BackupLessons_Lessons_LessonId",
+                        column: x => x.LessonId,
+                        principalTable: "Lessons",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Workloads",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Day = table.Column<int>(type: "int", nullable: false),
+                    Month = table.Column<int>(type: "int", nullable: false),
+                    Year = table.Column<int>(type: "int", nullable: false),
+                    Hours = table.Column<int>(type: "int", nullable: false),
+                    Disciplenes = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TypeOfLesson = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LessonId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Workloads", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Workloads_Lessons_LessonId",
                         column: x => x.LessonId,
                         principalTable: "Lessons",
                         principalColumn: "Id",
@@ -170,11 +171,6 @@ namespace DiplomaProject.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Fillings_UserId",
-                table: "Fillings",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Groups_UserId",
                 table: "Groups",
                 column: "UserId");
@@ -188,6 +184,11 @@ namespace DiplomaProject.Migrations
                 name: "IX_PlaceOfLessons_UserId",
                 table: "PlaceOfLessons",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Workloads_LessonId",
+                table: "Workloads",
+                column: "LessonId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -199,13 +200,13 @@ namespace DiplomaProject.Migrations
                 name: "Disciplines");
 
             migrationBuilder.DropTable(
-                name: "Fillings");
-
-            migrationBuilder.DropTable(
                 name: "Groups");
 
             migrationBuilder.DropTable(
                 name: "PlaceOfLessons");
+
+            migrationBuilder.DropTable(
+                name: "Workloads");
 
             migrationBuilder.DropTable(
                 name: "Lessons");

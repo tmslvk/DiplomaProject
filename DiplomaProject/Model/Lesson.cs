@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DiplomaProject.Model
 {
@@ -23,5 +18,6 @@ namespace DiplomaProject.Model
         public int UserId { get; set; }
         public User? User { get; set; }
         public List<BackupLessons> BackupLessons { get; set; }
+        public List<Workload> Workload { get; set; }
     }
 }

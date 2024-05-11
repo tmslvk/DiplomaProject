@@ -11,6 +11,8 @@ namespace DiplomaProject.Model
         public int Id { get; set; }
         public Lesson Lesson { get; set; }
         public int LessonId { get; set; }
-        public DateTime TimeOfChange { get; set; }
+        public bool IsNew { get;set; }
+        public DateTime NextLessonTime { get; set; }
+        public DateTime ExpireDateTime { get; set; }
     }
 }

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using DiplomaProject.Model;
+﻿using DiplomaProject.Model;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+
 
 namespace DiplomaProject
 {
@@ -13,7 +11,7 @@ namespace DiplomaProject
         }
 
         public DbSet<User> Users { get; set; } = null!;
-        public DbSet<Filling> Fillings { get; set; } = null!;
+        public DbSet<Workload> Workloads { get; set; } = null!;
         public DbSet<Discipline> Disciplines { get; set; } = null!;
         public DbSet<Lesson> Lessons { get; set; } = null!;
         public DbSet<Group> Groups { get; set; } = null!;
@@ -30,7 +28,7 @@ namespace DiplomaProject
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-1D3P714\\SQLEXPRESS;Database=DiplomaBD;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-1D3P714\\SQLEXPRESS;Database=DiplomaBD;Trusted_Connection=True;MultipleActiveResultSets=true;");
             }
         }
 
@@ -39,9 +37,9 @@ namespace DiplomaProject
             //User
             modelBuilder.Entity<User>().HasKey(u => u.Id);
 
-            //Fillings
-            modelBuilder.Entity<Filling>().HasKey(u => u.Id);
-            modelBuilder.Entity<Filling>().HasOne(f => f.User).WithMany(s => s.Filling).HasForeignKey(f => f.UserId);
+            //Worload
+            modelBuilder.Entity<Workload>().HasKey(u => u.Id);
+            modelBuilder.Entity<Workload>().HasOne(f => f.Lesson).WithMany(s => s.Workload).HasForeignKey(f => f.LessonId);
 
             //Discipline
             modelBuilder.Entity<Discipline>().HasKey(u => u.Id);

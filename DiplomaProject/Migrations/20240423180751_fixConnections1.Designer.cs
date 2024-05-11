@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DiplomaProject.Migrations
 {
     [DbContext(typeof(DiplomaBDContext))]
-    [Migration("20240414135454_remakeOfDb")]
-    partial class remakeOfDb
+    [Migration("20240423180751_fixConnections1")]
+    partial class fixConnections1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,10 +32,13 @@ namespace DiplomaProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<DateTime>("ExpireDateTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("LessonId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("TimeOfChange")
+                    b.Property<DateTime>("NextLessonTime")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -65,44 +68,6 @@ namespace DiplomaProject.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Disciplines");
-                });
-
-            modelBuilder.Entity("DiplomaProject.Model.Filling", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Day")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Disciplenes")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Hours")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Month")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TypeOfLesson")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Year")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Fillings");
                 });
 
             modelBuilder.Entity("DiplomaProject.Model.Group", b =>
@@ -228,6 +193,44 @@ namespace DiplomaProject.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("DiplomaProject.Model.Workload", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Day")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Disciplenes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Hours")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LessonId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TypeOfLesson")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LessonId");
+
+                    b.ToTable("Workloads");
+                });
+
             modelBuilder.Entity("DiplomaProject.Model.BackupLessons", b =>
                 {
                     b.HasOne("DiplomaProject.Model.Lesson", "Lesson")
@@ -243,17 +246,6 @@ namespace DiplomaProject.Migrations
                 {
                     b.HasOne("DiplomaProject.Model.User", "User")
                         .WithMany("Discipline")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("DiplomaProject.Model.Filling", b =>
-                {
-                    b.HasOne("DiplomaProject.Model.User", "User")
-                        .WithMany("Filling")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -294,16 +286,27 @@ namespace DiplomaProject.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("DiplomaProject.Model.Workload", b =>
+                {
+                    b.HasOne("DiplomaProject.Model.Lesson", "Lesson")
+                        .WithMany("Workload")
+                        .HasForeignKey("LessonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+                });
+
             modelBuilder.Entity("DiplomaProject.Model.Lesson", b =>
                 {
                     b.Navigation("BackupLessons");
+
+                    b.Navigation("Workload");
                 });
 
             modelBuilder.Entity("DiplomaProject.Model.User", b =>
                 {
                     b.Navigation("Discipline");
-
-                    b.Navigation("Filling");
 
                     b.Navigation("Group");
 

@@ -91,6 +91,7 @@
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2GradientPanel1.Size = new Size(420, 500);
             guna2GradientPanel1.TabIndex = 0;
+            guna2GradientPanel1.Paint += guna2GradientPanel1_Paint;
             // 
             // showHidePasswordButton
             // 

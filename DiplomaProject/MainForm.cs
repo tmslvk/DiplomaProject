@@ -1,6 +1,15 @@
 ﻿using DiplomaProject.Model;
+using DocumentFormat.OpenXml.Bibliography;
+using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.Reporting.WinForms;
+using OfficeOpenXml;
+using System;
+using System.Data;
+using System.Diagnostics;
+using System.IO.Packaging;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
-
+using TheArtOfDevHtmlRenderer.Core;
 
 namespace DiplomaProject
 {
@@ -13,7 +22,49 @@ namespace DiplomaProject
         public bool showHideCheckerNew = false;
         public bool showChangeGroupBox = false;
 
+        public string schedulePath = "Schedule.xlsx";
+        public string workloadPath = "Workload.xlsx";
         public Regex validator = new Regex("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&].{8,15}$");
+
+        List<DayOfWeek> dayOfWeeks = new List<DayOfWeek>()
+        {
+            DayOfWeek.Monday,
+            DayOfWeek.Tuesday,
+            DayOfWeek.Wednesday,
+            DayOfWeek.Thursday,
+            DayOfWeek.Friday,
+            DayOfWeek.Saturday
+        };
+
+        Dictionary<DayOfWeek, string> dayDictionary = new Dictionary<DayOfWeek, string>()
+        {
+            {DayOfWeek.Monday, "Понедельник" },
+            {DayOfWeek.Tuesday, "Вторник" },
+            {DayOfWeek.Wednesday, "Среда" },
+            {DayOfWeek.Thursday, "Четверг" },
+            {DayOfWeek.Friday, "Пятница" },
+            {DayOfWeek.Saturday, "Суббота" },
+
+        };
+
+        public List<string> typeOfLessons = new List<string>()
+        {
+            "Лекции",
+            "Практич. и семинарские занятия",
+            "Лабораторные занятия",
+            "Курсовое проектирование",
+            "Консультации",
+            "Зачеты",
+            "Экзамены",
+            "Руководство аспирантами",
+            "Дипломное проектирование",
+            "ГЭК",
+            "Учебные и произв. практики",
+            "Руководство магистрантами",
+            "Контрольные работы и РГР"
+        };
+
+        List<TimeSpan> timeOfLessons;
 
         public MainForm(int id, DiplomaBDContext context)
         {
@@ -31,11 +82,32 @@ namespace DiplomaProject
                 jobPostLabel.Text = user.JobPost;
             }
             FillSchedule(GetLessons());
+            FillWorkloadView(SortWorkload());
+            //RemoveExpiredLessons();
+        }
+        public void RemoveExpiredLessons()
+        {
+            if (db.BackupLessons != null)
+            {
+                foreach (var backup in db.BackupLessons)
+                {
+                    foreach (var lesson in db.Lessons)
+                    {
+                        if (backup.LessonId == lesson.Id && DateTime.Now > backup.ExpireDateTime)
+                        {
+                            db.Lessons.Remove(lesson);
+                        }
+                        return;
+                    }
+                }
+            }
+            return;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             oldPasswordTextBoxChange.UseSystemPasswordChar = true;
+            this.timeOfLessons = GetTimeOfLessons(GetLessonsForTimeSpans());
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -56,6 +128,7 @@ namespace DiplomaProject
             addInfoGroupBox.Hide();
             lessonGroupBox.Hide();
             scheduleGroupBox.Hide();
+            workloadGroupBox.Hide();
         }
         private void addCommonInfoGroupBoxButton_Click(object sender, EventArgs e)
         {
@@ -64,6 +137,7 @@ namespace DiplomaProject
             profileGroupBox.Hide();
             lessonGroupBox.Hide();
             scheduleGroupBox.Hide();
+            workloadGroupBox.Hide();
         }
 
         private void scheduleGroupBoxButton_Click(object sender, EventArgs e)
@@ -74,7 +148,7 @@ namespace DiplomaProject
             lessonGroupBox.Hide();
             addInfoGroupBox.Hide();
             profileGroupBox.Hide();
-
+            workloadGroupBox.Hide();
         }
         private void lessonGroupBoxButton_Click(object sender, EventArgs e)
         {
@@ -83,11 +157,17 @@ namespace DiplomaProject
             addInfoGroupBox.Hide();
             profileGroupBox.Hide();
             scheduleGroupBox.Hide();
+            workloadGroupBox.Hide();
         }
 
-        private void burdenGroupBoxButton_Click(object sender, EventArgs e)
+        private void workloadGroupBoxButton_Click(object sender, EventArgs e)
         {
+            workloadGroupBox.Show();
 
+            scheduleGroupBox.Hide();
+            profileGroupBox.Hide();
+            lessonGroupBox.Hide();
+            addInfoGroupBox.Hide();
         }
         #endregion
 
@@ -98,7 +178,6 @@ namespace DiplomaProject
 
         public User? GetUserById(int id)
         {
-
             return db.Users.FirstOrDefault(u => u.Id == id);
         }
 
@@ -202,30 +281,6 @@ namespace DiplomaProject
             form.Show();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        public Lesson? GetScheduleById()
-        {
-            return db.Lessons.FirstOrDefault<Lesson?>(s => s.UserId == userID);
-        }
-
-        private void addLessonButtonSchedule_Click(object sender, EventArgs e)
-        {
-            scheduleBindingSource.AddNew();
-        }
-
-        private void saveLessonButtonSchedule_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ScheduleGroupBox_Click(object sender, EventArgs e)
-        {
-
-        }
         #region[AddValuesForComboBoxes]
         public void AddValuesBoot()
         {
@@ -421,6 +476,7 @@ namespace DiplomaProject
         }
         #endregion
 
+        #region[AddUpdateLessons]
         private void addLessonButton_Click(object sender, EventArgs e)
         {
             var timeOfLesson = DateTime.Parse(timeAddLessonTextBox.Text).TimeOfDay;
@@ -446,21 +502,69 @@ namespace DiplomaProject
             }
             else
             {
+                weeksAddLabel.Visible = true;
+                weeksUpDown.Visible = true;
+                updateLessonButton.Visible = true;
 
-                BackupLessons backupLessons = new BackupLessons()
-                {
-                    Lesson = RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day),
-                    TimeOfChange = DateTime.Now,
-                    LessonId = RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day).Id
+                addLessonButton.Visible = false;
 
-                };
-                db.BackupLessons.Add(backupLessons);
+                searchResultTextBox.Clear();
+                searchResultTextBox.Text = $"В выбранное вами время уже существует занятие!" + Environment.NewLine +
+                    $"Это {RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day).TypeOfLesson}" + Environment.NewLine +
+                    $"{RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day).Discipline}" + Environment.NewLine +
+                    $"{RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day).Group}" + Environment.NewLine +
+                    $"Заменить его?";
+            }
+        }
+        private void updateLessonButton_Click(object sender, EventArgs e)
+        {
+            var timeOfLesson = DateTime.Parse(timeAddLessonTextBox.Text).TimeOfDay;
+            DayOfWeekItem selectedDay = (DayOfWeekItem)dayAddLessonComboBox.SelectedItem;
+            string selectedDayName = selectedDay.Name;
+            Lesson newLesson = new Lesson()
+            {
+                Day = selectedDayName,
+                DayOfWeek = (int)dayAddLessonComboBox.SelectedValue,
+                TypeOfWeek = typeOfWeekAddLessonComboBox.SelectedItem.ToString(),
+                Discipline = disciplineAddLessonComboBox.SelectedItem.ToString(),
+                Group = groupAddLessonComboBox.SelectedItem.ToString(),
+                PlaceOfLesson = placeAddLessonComboBox.SelectedItem.ToString(),
+                TimeOfLesson = timeOfLesson,
+                TypeOfLesson = typeLessonAddLessonComboBox.SelectedItem.ToString(),
+                User = GetUserById(userID),
+            };
+            if (!IsRepeated(newLesson.TimeOfLesson, newLesson.Day, newLesson) && RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day) != null)
+            {
                 db.Lessons.Add(newLesson);
                 db.SaveChanges();
-                searchResultTextBox.Clear();
-                searchResultTextBox.Text = "Занятие было перезаписано";
-                return;
+                BackupLessons oldBackupLessons = new BackupLessons()
+                {
+                    Lesson = RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day),
+                    LessonId = RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day).Id,
+                    NextLessonTime = GetNextLessonDate(RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day)),
+                    ExpireDateTime = GetNextLessonDate(RepeatedLesson(newLesson.TimeOfLesson, newLesson.Day)).AddDays((double)weeksUpDown.Value * 7),
+                    IsNew = false,
+                };
+                db.BackupLessons.Add(oldBackupLessons);
+                BackupLessons newBackupLessons = new BackupLessons()
+                {
+                    Lesson = newLesson,
+                    LessonId = newLesson.Id,
+                    NextLessonTime = GetNextLessonDate(newLesson),
+                    ExpireDateTime = GetNextLessonDate(newLesson).AddDays((double)weeksUpDown.Value * 7),
+                    IsNew = true
+                };
+                db.BackupLessons.Add(newBackupLessons);
+                db.SaveChanges();
             }
+        }
+
+        public DateTime GetNextLessonDate(Lesson lesson)
+        {
+            DayOfWeek nextDayOfLesson = (DayOfWeek)lesson.DayOfWeek;
+            int daysUntilNextLesson = (nextDayOfLesson - DateTime.Now.DayOfWeek + 7) % 7;
+
+            return DateTime.Now.AddDays(daysUntilNextLesson);
         }
 
         private void findLessonButton_Click(object sender, EventArgs e)
@@ -500,6 +604,11 @@ namespace DiplomaProject
             return db.Lessons.FirstOrDefault(l => l.TimeOfLesson == time && l.Day == day && l.UserId == userID);
         }
 
+        public Lesson? GetLastAddedLesson(TimeSpan? time, string day)
+        {
+            return db.Lessons.LastOrDefault(l => l.TimeOfLesson == time && l.Day == day && l.UserId == userID);
+        }
+
         public bool IsRepeated(TimeSpan? time, string day, Lesson newLesson)
         {
             if (RepeatedLesson(time, day) != null)
@@ -512,13 +621,13 @@ namespace DiplomaProject
             }
             return true;
         }
+        #endregion
 
         private void viewScheduleButton_Click(object sender, EventArgs e)
         {
-            ScheduleForm scheduleForm = new ScheduleForm();
-            scheduleForm.Show();
+            CreateScheduleOnExcel();
         }
-
+        //переделать
         public List<Lesson> GetLessons()
         {
             var sortedData = db.Lessons
@@ -528,23 +637,59 @@ namespace DiplomaProject
 
             //scheduleDataGridView.DataSource = sortedData;
             var backup = db.BackupLessons.ToList();
-            List<Lesson> finalList = new List<Lesson>();
-            if(backup != null)
+            var now = DateTime.Now;
+            if (backup != null)
             {
-                for (int i = 0; i < backup.Count; i++)
+                List<Lesson> finalList = new List<Lesson>();
+                foreach (var lesson in sortedData)
                 {
-                    for (int j = 0; j < sortedData.Count; j++)
+                    var hasBackup = backup.Any((item) => HasBackup(lesson, item));
+                    if (!hasBackup)
                     {
-                        if (backup[i].LessonId != sortedData[j].Id)
-                        {
-                            finalList.Add(sortedData[j]);
-                        }
-                        return finalList;
+                        finalList.Add(lesson);
                     }
-                    return finalList;
                 }
+
+                return finalList;
             }
-            
+
+            return sortedData;
+        }
+
+        private bool HasBackup(Lesson lesson, BackupLessons backupLesson)
+        {
+            var now = DateTime.Now;
+            return backupLesson.LessonId == lesson.Id &&
+                (backupLesson.ExpireDateTime < now && backupLesson.IsNew
+                ||
+                backupLesson.ExpireDateTime > now && !backupLesson.IsNew);
+        }
+
+        public void FillWorkloadView(List<Workload> workload)
+        {
+            workloadDataGridView.DataSource = workload;
+        }
+
+        public List<Workload> SortWorkload()
+        {
+            var lessons = db.Lessons.Where(l => l.UserId == userID).ToList();
+            var sortedData = db.Workloads
+            .OrderBy(x => x.Day)
+            .Where(x => lessons.Contains(x.Lesson))
+            .ToList();
+
+            var finalList = new List<Workload>();
+            if (sortedData != null)
+            {
+                foreach (var filling in sortedData)
+                {
+                    if (filling.Month == DateTime.Now.Month && filling.Year == DateTime.Now.Year)
+                    {
+                        finalList.Add(filling);
+                    }
+                }
+                return finalList;
+            }
             return sortedData;
         }
 
@@ -561,9 +706,12 @@ namespace DiplomaProject
 
         private void createFillingFromScheduleButton_Click(object sender, EventArgs e)
         {
+            firstFillingGratsLabel.Text = "";
             FillWorkLoadTable(GetLessons());
+            firstFillingGratsLabel.Text = "Перенос расписания на нагрузку был успешен";
+            firstFillingGratsLabel.Visible = true;
         }
-
+        //доработать
         public void FillWorkLoadTable(List<Lesson> lessons)
         {
             foreach (var lesson in lessons)
@@ -571,6 +719,8 @@ namespace DiplomaProject
                 for (int day = 1; day <= DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month); day++)
                 {
                     DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, day);
+
+                    if (lesson.BackupLessons != null && lesson.BackupLessons.Any(b => b.IsNew ? b.ExpireDateTime < date : b.ExpireDateTime > date)) continue;
                     if ((int)date.DayOfWeek == lesson.DayOfWeek)
                     {
                         bool addLesson = false;
@@ -589,16 +739,16 @@ namespace DiplomaProject
 
                         if (addLesson)
                         {
-                            db.Fillings.Add(new Filling
+                            db.Workloads.Add(new Workload
                             {
                                 Day = day,
                                 Month = DateTime.Now.Month,
                                 Year = DateTime.Now.Year,
-                                Hours = 2, // фиксированное количество в 2 часа
+                                Hours = 2,
                                 Disciplenes = lesson.Discipline,
                                 TypeOfLesson = lesson.TypeOfLesson,
-                                User = GetUserById(userID)
-                                
+                                Lesson = lesson,
+
                             });
                         }
                     }
@@ -606,5 +756,306 @@ namespace DiplomaProject
             }
             db.SaveChanges();
         }
+
+        public List<Workload> GetWorkload()
+        {
+            var lessons = db.Lessons.Where(l => l.UserId == userID).ToList();
+            return db.Workloads.Where(l => lessons.Contains(l.Lesson) && l.Month == DateTime.Now.Month && l.Year == DateTime.Now.Year).ToList();
+        }
+
+        private void updateWorkloadButton_Click(object sender, EventArgs e)
+        {
+            List<Lesson> lessons = db.Lessons.Where(l => l.UserId == userID).ToList();
+
+            var oldWorloads = db.Workloads.Where(w => lessons.Contains(w.Lesson)).ToList();
+            db.Workloads.RemoveRange(oldWorloads);
+            FillWorkLoadTable(lessons);
+            FillWorkloadView(GetWorkload());
+        }
+
+        private void watchScheduleButton_Click(object sender, EventArgs e)
+        {
+            ScheduleForm form = new ScheduleForm(db, userID);
+            form.Show();
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        #region[ExcelScheduleLogic]
+
+        public void CreateScheduleOnExcel()
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            ExcelPackage package = new ExcelPackage();
+            ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Расписание");
+
+            int startRow = 2;
+            int startCol = 2;
+
+            worksheet.Cells[1, 1].Value = "Время \\ Дни";
+            for (int i = 0; i < dayDictionary.Count; i++)
+            {
+                worksheet.Cells[i + startCol, 1].Value = dayDictionary[dayOfWeeks[i]];
+                for (int j = 0; j < timeOfLessons.Count; j++)
+                {
+                    worksheet.Cells[1, j + startRow].Value = timeOfLessons[j].ToString();
+                }
+            }
+
+            package.SaveAs(new FileInfo(schedulePath));
+        }
+
+        public void FillDataInExcel()
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+            ExcelPackage package = new ExcelPackage(schedulePath);
+            List<Lesson> lessons = GetLessons(); // Здесь GetLessonsData() - ваш метод для получения данных из таблицы
+            ExcelWorksheet worksheet = package.Workbook.Worksheets["Расписание"];
+            int startRow = 2;
+            int startCol = 2;
+            Action clearRows = () =>
+            {
+                for (int i = startRow; i <= worksheet.Dimension.Rows; i++)
+                {
+                    for (int j = startCol; j <= worksheet.Dimension.Columns; j++)
+                    {
+                        worksheet.Cells[i, j].Value = "";
+                    }
+                }
+            };
+
+            Func<Lesson, int> getRow = (lesson) =>
+            {
+                var day = lesson.Day;
+                for (int i = startRow; i <= worksheet.Dimension.Rows; i++)
+                {
+                    if (day == worksheet.Cells[i, 1].Value.ToString())
+                    {
+                        return i;
+                    }
+                }
+
+                return -1;
+            };
+
+            Func<Lesson, int> getCol = (lesson) =>
+            {
+                var timeOfLesson = lesson.TimeOfLesson;
+                for (int j = startCol; j <= worksheet.Dimension.Columns; j++)
+                {
+                    if (timeOfLesson.ToString() == worksheet.Cells[1, j].Value.ToString())
+                    {
+                        return j;
+                    }
+                }
+
+                return -1;
+            };
+
+            clearRows();
+
+            foreach (var lesson in lessons)
+            {
+                var col = getCol(lesson);
+                var row = getRow(lesson);
+
+                if (col != -1 && row != -1)
+                {
+                    if (worksheet.Cells[row, col].Value.ToString() != String.Empty)
+                    {
+                        worksheet.Cells[row, col].Value += Environment.NewLine;
+                    }
+
+                    worksheet.Cells[row, col].Value +=
+                        $"{lesson.TypeOfWeek}" + Environment.NewLine +
+                        $"{lesson.TypeOfLesson}" + Environment.NewLine +
+                        $"{lesson.Discipline}" + $" {lesson.PlaceOfLesson}" + $" {lesson.Group}";
+                }
+            }
+
+            package.Save();
+        }
+        #endregion
+        public List<Lesson> GetLessonsForTimeSpans()
+        {
+            return db.Lessons.Where(l => l.UserId == userID).ToList();
+        }
+
+        public List<TimeSpan> GetTimeOfLessons(List<Lesson> lessons)
+        {
+            return lessons.Select(l => l.TimeOfLesson).OfType<TimeSpan>().Distinct().OrderBy(t => t).ToList();
+        }
+
+        private void createTemplateOfScheduleButton_Click(object sender, EventArgs e)
+        {
+            firstFillingGratsLabel.Text = "";
+            CreateScheduleOnExcel();
+            firstFillingGratsLabel.Text = "Шаблон расписания был успешно создан";
+            firstFillingGratsLabel.Visible = true;
+        }
+
+        private void fillScheduleExcelButton_Click(object sender, EventArgs e)
+        {
+            firstFillingGratsLabel.Text = "";
+            FillDataInExcel();
+            firstFillingGratsLabel.Text = "Файл Excel был успешно заполнен";
+            firstFillingGratsLabel.Visible = true;
+        }
+
+        private void openScheduleButton_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo excel = new ProcessStartInfo();
+            excel.UseShellExecute = true;
+            excel.FileName = "EXCEL.EXE";
+            var directory = Directory.GetCurrentDirectory();
+            excel.Arguments = $"{directory}\\{schedulePath}";
+            Process.Start(excel);
+        }
+
+        private void openWorkloadButton_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo excel = new ProcessStartInfo();
+            excel.UseShellExecute = true;
+            excel.FileName = "EXCEL.EXE";
+            var directory = Directory.GetCurrentDirectory();
+            excel.Arguments = $"{directory}\\{workloadPath}";
+            Process.Start(excel);
+        }
+
+        public void CreateTemplateWorkload()
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            ExcelPackage package = new ExcelPackage();
+            ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Нагрузка");
+
+            int startRow = 2;
+            int startCol = 2;
+
+            worksheet.Cells[1, 1].Value = "Дата \\ Типы занятий";
+            for (int i = 0; i <= DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) - 1; i++)
+            {
+                worksheet.Cells[i + startCol, 1].Value = i + 1;
+                worksheet.Cells[startRow + DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month), 1].Value = "Итого:";
+                worksheet.Cells[1, typeOfLessons.Count + startCol].Value = "Наименование дисциплины";
+                for (int j = 0; j < typeOfLessons.Count; j++)
+                {
+                    worksheet.Cells[1, j + startRow].Value = typeOfLessons[j].ToString();
+                }
+            }
+
+            package.SaveAs(new FileInfo(workloadPath));
+        }
+
+        public class WorkloadCell
+        {
+            public int? Hours;
+            public string TypeOfLesson;
+            public int Day;
+        }
+        public List<WorkloadCell> GetWorkloadCells(List<Workload> workloads)
+        {
+            var workloadCells = workloads.GroupBy((wl) => wl.TypeOfLesson + wl.Day).Select((wlGroup) => wlGroup.Aggregate(new WorkloadCell(), (cell, wl) =>
+            {
+                cell.TypeOfLesson = wl.TypeOfLesson;
+                cell.Day = wl.Day;
+                var hours = cell.Hours == null ? wl.Hours : cell.Hours + wl.Hours;
+                cell.Hours = hours;
+                return cell;
+            })).ToList();
+
+            return workloadCells;
+        }
+        public Dictionary<string, int> GetLessonHours(List<WorkloadCell> workloadCells)
+        {
+            return workloadCells.GroupBy((wc) => wc.TypeOfLesson).Select((wc) =>
+            new
+            {
+                Key = wc.Key,
+                Value = wc.Aggregate(0, (total, wc) => total += (int)wc.Hours)
+            }).ToDictionary((kv) => kv.Key, (kv) => kv.Value);
+        }
+
+        public void FillDataInWorkload()
+        {
+
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+            ExcelPackage package = new ExcelPackage(workloadPath);
+            List<Workload> workloads = GetWorkload();
+            ExcelWorksheet worksheet = package.Workbook.Worksheets["Нагрузка"];
+            int startRow = 2;
+            int startCol = 2;
+            Action clearRows = () =>
+            {
+                for (int i = startRow; i <= worksheet.Dimension.Rows; i++)
+                {
+                    for (int j = startCol; j <= worksheet.Dimension.Columns; j++)
+                    {
+                        worksheet.Cells[i, j].Value = "";
+                    }
+                }
+            };
+
+            Func<WorkloadCell, int> getRow = (workload) =>
+            {
+                var day = workload.Day;
+                for (int i = startRow; i <= worksheet.Dimension.Rows; i++)
+                {
+                    if (day.ToString() == worksheet.Cells[i, 1].Value.ToString())
+                    {
+                        return i;
+                    }
+                }
+
+                return -1;
+            };
+
+            Func<WorkloadCell, int> getCol = (workload) =>
+            {
+                var lessonType = workload.TypeOfLesson;
+                for (int j = startCol; j <= worksheet.Dimension.Columns; j++)
+                {
+                    if (lessonType.ToString() == worksheet.Cells[1, j].Value.ToString())
+                    {
+                        return j;
+                    }
+                }
+
+                return -1;
+            };
+
+            clearRows();
+
+            var workloadCells = this.GetWorkloadCells(workloads);
+            var totalHours = this.GetLessonHours(workloadCells);
+
+            foreach (var cell in workloadCells)
+            {
+                var col = getCol(cell);
+                var row = getRow(cell);
+                worksheet.Cells[DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + startRow, col].Value = totalHours[cell.TypeOfLesson];
+                if (col != -1 && row != -1)
+                {
+                    worksheet.Cells[row, col].Value = cell.Hours;
+                }
+            }
+
+            package.Save();
+        }
+
+        private void createWorkloadTemplateButton_Click(object sender, EventArgs e)
+        {
+            CreateTemplateWorkload();
+        }
+
+        private void fillWorkloadButton_Click(object sender, EventArgs e)
+        {
+            FillDataInWorkload();
+        }
     }
+
 }
