@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges127 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges128 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges133 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges134 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -62,10 +62,10 @@
             DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -76,10 +76,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -92,24 +92,22 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges93 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges94 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges67 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges68 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges65 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges66 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges95 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges96 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges79 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges80 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges67 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges68 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges89 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges90 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges69 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges70 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges71 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -120,8 +118,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges76 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges77 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges78 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges93 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges94 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges79 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges80 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges81 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges82 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges83 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -130,28 +128,30 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges86 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges87 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges88 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges89 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges90 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges91 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges92 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges95 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges96 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges97 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges98 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges119 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges120 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges125 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges126 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges105 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges106 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges99 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges100 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges101 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges102 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges117 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges118 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges103 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges104 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges105 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges106 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges107 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges108 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges123 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges124 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges109 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges110 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges111 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges112 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -159,12 +159,18 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges114 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges115 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges116 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges117 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges118 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges119 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges120 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges121 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges122 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges123 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges124 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges125 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges126 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges127 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges128 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges129 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges130 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges131 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges132 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             idLabel = new Label();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             scheduleGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
@@ -201,6 +207,26 @@
             userDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             lessonBindingSource = new BindingSource(components);
             addCommonInfoGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
+            addInfoGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
+            guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            deleteInfoLabel = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            deletePlaceButton = new Guna.UI2.WinForms.Guna2Button();
+            label8 = new Label();
+            deleteGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deleteDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
+            deleteDisciplineComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deleteGroupButton = new Guna.UI2.WinForms.Guna2Button();
+            deletePlaceOfLessonComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            addInfoLabel = new Label();
+            addGroupsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            addDisciplineTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            addPlaceOfLessonTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            addGroupButton = new Guna.UI2.WinForms.Guna2Button();
+            addDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
+            addPlaceOfLessonButton = new Guna.UI2.WinForms.Guna2Button();
             lessonGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
             deleteLessonPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             deleteLessonButton = new Guna.UI2.WinForms.Guna2Button();
@@ -233,29 +259,15 @@
             searchResultTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             workloadGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
             lessonsGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
-            addInfoGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
-            guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            deleteInfoLabel = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            deletePlaceButton = new Guna.UI2.WinForms.Guna2Button();
-            label8 = new Label();
-            deleteGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deleteDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
-            deleteDisciplineComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deleteGroupButton = new Guna.UI2.WinForms.Guna2Button();
-            deletePlaceOfLessonComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            addInfoLabel = new Label();
-            addGroupsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            addDisciplineTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            addPlaceOfLessonTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            addGroupButton = new Guna.UI2.WinForms.Guna2Button();
-            addDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
-            addPlaceOfLessonButton = new Guna.UI2.WinForms.Guna2Button();
             profileGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
             profileGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
+            guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
+            findWorkloadErrorLabel = new Label();
+            label18 = new Label();
+            label16 = new Label();
             openWorkloadButton = new Guna.UI2.WinForms.Guna2Button();
+            yearNumericUpDown = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            monthComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             openScheduleButton = new Guna.UI2.WinForms.Guna2Button();
             changePasswordGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
             changePasswoedGratsLabel = new Label();
@@ -286,6 +298,7 @@
             disciplineBindingSource = new BindingSource(components);
             groupBindingSource = new BindingSource(components);
             diplomaBDContextBindingSource = new BindingSource(components);
+            findScheduleErrorLabel = new Label();
             guna2GradientPanel1.SuspendLayout();
             workloadGroupBox.SuspendLayout();
             guna2GroupBox2.SuspendLayout();
@@ -295,14 +308,16 @@
             guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scheduleDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)lessonBindingSource).BeginInit();
+            addInfoGroupBox.SuspendLayout();
+            guna2GradientPanel3.SuspendLayout();
+            guna2GradientPanel2.SuspendLayout();
             lessonGroupBox.SuspendLayout();
             deleteLessonPanel.SuspendLayout();
             addLessonPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)weeksUpDown).BeginInit();
-            addInfoGroupBox.SuspendLayout();
-            guna2GradientPanel3.SuspendLayout();
-            guna2GradientPanel2.SuspendLayout();
             profileGroupBox.SuspendLayout();
+            guna2GroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)yearNumericUpDown).BeginInit();
             changePasswordGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scheduleBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)placeOfLessonBindingSource).BeginInit();
@@ -329,23 +344,23 @@
             guna2GradientPanel1.Controls.Add(workloadGroupBox);
             guna2GradientPanel1.Controls.Add(scheduleGroupBox);
             guna2GradientPanel1.Controls.Add(addCommonInfoGroupBoxButton);
-            guna2GradientPanel1.Controls.Add(lessonGroupBox);
-            guna2GradientPanel1.Controls.Add(workloadGroupBoxButton);
-            guna2GradientPanel1.Controls.Add(lessonsGroupBoxButton);
             guna2GradientPanel1.Controls.Add(addInfoGroupBox);
+            guna2GradientPanel1.Controls.Add(workloadGroupBoxButton);
+            guna2GradientPanel1.Controls.Add(lessonGroupBox);
+            guna2GradientPanel1.Controls.Add(lessonsGroupBoxButton);
             guna2GradientPanel1.Controls.Add(profileGroupBoxButton);
             guna2GradientPanel1.Controls.Add(profileGroupBox);
             guna2GradientPanel1.Controls.Add(guna2Separator1);
             guna2GradientPanel1.Controls.Add(hideButton);
             guna2GradientPanel1.Controls.Add(closeButton);
             guna2GradientPanel1.Controls.Add(backButton);
-            guna2GradientPanel1.CustomizableEdges = customizableEdges127;
+            guna2GradientPanel1.CustomizableEdges = customizableEdges133;
             guna2GradientPanel1.FillColor = Color.SlateBlue;
             guna2GradientPanel1.FillColor2 = Color.FromArgb(50, 70, 80);
             guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             guna2GradientPanel1.Location = new Point(0, 0);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
-            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges128;
+            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges134;
             guna2GradientPanel1.Size = new Size(1200, 700);
             guna2GradientPanel1.TabIndex = 1;
             // 
@@ -946,6 +961,470 @@
             addCommonInfoGroupBoxButton.Text = "Добавить информацию";
             addCommonInfoGroupBoxButton.Click += addCommonInfoGroupBoxButton_Click;
             // 
+            // addInfoGroupBox
+            // 
+            addInfoGroupBox.BorderColor = Color.DarkSlateBlue;
+            addInfoGroupBox.BorderRadius = 6;
+            addInfoGroupBox.BorderThickness = 2;
+            addInfoGroupBox.Controls.Add(guna2GradientPanel3);
+            addInfoGroupBox.Controls.Add(guna2GradientPanel2);
+            addInfoGroupBox.CustomBorderColor = Color.MediumSlateBlue;
+            addInfoGroupBox.CustomizableEdges = customizableEdges53;
+            addInfoGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            addInfoGroupBox.ForeColor = Color.Black;
+            addInfoGroupBox.Location = new Point(249, 67);
+            addInfoGroupBox.Name = "addInfoGroupBox";
+            addInfoGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            addInfoGroupBox.Size = new Size(939, 621);
+            addInfoGroupBox.TabIndex = 35;
+            addInfoGroupBox.Text = "Добавление информации ";
+            addInfoGroupBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // guna2GradientPanel3
+            // 
+            guna2GradientPanel3.BorderColor = Color.DarkSlateBlue;
+            guna2GradientPanel3.BorderRadius = 10;
+            guna2GradientPanel3.BorderThickness = 1;
+            guna2GradientPanel3.Controls.Add(deleteInfoLabel);
+            guna2GradientPanel3.Controls.Add(label6);
+            guna2GradientPanel3.Controls.Add(label7);
+            guna2GradientPanel3.Controls.Add(deletePlaceButton);
+            guna2GradientPanel3.Controls.Add(label8);
+            guna2GradientPanel3.Controls.Add(deleteGroupComboBox);
+            guna2GradientPanel3.Controls.Add(deleteDisciplineButton);
+            guna2GradientPanel3.Controls.Add(deleteDisciplineComboBox);
+            guna2GradientPanel3.Controls.Add(deleteGroupButton);
+            guna2GradientPanel3.Controls.Add(deletePlaceOfLessonComboBox);
+            guna2GradientPanel3.CustomizableEdges = customizableEdges37;
+            guna2GradientPanel3.FillColor = Color.SlateBlue;
+            guna2GradientPanel3.FillColor2 = Color.IndianRed;
+            guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            guna2GradientPanel3.Location = new Point(10, 363);
+            guna2GradientPanel3.Name = "guna2GradientPanel3";
+            guna2GradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            guna2GradientPanel3.Size = new Size(892, 244);
+            guna2GradientPanel3.TabIndex = 66;
+            // 
+            // deleteInfoLabel
+            // 
+            deleteInfoLabel.AutoSize = true;
+            deleteInfoLabel.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteInfoLabel.ForeColor = Color.White;
+            deleteInfoLabel.Location = new Point(104, 197);
+            deleteInfoLabel.Name = "deleteInfoLabel";
+            deleteInfoLabel.Size = new Size(0, 40);
+            deleteInfoLabel.TabIndex = 49;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(88, 17);
+            label6.Name = "label6";
+            label6.Size = new Size(207, 36);
+            label6.TabIndex = 1;
+            label6.Text = "Ваши группы:";
+            label6.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(104, 77);
+            label7.Name = "label7";
+            label7.Size = new Size(191, 36);
+            label7.TabIndex = 38;
+            label7.Text = "Дисциплины:";
+            label7.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // deletePlaceButton
+            // 
+            deletePlaceButton.Animated = true;
+            deletePlaceButton.BackColor = Color.Transparent;
+            deletePlaceButton.BorderColor = Color.DarkSlateBlue;
+            deletePlaceButton.BorderRadius = 20;
+            deletePlaceButton.BorderThickness = 1;
+            deletePlaceButton.CustomizableEdges = customizableEdges25;
+            deletePlaceButton.DisabledState.BorderColor = Color.DarkGray;
+            deletePlaceButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            deletePlaceButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            deletePlaceButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            deletePlaceButton.FillColor = Color.White;
+            deletePlaceButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            deletePlaceButton.ForeColor = Color.White;
+            deletePlaceButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            deletePlaceButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            deletePlaceButton.HoverState.ForeColor = Color.GhostWhite;
+            deletePlaceButton.Image = Properties.Resources.icons8_удалить_48__1_;
+            deletePlaceButton.ImageSize = new Size(40, 40);
+            deletePlaceButton.Location = new Point(783, 130);
+            deletePlaceButton.Name = "deletePlaceButton";
+            deletePlaceButton.ShadowDecoration.BorderRadius = 20;
+            deletePlaceButton.ShadowDecoration.Color = Color.Navy;
+            deletePlaceButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            deletePlaceButton.ShadowDecoration.Enabled = true;
+            deletePlaceButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            deletePlaceButton.Size = new Size(96, 56);
+            deletePlaceButton.TabIndex = 48;
+            deletePlaceButton.Click += deletePlaceButton_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(8, 139);
+            label8.Name = "label8";
+            label8.Size = new Size(287, 36);
+            label8.TabIndex = 39;
+            label8.Text = "Места проведения:";
+            label8.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // deleteGroupComboBox
+            // 
+            deleteGroupComboBox.BackColor = Color.Transparent;
+            deleteGroupComboBox.BorderColor = Color.DarkSlateBlue;
+            deleteGroupComboBox.BorderRadius = 10;
+            deleteGroupComboBox.CustomizableEdges = customizableEdges27;
+            deleteGroupComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deleteGroupComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deleteGroupComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deleteGroupComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deleteGroupComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteGroupComboBox.ForeColor = Color.DarkSlateBlue;
+            deleteGroupComboBox.ItemHeight = 50;
+            deleteGroupComboBox.Location = new Point(304, 6);
+            deleteGroupComboBox.Name = "deleteGroupComboBox";
+            deleteGroupComboBox.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            deleteGroupComboBox.Size = new Size(473, 56);
+            deleteGroupComboBox.TabIndex = 43;
+            // 
+            // deleteDisciplineButton
+            // 
+            deleteDisciplineButton.Animated = true;
+            deleteDisciplineButton.BackColor = Color.Transparent;
+            deleteDisciplineButton.BorderColor = Color.DarkSlateBlue;
+            deleteDisciplineButton.BorderRadius = 20;
+            deleteDisciplineButton.BorderThickness = 1;
+            deleteDisciplineButton.CustomizableEdges = customizableEdges29;
+            deleteDisciplineButton.DisabledState.BorderColor = Color.DarkGray;
+            deleteDisciplineButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            deleteDisciplineButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            deleteDisciplineButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            deleteDisciplineButton.FillColor = Color.White;
+            deleteDisciplineButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteDisciplineButton.ForeColor = Color.White;
+            deleteDisciplineButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            deleteDisciplineButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            deleteDisciplineButton.HoverState.ForeColor = Color.GhostWhite;
+            deleteDisciplineButton.Image = Properties.Resources.icons8_удалить_48__1_;
+            deleteDisciplineButton.ImageSize = new Size(40, 40);
+            deleteDisciplineButton.Location = new Point(783, 68);
+            deleteDisciplineButton.Name = "deleteDisciplineButton";
+            deleteDisciplineButton.ShadowDecoration.BorderRadius = 20;
+            deleteDisciplineButton.ShadowDecoration.Color = Color.Navy;
+            deleteDisciplineButton.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            deleteDisciplineButton.ShadowDecoration.Enabled = true;
+            deleteDisciplineButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            deleteDisciplineButton.Size = new Size(96, 56);
+            deleteDisciplineButton.TabIndex = 47;
+            deleteDisciplineButton.Click += deleteDisciplineButton_Click;
+            // 
+            // deleteDisciplineComboBox
+            // 
+            deleteDisciplineComboBox.BackColor = Color.Transparent;
+            deleteDisciplineComboBox.BorderColor = Color.DarkSlateBlue;
+            deleteDisciplineComboBox.BorderRadius = 10;
+            deleteDisciplineComboBox.CustomizableEdges = customizableEdges31;
+            deleteDisciplineComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deleteDisciplineComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deleteDisciplineComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deleteDisciplineComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deleteDisciplineComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteDisciplineComboBox.ForeColor = Color.DarkSlateBlue;
+            deleteDisciplineComboBox.ItemHeight = 50;
+            deleteDisciplineComboBox.Location = new Point(304, 68);
+            deleteDisciplineComboBox.Name = "deleteDisciplineComboBox";
+            deleteDisciplineComboBox.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            deleteDisciplineComboBox.Size = new Size(473, 56);
+            deleteDisciplineComboBox.TabIndex = 44;
+            // 
+            // deleteGroupButton
+            // 
+            deleteGroupButton.Animated = true;
+            deleteGroupButton.BackColor = Color.Transparent;
+            deleteGroupButton.BorderColor = Color.DarkSlateBlue;
+            deleteGroupButton.BorderRadius = 20;
+            deleteGroupButton.BorderThickness = 1;
+            deleteGroupButton.CustomizableEdges = customizableEdges33;
+            deleteGroupButton.DisabledState.BorderColor = Color.DarkGray;
+            deleteGroupButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            deleteGroupButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            deleteGroupButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            deleteGroupButton.FillColor = Color.White;
+            deleteGroupButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            deleteGroupButton.ForeColor = Color.White;
+            deleteGroupButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            deleteGroupButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            deleteGroupButton.HoverState.ForeColor = Color.GhostWhite;
+            deleteGroupButton.Image = Properties.Resources.icons8_удалить_48__1_;
+            deleteGroupButton.ImageSize = new Size(40, 40);
+            deleteGroupButton.Location = new Point(783, 6);
+            deleteGroupButton.Name = "deleteGroupButton";
+            deleteGroupButton.ShadowDecoration.BorderRadius = 20;
+            deleteGroupButton.ShadowDecoration.Color = Color.Navy;
+            deleteGroupButton.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            deleteGroupButton.ShadowDecoration.Enabled = true;
+            deleteGroupButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            deleteGroupButton.Size = new Size(96, 56);
+            deleteGroupButton.TabIndex = 46;
+            deleteGroupButton.Click += deleteGroupButton_Click;
+            // 
+            // deletePlaceOfLessonComboBox
+            // 
+            deletePlaceOfLessonComboBox.BackColor = Color.Transparent;
+            deletePlaceOfLessonComboBox.BorderColor = Color.DarkSlateBlue;
+            deletePlaceOfLessonComboBox.BorderRadius = 10;
+            deletePlaceOfLessonComboBox.CustomizableEdges = customizableEdges35;
+            deletePlaceOfLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            deletePlaceOfLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            deletePlaceOfLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            deletePlaceOfLessonComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            deletePlaceOfLessonComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            deletePlaceOfLessonComboBox.ForeColor = Color.DarkSlateBlue;
+            deletePlaceOfLessonComboBox.ItemHeight = 50;
+            deletePlaceOfLessonComboBox.Location = new Point(304, 130);
+            deletePlaceOfLessonComboBox.Name = "deletePlaceOfLessonComboBox";
+            deletePlaceOfLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            deletePlaceOfLessonComboBox.Size = new Size(473, 56);
+            deletePlaceOfLessonComboBox.TabIndex = 45;
+            // 
+            // guna2GradientPanel2
+            // 
+            guna2GradientPanel2.BorderColor = Color.DarkSlateBlue;
+            guna2GradientPanel2.BorderRadius = 10;
+            guna2GradientPanel2.BorderThickness = 1;
+            guna2GradientPanel2.Controls.Add(addInfoLabel);
+            guna2GradientPanel2.Controls.Add(addGroupsTextBox);
+            guna2GradientPanel2.Controls.Add(addDisciplineTextBox);
+            guna2GradientPanel2.Controls.Add(addPlaceOfLessonTextBox);
+            guna2GradientPanel2.Controls.Add(addGroupButton);
+            guna2GradientPanel2.Controls.Add(addDisciplineButton);
+            guna2GradientPanel2.Controls.Add(addPlaceOfLessonButton);
+            guna2GradientPanel2.CustomizableEdges = customizableEdges51;
+            guna2GradientPanel2.FillColor = Color.SlateBlue;
+            guna2GradientPanel2.FillColor2 = Color.DarkSeaGreen;
+            guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            guna2GradientPanel2.Location = new Point(8, 54);
+            guna2GradientPanel2.Name = "guna2GradientPanel2";
+            guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            guna2GradientPanel2.Size = new Size(894, 244);
+            guna2GradientPanel2.TabIndex = 65;
+            // 
+            // addInfoLabel
+            // 
+            addInfoLabel.AutoSize = true;
+            addInfoLabel.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            addInfoLabel.ForeColor = Color.White;
+            addInfoLabel.Location = new Point(106, 193);
+            addInfoLabel.Name = "addInfoLabel";
+            addInfoLabel.Size = new Size(0, 40);
+            addInfoLabel.TabIndex = 38;
+            // 
+            // addGroupsTextBox
+            // 
+            addGroupsTextBox.Animated = true;
+            addGroupsTextBox.BackColor = Color.Transparent;
+            addGroupsTextBox.BorderColor = Color.DarkSlateBlue;
+            addGroupsTextBox.BorderRadius = 13;
+            addGroupsTextBox.BorderThickness = 2;
+            addGroupsTextBox.CustomizableEdges = customizableEdges39;
+            addGroupsTextBox.DefaultText = "";
+            addGroupsTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            addGroupsTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            addGroupsTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            addGroupsTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            addGroupsTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            addGroupsTextBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            addGroupsTextBox.ForeColor = Color.Black;
+            addGroupsTextBox.HoverState.BorderColor = Color.MediumSlateBlue;
+            addGroupsTextBox.HoverState.PlaceholderForeColor = Color.MediumSlateBlue;
+            addGroupsTextBox.IconLeftSize = new Size(35, 35);
+            addGroupsTextBox.Location = new Point(195, 4);
+            addGroupsTextBox.Margin = new Padding(4, 3, 4, 3);
+            addGroupsTextBox.Name = "addGroupsTextBox";
+            addGroupsTextBox.PasswordChar = '\0';
+            addGroupsTextBox.PlaceholderText = "Номер группы";
+            addGroupsTextBox.SelectedText = "";
+            addGroupsTextBox.ShadowDecoration.BorderRadius = 13;
+            addGroupsTextBox.ShadowDecoration.Color = Color.White;
+            addGroupsTextBox.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            addGroupsTextBox.ShadowDecoration.Enabled = true;
+            addGroupsTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            addGroupsTextBox.Size = new Size(473, 56);
+            addGroupsTextBox.TabIndex = 32;
+            // 
+            // addDisciplineTextBox
+            // 
+            addDisciplineTextBox.Animated = true;
+            addDisciplineTextBox.BackColor = Color.Transparent;
+            addDisciplineTextBox.BorderColor = Color.DarkSlateBlue;
+            addDisciplineTextBox.BorderRadius = 13;
+            addDisciplineTextBox.BorderThickness = 2;
+            addDisciplineTextBox.CustomizableEdges = customizableEdges41;
+            addDisciplineTextBox.DefaultText = "";
+            addDisciplineTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            addDisciplineTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            addDisciplineTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            addDisciplineTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            addDisciplineTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            addDisciplineTextBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            addDisciplineTextBox.ForeColor = Color.Black;
+            addDisciplineTextBox.HoverState.BorderColor = Color.MediumSlateBlue;
+            addDisciplineTextBox.HoverState.PlaceholderForeColor = Color.MediumSlateBlue;
+            addDisciplineTextBox.IconLeftSize = new Size(35, 35);
+            addDisciplineTextBox.Location = new Point(195, 65);
+            addDisciplineTextBox.Margin = new Padding(4, 3, 4, 3);
+            addDisciplineTextBox.Name = "addDisciplineTextBox";
+            addDisciplineTextBox.PasswordChar = '\0';
+            addDisciplineTextBox.PlaceholderText = "Дисциплина";
+            addDisciplineTextBox.SelectedText = "";
+            addDisciplineTextBox.ShadowDecoration.BorderRadius = 13;
+            addDisciplineTextBox.ShadowDecoration.Color = Color.White;
+            addDisciplineTextBox.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            addDisciplineTextBox.ShadowDecoration.Enabled = true;
+            addDisciplineTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            addDisciplineTextBox.Size = new Size(473, 56);
+            addDisciplineTextBox.TabIndex = 34;
+            // 
+            // addPlaceOfLessonTextBox
+            // 
+            addPlaceOfLessonTextBox.Animated = true;
+            addPlaceOfLessonTextBox.BackColor = Color.Transparent;
+            addPlaceOfLessonTextBox.BorderColor = Color.DarkSlateBlue;
+            addPlaceOfLessonTextBox.BorderRadius = 13;
+            addPlaceOfLessonTextBox.BorderThickness = 2;
+            addPlaceOfLessonTextBox.CustomizableEdges = customizableEdges43;
+            addPlaceOfLessonTextBox.DefaultText = "";
+            addPlaceOfLessonTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            addPlaceOfLessonTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            addPlaceOfLessonTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            addPlaceOfLessonTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            addPlaceOfLessonTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            addPlaceOfLessonTextBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            addPlaceOfLessonTextBox.ForeColor = Color.Black;
+            addPlaceOfLessonTextBox.HoverState.BorderColor = Color.MediumSlateBlue;
+            addPlaceOfLessonTextBox.HoverState.PlaceholderForeColor = Color.MediumSlateBlue;
+            addPlaceOfLessonTextBox.IconLeftSize = new Size(35, 35);
+            addPlaceOfLessonTextBox.Location = new Point(195, 126);
+            addPlaceOfLessonTextBox.Margin = new Padding(4, 3, 4, 3);
+            addPlaceOfLessonTextBox.Name = "addPlaceOfLessonTextBox";
+            addPlaceOfLessonTextBox.PasswordChar = '\0';
+            addPlaceOfLessonTextBox.PlaceholderText = "Место проведения, например 225, к.11";
+            addPlaceOfLessonTextBox.SelectedText = "";
+            addPlaceOfLessonTextBox.ShadowDecoration.BorderRadius = 13;
+            addPlaceOfLessonTextBox.ShadowDecoration.Color = Color.White;
+            addPlaceOfLessonTextBox.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            addPlaceOfLessonTextBox.ShadowDecoration.Enabled = true;
+            addPlaceOfLessonTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            addPlaceOfLessonTextBox.Size = new Size(473, 56);
+            addPlaceOfLessonTextBox.TabIndex = 36;
+            // 
+            // addGroupButton
+            // 
+            addGroupButton.Animated = true;
+            addGroupButton.BackColor = Color.Transparent;
+            addGroupButton.BorderColor = Color.DarkSlateBlue;
+            addGroupButton.BorderRadius = 20;
+            addGroupButton.BorderThickness = 1;
+            addGroupButton.CustomizableEdges = customizableEdges45;
+            addGroupButton.DisabledState.BorderColor = Color.DarkGray;
+            addGroupButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addGroupButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addGroupButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addGroupButton.FillColor = Color.White;
+            addGroupButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            addGroupButton.ForeColor = Color.White;
+            addGroupButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            addGroupButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            addGroupButton.HoverState.ForeColor = Color.GhostWhite;
+            addGroupButton.Image = Properties.Resources.plus;
+            addGroupButton.ImageSize = new Size(30, 30);
+            addGroupButton.Location = new Point(675, 7);
+            addGroupButton.Name = "addGroupButton";
+            addGroupButton.ShadowDecoration.BorderRadius = 20;
+            addGroupButton.ShadowDecoration.Color = Color.Navy;
+            addGroupButton.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            addGroupButton.ShadowDecoration.Enabled = true;
+            addGroupButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            addGroupButton.Size = new Size(96, 56);
+            addGroupButton.TabIndex = 33;
+            addGroupButton.Click += addGroupButton_Click;
+            // 
+            // addDisciplineButton
+            // 
+            addDisciplineButton.Animated = true;
+            addDisciplineButton.BackColor = Color.Transparent;
+            addDisciplineButton.BorderColor = Color.DarkSlateBlue;
+            addDisciplineButton.BorderRadius = 20;
+            addDisciplineButton.BorderThickness = 1;
+            addDisciplineButton.CustomizableEdges = customizableEdges47;
+            addDisciplineButton.DisabledState.BorderColor = Color.DarkGray;
+            addDisciplineButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addDisciplineButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addDisciplineButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addDisciplineButton.FillColor = Color.White;
+            addDisciplineButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            addDisciplineButton.ForeColor = Color.White;
+            addDisciplineButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            addDisciplineButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            addDisciplineButton.HoverState.ForeColor = Color.GhostWhite;
+            addDisciplineButton.Image = Properties.Resources.plus;
+            addDisciplineButton.ImageSize = new Size(30, 30);
+            addDisciplineButton.Location = new Point(675, 65);
+            addDisciplineButton.Name = "addDisciplineButton";
+            addDisciplineButton.ShadowDecoration.BorderRadius = 20;
+            addDisciplineButton.ShadowDecoration.Color = Color.Navy;
+            addDisciplineButton.ShadowDecoration.CustomizableEdges = customizableEdges48;
+            addDisciplineButton.ShadowDecoration.Enabled = true;
+            addDisciplineButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            addDisciplineButton.Size = new Size(96, 56);
+            addDisciplineButton.TabIndex = 35;
+            addDisciplineButton.Click += addDisciplineButton_Click;
+            // 
+            // addPlaceOfLessonButton
+            // 
+            addPlaceOfLessonButton.Animated = true;
+            addPlaceOfLessonButton.BackColor = Color.Transparent;
+            addPlaceOfLessonButton.BorderColor = Color.DarkSlateBlue;
+            addPlaceOfLessonButton.BorderRadius = 20;
+            addPlaceOfLessonButton.BorderThickness = 1;
+            addPlaceOfLessonButton.CustomizableEdges = customizableEdges49;
+            addPlaceOfLessonButton.DisabledState.BorderColor = Color.DarkGray;
+            addPlaceOfLessonButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            addPlaceOfLessonButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            addPlaceOfLessonButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            addPlaceOfLessonButton.FillColor = Color.White;
+            addPlaceOfLessonButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            addPlaceOfLessonButton.ForeColor = Color.White;
+            addPlaceOfLessonButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            addPlaceOfLessonButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            addPlaceOfLessonButton.HoverState.ForeColor = Color.GhostWhite;
+            addPlaceOfLessonButton.Image = Properties.Resources.plus;
+            addPlaceOfLessonButton.ImageSize = new Size(30, 30);
+            addPlaceOfLessonButton.Location = new Point(675, 126);
+            addPlaceOfLessonButton.Name = "addPlaceOfLessonButton";
+            addPlaceOfLessonButton.ShadowDecoration.BorderRadius = 20;
+            addPlaceOfLessonButton.ShadowDecoration.Color = Color.Navy;
+            addPlaceOfLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            addPlaceOfLessonButton.ShadowDecoration.Enabled = true;
+            addPlaceOfLessonButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            addPlaceOfLessonButton.Size = new Size(96, 56);
+            addPlaceOfLessonButton.TabIndex = 37;
+            addPlaceOfLessonButton.Click += addPlaceOfLessonButton_Click;
+            // 
             // lessonGroupBox
             // 
             lessonGroupBox.BorderColor = Color.DarkSlateBlue;
@@ -955,13 +1434,13 @@
             lessonGroupBox.Controls.Add(addLessonPanel);
             lessonGroupBox.Controls.Add(searchResultTextBox);
             lessonGroupBox.CustomBorderColor = Color.MediumSlateBlue;
-            lessonGroupBox.CustomizableEdges = customizableEdges61;
+            lessonGroupBox.CustomizableEdges = customizableEdges93;
             lessonGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lessonGroupBox.ForeColor = Color.Black;
             lessonGroupBox.Location = new Point(249, 67);
             lessonGroupBox.Name = "lessonGroupBox";
             lessonGroupBox.ShadowDecoration.Color = Color.Navy;
-            lessonGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            lessonGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges94;
             lessonGroupBox.Size = new Size(939, 621);
             lessonGroupBox.TabIndex = 50;
             lessonGroupBox.Text = "Занятия";
@@ -980,13 +1459,13 @@
             deleteLessonPanel.Controls.Add(label20);
             deleteLessonPanel.Controls.Add(label21);
             deleteLessonPanel.Controls.Add(typeOfWeekDeleteLessonComboBox);
-            deleteLessonPanel.CustomizableEdges = customizableEdges35;
+            deleteLessonPanel.CustomizableEdges = customizableEdges67;
             deleteLessonPanel.FillColor = Color.SlateBlue;
             deleteLessonPanel.FillColor2 = Color.IndianRed;
             deleteLessonPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             deleteLessonPanel.Location = new Point(492, 43);
             deleteLessonPanel.Name = "deleteLessonPanel";
-            deleteLessonPanel.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            deleteLessonPanel.ShadowDecoration.CustomizableEdges = customizableEdges68;
             deleteLessonPanel.Size = new Size(437, 290);
             deleteLessonPanel.TabIndex = 65;
             // 
@@ -997,7 +1476,7 @@
             deleteLessonButton.BorderColor = Color.DarkSlateBlue;
             deleteLessonButton.BorderRadius = 20;
             deleteLessonButton.BorderThickness = 1;
-            deleteLessonButton.CustomizableEdges = customizableEdges25;
+            deleteLessonButton.CustomizableEdges = customizableEdges57;
             deleteLessonButton.DisabledState.BorderColor = Color.DarkGray;
             deleteLessonButton.DisabledState.CustomBorderColor = Color.DarkGray;
             deleteLessonButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -1013,7 +1492,7 @@
             deleteLessonButton.Name = "deleteLessonButton";
             deleteLessonButton.ShadowDecoration.BorderRadius = 20;
             deleteLessonButton.ShadowDecoration.Color = Color.Navy;
-            deleteLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            deleteLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges58;
             deleteLessonButton.ShadowDecoration.Enabled = true;
             deleteLessonButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             deleteLessonButton.Size = new Size(240, 70);
@@ -1025,7 +1504,7 @@
             dayDeleteLessonComboBox.BackColor = Color.Transparent;
             dayDeleteLessonComboBox.BorderColor = Color.DarkSlateBlue;
             dayDeleteLessonComboBox.BorderRadius = 10;
-            dayDeleteLessonComboBox.CustomizableEdges = customizableEdges27;
+            dayDeleteLessonComboBox.CustomizableEdges = customizableEdges59;
             dayDeleteLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             dayDeleteLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             dayDeleteLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1036,7 +1515,7 @@
             dayDeleteLessonComboBox.Items.AddRange(new object[] { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота" });
             dayDeleteLessonComboBox.Location = new Point(181, 3);
             dayDeleteLessonComboBox.Name = "dayDeleteLessonComboBox";
-            dayDeleteLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            dayDeleteLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges60;
             dayDeleteLessonComboBox.Size = new Size(250, 36);
             dayDeleteLessonComboBox.TabIndex = 81;
             // 
@@ -1045,7 +1524,7 @@
             timeDeleteLessonComboBox.BackColor = Color.Transparent;
             timeDeleteLessonComboBox.BorderColor = Color.DarkSlateBlue;
             timeDeleteLessonComboBox.BorderRadius = 10;
-            timeDeleteLessonComboBox.CustomizableEdges = customizableEdges29;
+            timeDeleteLessonComboBox.CustomizableEdges = customizableEdges61;
             timeDeleteLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             timeDeleteLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             timeDeleteLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1055,7 +1534,7 @@
             timeDeleteLessonComboBox.ItemHeight = 30;
             timeDeleteLessonComboBox.Location = new Point(181, 86);
             timeDeleteLessonComboBox.Name = "timeDeleteLessonComboBox";
-            timeDeleteLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            timeDeleteLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges62;
             timeDeleteLessonComboBox.Size = new Size(250, 36);
             timeDeleteLessonComboBox.TabIndex = 80;
             // 
@@ -1066,7 +1545,7 @@
             findLessonButton.BorderColor = Color.DarkSlateBlue;
             findLessonButton.BorderRadius = 20;
             findLessonButton.BorderThickness = 1;
-            findLessonButton.CustomizableEdges = customizableEdges31;
+            findLessonButton.CustomizableEdges = customizableEdges63;
             findLessonButton.DisabledState.BorderColor = Color.DarkGray;
             findLessonButton.DisabledState.CustomBorderColor = Color.DarkGray;
             findLessonButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -1082,7 +1561,7 @@
             findLessonButton.Name = "findLessonButton";
             findLessonButton.ShadowDecoration.BorderRadius = 20;
             findLessonButton.ShadowDecoration.Color = Color.Navy;
-            findLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            findLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges64;
             findLessonButton.ShadowDecoration.Enabled = true;
             findLessonButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             findLessonButton.Size = new Size(240, 70);
@@ -1131,7 +1610,7 @@
             typeOfWeekDeleteLessonComboBox.BackColor = Color.Transparent;
             typeOfWeekDeleteLessonComboBox.BorderColor = Color.DarkSlateBlue;
             typeOfWeekDeleteLessonComboBox.BorderRadius = 10;
-            typeOfWeekDeleteLessonComboBox.CustomizableEdges = customizableEdges33;
+            typeOfWeekDeleteLessonComboBox.CustomizableEdges = customizableEdges65;
             typeOfWeekDeleteLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             typeOfWeekDeleteLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             typeOfWeekDeleteLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1139,10 +1618,10 @@
             typeOfWeekDeleteLessonComboBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
             typeOfWeekDeleteLessonComboBox.ForeColor = Color.DarkSlateBlue;
             typeOfWeekDeleteLessonComboBox.ItemHeight = 30;
-            typeOfWeekDeleteLessonComboBox.Items.AddRange(new object[] { "Четная", "Нечетная" });
+            typeOfWeekDeleteLessonComboBox.Items.AddRange(new object[] { "Четная", "Нечетная", "Еженедельно" });
             typeOfWeekDeleteLessonComboBox.Location = new Point(181, 44);
             typeOfWeekDeleteLessonComboBox.Name = "typeOfWeekDeleteLessonComboBox";
-            typeOfWeekDeleteLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            typeOfWeekDeleteLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges66;
             typeOfWeekDeleteLessonComboBox.Size = new Size(250, 36);
             typeOfWeekDeleteLessonComboBox.TabIndex = 65;
             // 
@@ -1169,13 +1648,13 @@
             addLessonPanel.Controls.Add(placeAddLessonComboBox);
             addLessonPanel.Controls.Add(label14);
             addLessonPanel.Controls.Add(groupAddLessonComboBox);
-            addLessonPanel.CustomizableEdges = customizableEdges57;
+            addLessonPanel.CustomizableEdges = customizableEdges89;
             addLessonPanel.FillColor = Color.SlateBlue;
             addLessonPanel.FillColor2 = Color.DarkSeaGreen;
             addLessonPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             addLessonPanel.Location = new Point(10, 43);
             addLessonPanel.Name = "addLessonPanel";
-            addLessonPanel.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            addLessonPanel.ShadowDecoration.CustomizableEdges = customizableEdges90;
             addLessonPanel.Size = new Size(437, 435);
             addLessonPanel.TabIndex = 64;
             // 
@@ -1186,7 +1665,7 @@
             updateLessonButton.BorderColor = Color.DarkSlateBlue;
             updateLessonButton.BorderRadius = 20;
             updateLessonButton.BorderThickness = 1;
-            updateLessonButton.CustomizableEdges = customizableEdges37;
+            updateLessonButton.CustomizableEdges = customizableEdges69;
             updateLessonButton.DisabledState.BorderColor = Color.DarkGray;
             updateLessonButton.DisabledState.CustomBorderColor = Color.DarkGray;
             updateLessonButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -1202,7 +1681,7 @@
             updateLessonButton.Name = "updateLessonButton";
             updateLessonButton.ShadowDecoration.BorderRadius = 20;
             updateLessonButton.ShadowDecoration.Color = Color.Navy;
-            updateLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            updateLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges70;
             updateLessonButton.ShadowDecoration.Enabled = true;
             updateLessonButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             updateLessonButton.Size = new Size(240, 70);
@@ -1216,14 +1695,14 @@
             weeksUpDown.BackColor = Color.Transparent;
             weeksUpDown.BorderColor = Color.DarkSlateBlue;
             weeksUpDown.BorderRadius = 6;
-            weeksUpDown.CustomizableEdges = customizableEdges39;
+            weeksUpDown.CustomizableEdges = customizableEdges71;
             weeksUpDown.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
             weeksUpDown.Location = new Point(181, 296);
             weeksUpDown.Margin = new Padding(4, 3, 4, 3);
             weeksUpDown.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
             weeksUpDown.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             weeksUpDown.Name = "weeksUpDown";
-            weeksUpDown.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            weeksUpDown.ShadowDecoration.CustomizableEdges = customizableEdges72;
             weeksUpDown.Size = new Size(242, 39);
             weeksUpDown.TabIndex = 84;
             weeksUpDown.UpDownButtonFillColor = Color.FromArgb(128, 128, 255);
@@ -1248,7 +1727,7 @@
             timeAddLessonTextBox.BackColor = Color.Transparent;
             timeAddLessonTextBox.BorderColor = Color.DarkSlateBlue;
             timeAddLessonTextBox.BorderRadius = 10;
-            timeAddLessonTextBox.CustomizableEdges = customizableEdges41;
+            timeAddLessonTextBox.CustomizableEdges = customizableEdges73;
             timeAddLessonTextBox.DefaultText = "";
             timeAddLessonTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             timeAddLessonTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -1264,7 +1743,7 @@
             timeAddLessonTextBox.PlaceholderText = "Например 8:00";
             timeAddLessonTextBox.SelectedText = "";
             timeAddLessonTextBox.ShadowDecoration.Color = Color.Navy;
-            timeAddLessonTextBox.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            timeAddLessonTextBox.ShadowDecoration.CustomizableEdges = customizableEdges74;
             timeAddLessonTextBox.ShadowDecoration.Enabled = true;
             timeAddLessonTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             timeAddLessonTextBox.Size = new Size(243, 36);
@@ -1275,7 +1754,7 @@
             dayAddLessonComboBox.BackColor = Color.Transparent;
             dayAddLessonComboBox.BorderColor = Color.DarkSlateBlue;
             dayAddLessonComboBox.BorderRadius = 10;
-            dayAddLessonComboBox.CustomizableEdges = customizableEdges43;
+            dayAddLessonComboBox.CustomizableEdges = customizableEdges75;
             dayAddLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             dayAddLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             dayAddLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1285,7 +1764,7 @@
             dayAddLessonComboBox.ItemHeight = 30;
             dayAddLessonComboBox.Location = new Point(181, 3);
             dayAddLessonComboBox.Name = "dayAddLessonComboBox";
-            dayAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            dayAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges76;
             dayAddLessonComboBox.Size = new Size(243, 36);
             dayAddLessonComboBox.TabIndex = 80;
             // 
@@ -1294,7 +1773,7 @@
             typeOfWeekAddLessonComboBox.BackColor = Color.Transparent;
             typeOfWeekAddLessonComboBox.BorderColor = Color.DarkSlateBlue;
             typeOfWeekAddLessonComboBox.BorderRadius = 10;
-            typeOfWeekAddLessonComboBox.CustomizableEdges = customizableEdges45;
+            typeOfWeekAddLessonComboBox.CustomizableEdges = customizableEdges77;
             typeOfWeekAddLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             typeOfWeekAddLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             typeOfWeekAddLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1305,7 +1784,7 @@
             typeOfWeekAddLessonComboBox.Items.AddRange(new object[] { "Четная", "Нечетная", "Еженедельно" });
             typeOfWeekAddLessonComboBox.Location = new Point(180, 44);
             typeOfWeekAddLessonComboBox.Name = "typeOfWeekAddLessonComboBox";
-            typeOfWeekAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            typeOfWeekAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges78;
             typeOfWeekAddLessonComboBox.Size = new Size(243, 36);
             typeOfWeekAddLessonComboBox.TabIndex = 79;
             // 
@@ -1316,7 +1795,7 @@
             addLessonButton.BorderColor = Color.DarkSlateBlue;
             addLessonButton.BorderRadius = 20;
             addLessonButton.BorderThickness = 1;
-            addLessonButton.CustomizableEdges = customizableEdges47;
+            addLessonButton.CustomizableEdges = customizableEdges79;
             addLessonButton.DisabledState.BorderColor = Color.DarkGray;
             addLessonButton.DisabledState.CustomBorderColor = Color.DarkGray;
             addLessonButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -1332,7 +1811,7 @@
             addLessonButton.Name = "addLessonButton";
             addLessonButton.ShadowDecoration.BorderRadius = 20;
             addLessonButton.ShadowDecoration.Color = Color.Navy;
-            addLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges48;
+            addLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges80;
             addLessonButton.ShadowDecoration.Enabled = true;
             addLessonButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             addLessonButton.Size = new Size(240, 70);
@@ -1357,7 +1836,7 @@
             disciplineAddLessonComboBox.BackColor = Color.Transparent;
             disciplineAddLessonComboBox.BorderColor = Color.DarkSlateBlue;
             disciplineAddLessonComboBox.BorderRadius = 10;
-            disciplineAddLessonComboBox.CustomizableEdges = customizableEdges49;
+            disciplineAddLessonComboBox.CustomizableEdges = customizableEdges81;
             disciplineAddLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             disciplineAddLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             disciplineAddLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1367,7 +1846,7 @@
             disciplineAddLessonComboBox.ItemHeight = 30;
             disciplineAddLessonComboBox.Location = new Point(181, 254);
             disciplineAddLessonComboBox.Name = "disciplineAddLessonComboBox";
-            disciplineAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            disciplineAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges82;
             disciplineAddLessonComboBox.Size = new Size(243, 36);
             disciplineAddLessonComboBox.TabIndex = 73;
             // 
@@ -1424,7 +1903,7 @@
             typeLessonAddLessonComboBox.BackColor = Color.Transparent;
             typeLessonAddLessonComboBox.BorderColor = Color.DarkSlateBlue;
             typeLessonAddLessonComboBox.BorderRadius = 10;
-            typeLessonAddLessonComboBox.CustomizableEdges = customizableEdges51;
+            typeLessonAddLessonComboBox.CustomizableEdges = customizableEdges83;
             typeLessonAddLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             typeLessonAddLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             typeLessonAddLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1435,7 +1914,7 @@
             typeLessonAddLessonComboBox.Items.AddRange(new object[] { "Лекции", "Практич. и семинарские занятия", "Лабораторные занятия", "Курсовое проектирование", "Консультации", "Зачеты", "Экзамены", "Руководство аспирантами", "Дипломное проектирование", "ГЭК", "Учебные и произв. практики", "Руководство магистрантами", "Контрольные работы и РГР" });
             typeLessonAddLessonComboBox.Location = new Point(181, 128);
             typeLessonAddLessonComboBox.Name = "typeLessonAddLessonComboBox";
-            typeLessonAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            typeLessonAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges84;
             typeLessonAddLessonComboBox.Size = new Size(243, 36);
             typeLessonAddLessonComboBox.TabIndex = 75;
             // 
@@ -1456,7 +1935,7 @@
             placeAddLessonComboBox.BackColor = Color.Transparent;
             placeAddLessonComboBox.BorderColor = Color.DarkSlateBlue;
             placeAddLessonComboBox.BorderRadius = 10;
-            placeAddLessonComboBox.CustomizableEdges = customizableEdges53;
+            placeAddLessonComboBox.CustomizableEdges = customizableEdges85;
             placeAddLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             placeAddLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             placeAddLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1466,7 +1945,7 @@
             placeAddLessonComboBox.ItemHeight = 30;
             placeAddLessonComboBox.Location = new Point(181, 170);
             placeAddLessonComboBox.Name = "placeAddLessonComboBox";
-            placeAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            placeAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges86;
             placeAddLessonComboBox.Size = new Size(243, 36);
             placeAddLessonComboBox.TabIndex = 69;
             // 
@@ -1487,7 +1966,7 @@
             groupAddLessonComboBox.BackColor = Color.Transparent;
             groupAddLessonComboBox.BorderColor = Color.DarkSlateBlue;
             groupAddLessonComboBox.BorderRadius = 10;
-            groupAddLessonComboBox.CustomizableEdges = customizableEdges55;
+            groupAddLessonComboBox.CustomizableEdges = customizableEdges87;
             groupAddLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
             groupAddLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             groupAddLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -1497,7 +1976,7 @@
             groupAddLessonComboBox.ItemHeight = 30;
             groupAddLessonComboBox.Location = new Point(181, 212);
             groupAddLessonComboBox.Name = "groupAddLessonComboBox";
-            groupAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            groupAddLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges88;
             groupAddLessonComboBox.Size = new Size(243, 36);
             groupAddLessonComboBox.TabIndex = 71;
             // 
@@ -1506,7 +1985,7 @@
             searchResultTextBox.BackColor = Color.Transparent;
             searchResultTextBox.BorderColor = Color.DarkSlateBlue;
             searchResultTextBox.BorderRadius = 10;
-            searchResultTextBox.CustomizableEdges = customizableEdges59;
+            searchResultTextBox.CustomizableEdges = customizableEdges91;
             searchResultTextBox.DefaultText = "";
             searchResultTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             searchResultTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -1524,7 +2003,7 @@
             searchResultTextBox.ReadOnly = true;
             searchResultTextBox.SelectedText = "";
             searchResultTextBox.ShadowDecoration.Color = Color.Navy;
-            searchResultTextBox.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            searchResultTextBox.ShadowDecoration.CustomizableEdges = customizableEdges92;
             searchResultTextBox.ShadowDecoration.Enabled = true;
             searchResultTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             searchResultTextBox.Size = new Size(437, 139);
@@ -1537,7 +2016,7 @@
             workloadGroupBoxButton.BorderColor = Color.DarkSlateBlue;
             workloadGroupBoxButton.BorderRadius = 20;
             workloadGroupBoxButton.BorderThickness = 1;
-            workloadGroupBoxButton.CustomizableEdges = customizableEdges63;
+            workloadGroupBoxButton.CustomizableEdges = customizableEdges55;
             workloadGroupBoxButton.DisabledState.BorderColor = Color.DarkGray;
             workloadGroupBoxButton.DisabledState.CustomBorderColor = Color.DarkGray;
             workloadGroupBoxButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -1553,7 +2032,7 @@
             workloadGroupBoxButton.Name = "workloadGroupBoxButton";
             workloadGroupBoxButton.ShadowDecoration.BorderRadius = 20;
             workloadGroupBoxButton.ShadowDecoration.Color = Color.Navy;
-            workloadGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            workloadGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges56;
             workloadGroupBoxButton.ShadowDecoration.Enabled = true;
             workloadGroupBoxButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             workloadGroupBoxButton.Size = new Size(240, 70);
@@ -1568,7 +2047,7 @@
             lessonsGroupBoxButton.BorderColor = Color.DarkSlateBlue;
             lessonsGroupBoxButton.BorderRadius = 20;
             lessonsGroupBoxButton.BorderThickness = 1;
-            lessonsGroupBoxButton.CustomizableEdges = customizableEdges65;
+            lessonsGroupBoxButton.CustomizableEdges = customizableEdges95;
             lessonsGroupBoxButton.DisabledState.BorderColor = Color.DarkGray;
             lessonsGroupBoxButton.DisabledState.CustomBorderColor = Color.DarkGray;
             lessonsGroupBoxButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -1584,477 +2063,13 @@
             lessonsGroupBoxButton.Name = "lessonsGroupBoxButton";
             lessonsGroupBoxButton.ShadowDecoration.BorderRadius = 20;
             lessonsGroupBoxButton.ShadowDecoration.Color = Color.Navy;
-            lessonsGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges66;
+            lessonsGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges96;
             lessonsGroupBoxButton.ShadowDecoration.Enabled = true;
             lessonsGroupBoxButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             lessonsGroupBoxButton.Size = new Size(240, 70);
             lessonsGroupBoxButton.TabIndex = 27;
             lessonsGroupBoxButton.Text = "Занятия";
             lessonsGroupBoxButton.Click += lessonGroupBoxButton_Click;
-            // 
-            // addInfoGroupBox
-            // 
-            addInfoGroupBox.BorderColor = Color.DarkSlateBlue;
-            addInfoGroupBox.BorderRadius = 6;
-            addInfoGroupBox.BorderThickness = 2;
-            addInfoGroupBox.Controls.Add(guna2GradientPanel3);
-            addInfoGroupBox.Controls.Add(guna2GradientPanel2);
-            addInfoGroupBox.CustomBorderColor = Color.MediumSlateBlue;
-            addInfoGroupBox.CustomizableEdges = customizableEdges95;
-            addInfoGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            addInfoGroupBox.ForeColor = Color.Black;
-            addInfoGroupBox.Location = new Point(249, 67);
-            addInfoGroupBox.Name = "addInfoGroupBox";
-            addInfoGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges96;
-            addInfoGroupBox.Size = new Size(939, 621);
-            addInfoGroupBox.TabIndex = 35;
-            addInfoGroupBox.Text = "Добавление информации ";
-            addInfoGroupBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // guna2GradientPanel3
-            // 
-            guna2GradientPanel3.BorderColor = Color.DarkSlateBlue;
-            guna2GradientPanel3.BorderRadius = 10;
-            guna2GradientPanel3.BorderThickness = 1;
-            guna2GradientPanel3.Controls.Add(deleteInfoLabel);
-            guna2GradientPanel3.Controls.Add(label6);
-            guna2GradientPanel3.Controls.Add(label7);
-            guna2GradientPanel3.Controls.Add(deletePlaceButton);
-            guna2GradientPanel3.Controls.Add(label8);
-            guna2GradientPanel3.Controls.Add(deleteGroupComboBox);
-            guna2GradientPanel3.Controls.Add(deleteDisciplineButton);
-            guna2GradientPanel3.Controls.Add(deleteDisciplineComboBox);
-            guna2GradientPanel3.Controls.Add(deleteGroupButton);
-            guna2GradientPanel3.Controls.Add(deletePlaceOfLessonComboBox);
-            guna2GradientPanel3.CustomizableEdges = customizableEdges79;
-            guna2GradientPanel3.FillColor = Color.SlateBlue;
-            guna2GradientPanel3.FillColor2 = Color.IndianRed;
-            guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            guna2GradientPanel3.Location = new Point(10, 363);
-            guna2GradientPanel3.Name = "guna2GradientPanel3";
-            guna2GradientPanel3.ShadowDecoration.CustomizableEdges = customizableEdges80;
-            guna2GradientPanel3.Size = new Size(892, 244);
-            guna2GradientPanel3.TabIndex = 66;
-            // 
-            // deleteInfoLabel
-            // 
-            deleteInfoLabel.AutoSize = true;
-            deleteInfoLabel.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            deleteInfoLabel.ForeColor = Color.White;
-            deleteInfoLabel.Location = new Point(104, 197);
-            deleteInfoLabel.Name = "deleteInfoLabel";
-            deleteInfoLabel.Size = new Size(0, 40);
-            deleteInfoLabel.TabIndex = 49;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(88, 17);
-            label6.Name = "label6";
-            label6.Size = new Size(207, 36);
-            label6.TabIndex = 1;
-            label6.Text = "Ваши группы:";
-            label6.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(104, 77);
-            label7.Name = "label7";
-            label7.Size = new Size(191, 36);
-            label7.TabIndex = 38;
-            label7.Text = "Дисциплины:";
-            label7.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // deletePlaceButton
-            // 
-            deletePlaceButton.Animated = true;
-            deletePlaceButton.BackColor = Color.Transparent;
-            deletePlaceButton.BorderColor = Color.DarkSlateBlue;
-            deletePlaceButton.BorderRadius = 20;
-            deletePlaceButton.BorderThickness = 1;
-            deletePlaceButton.CustomizableEdges = customizableEdges67;
-            deletePlaceButton.DisabledState.BorderColor = Color.DarkGray;
-            deletePlaceButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            deletePlaceButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            deletePlaceButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            deletePlaceButton.FillColor = Color.White;
-            deletePlaceButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            deletePlaceButton.ForeColor = Color.White;
-            deletePlaceButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            deletePlaceButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            deletePlaceButton.HoverState.ForeColor = Color.GhostWhite;
-            deletePlaceButton.Image = Properties.Resources.icons8_удалить_48__1_;
-            deletePlaceButton.ImageSize = new Size(40, 40);
-            deletePlaceButton.Location = new Point(783, 130);
-            deletePlaceButton.Name = "deletePlaceButton";
-            deletePlaceButton.ShadowDecoration.BorderRadius = 20;
-            deletePlaceButton.ShadowDecoration.Color = Color.Navy;
-            deletePlaceButton.ShadowDecoration.CustomizableEdges = customizableEdges68;
-            deletePlaceButton.ShadowDecoration.Enabled = true;
-            deletePlaceButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            deletePlaceButton.Size = new Size(96, 56);
-            deletePlaceButton.TabIndex = 48;
-            deletePlaceButton.Click += deletePlaceButton_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(8, 139);
-            label8.Name = "label8";
-            label8.Size = new Size(287, 36);
-            label8.TabIndex = 39;
-            label8.Text = "Места проведения:";
-            label8.TextAlign = ContentAlignment.MiddleRight;
-            // 
-            // deleteGroupComboBox
-            // 
-            deleteGroupComboBox.BackColor = Color.Transparent;
-            deleteGroupComboBox.BorderColor = Color.DarkSlateBlue;
-            deleteGroupComboBox.BorderRadius = 10;
-            deleteGroupComboBox.CustomizableEdges = customizableEdges69;
-            deleteGroupComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            deleteGroupComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            deleteGroupComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            deleteGroupComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            deleteGroupComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            deleteGroupComboBox.ForeColor = Color.DarkSlateBlue;
-            deleteGroupComboBox.ItemHeight = 50;
-            deleteGroupComboBox.Location = new Point(304, 6);
-            deleteGroupComboBox.Name = "deleteGroupComboBox";
-            deleteGroupComboBox.ShadowDecoration.CustomizableEdges = customizableEdges70;
-            deleteGroupComboBox.Size = new Size(473, 56);
-            deleteGroupComboBox.TabIndex = 43;
-            // 
-            // deleteDisciplineButton
-            // 
-            deleteDisciplineButton.Animated = true;
-            deleteDisciplineButton.BackColor = Color.Transparent;
-            deleteDisciplineButton.BorderColor = Color.DarkSlateBlue;
-            deleteDisciplineButton.BorderRadius = 20;
-            deleteDisciplineButton.BorderThickness = 1;
-            deleteDisciplineButton.CustomizableEdges = customizableEdges71;
-            deleteDisciplineButton.DisabledState.BorderColor = Color.DarkGray;
-            deleteDisciplineButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            deleteDisciplineButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            deleteDisciplineButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            deleteDisciplineButton.FillColor = Color.White;
-            deleteDisciplineButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            deleteDisciplineButton.ForeColor = Color.White;
-            deleteDisciplineButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            deleteDisciplineButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            deleteDisciplineButton.HoverState.ForeColor = Color.GhostWhite;
-            deleteDisciplineButton.Image = Properties.Resources.icons8_удалить_48__1_;
-            deleteDisciplineButton.ImageSize = new Size(40, 40);
-            deleteDisciplineButton.Location = new Point(783, 68);
-            deleteDisciplineButton.Name = "deleteDisciplineButton";
-            deleteDisciplineButton.ShadowDecoration.BorderRadius = 20;
-            deleteDisciplineButton.ShadowDecoration.Color = Color.Navy;
-            deleteDisciplineButton.ShadowDecoration.CustomizableEdges = customizableEdges72;
-            deleteDisciplineButton.ShadowDecoration.Enabled = true;
-            deleteDisciplineButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            deleteDisciplineButton.Size = new Size(96, 56);
-            deleteDisciplineButton.TabIndex = 47;
-            deleteDisciplineButton.Click += deleteDisciplineButton_Click;
-            // 
-            // deleteDisciplineComboBox
-            // 
-            deleteDisciplineComboBox.BackColor = Color.Transparent;
-            deleteDisciplineComboBox.BorderColor = Color.DarkSlateBlue;
-            deleteDisciplineComboBox.BorderRadius = 10;
-            deleteDisciplineComboBox.CustomizableEdges = customizableEdges73;
-            deleteDisciplineComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            deleteDisciplineComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            deleteDisciplineComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            deleteDisciplineComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            deleteDisciplineComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            deleteDisciplineComboBox.ForeColor = Color.DarkSlateBlue;
-            deleteDisciplineComboBox.ItemHeight = 50;
-            deleteDisciplineComboBox.Location = new Point(304, 68);
-            deleteDisciplineComboBox.Name = "deleteDisciplineComboBox";
-            deleteDisciplineComboBox.ShadowDecoration.CustomizableEdges = customizableEdges74;
-            deleteDisciplineComboBox.Size = new Size(473, 56);
-            deleteDisciplineComboBox.TabIndex = 44;
-            // 
-            // deleteGroupButton
-            // 
-            deleteGroupButton.Animated = true;
-            deleteGroupButton.BackColor = Color.Transparent;
-            deleteGroupButton.BorderColor = Color.DarkSlateBlue;
-            deleteGroupButton.BorderRadius = 20;
-            deleteGroupButton.BorderThickness = 1;
-            deleteGroupButton.CustomizableEdges = customizableEdges75;
-            deleteGroupButton.DisabledState.BorderColor = Color.DarkGray;
-            deleteGroupButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            deleteGroupButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            deleteGroupButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            deleteGroupButton.FillColor = Color.White;
-            deleteGroupButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            deleteGroupButton.ForeColor = Color.White;
-            deleteGroupButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            deleteGroupButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            deleteGroupButton.HoverState.ForeColor = Color.GhostWhite;
-            deleteGroupButton.Image = Properties.Resources.icons8_удалить_48__1_;
-            deleteGroupButton.ImageSize = new Size(40, 40);
-            deleteGroupButton.Location = new Point(783, 6);
-            deleteGroupButton.Name = "deleteGroupButton";
-            deleteGroupButton.ShadowDecoration.BorderRadius = 20;
-            deleteGroupButton.ShadowDecoration.Color = Color.Navy;
-            deleteGroupButton.ShadowDecoration.CustomizableEdges = customizableEdges76;
-            deleteGroupButton.ShadowDecoration.Enabled = true;
-            deleteGroupButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            deleteGroupButton.Size = new Size(96, 56);
-            deleteGroupButton.TabIndex = 46;
-            deleteGroupButton.Click += deleteGroupButton_Click;
-            // 
-            // deletePlaceOfLessonComboBox
-            // 
-            deletePlaceOfLessonComboBox.BackColor = Color.Transparent;
-            deletePlaceOfLessonComboBox.BorderColor = Color.DarkSlateBlue;
-            deletePlaceOfLessonComboBox.BorderRadius = 10;
-            deletePlaceOfLessonComboBox.CustomizableEdges = customizableEdges77;
-            deletePlaceOfLessonComboBox.DrawMode = DrawMode.OwnerDrawFixed;
-            deletePlaceOfLessonComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            deletePlaceOfLessonComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
-            deletePlaceOfLessonComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            deletePlaceOfLessonComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            deletePlaceOfLessonComboBox.ForeColor = Color.DarkSlateBlue;
-            deletePlaceOfLessonComboBox.ItemHeight = 50;
-            deletePlaceOfLessonComboBox.Location = new Point(304, 130);
-            deletePlaceOfLessonComboBox.Name = "deletePlaceOfLessonComboBox";
-            deletePlaceOfLessonComboBox.ShadowDecoration.CustomizableEdges = customizableEdges78;
-            deletePlaceOfLessonComboBox.Size = new Size(473, 56);
-            deletePlaceOfLessonComboBox.TabIndex = 45;
-            // 
-            // guna2GradientPanel2
-            // 
-            guna2GradientPanel2.BorderColor = Color.DarkSlateBlue;
-            guna2GradientPanel2.BorderRadius = 10;
-            guna2GradientPanel2.BorderThickness = 1;
-            guna2GradientPanel2.Controls.Add(addInfoLabel);
-            guna2GradientPanel2.Controls.Add(addGroupsTextBox);
-            guna2GradientPanel2.Controls.Add(addDisciplineTextBox);
-            guna2GradientPanel2.Controls.Add(addPlaceOfLessonTextBox);
-            guna2GradientPanel2.Controls.Add(addGroupButton);
-            guna2GradientPanel2.Controls.Add(addDisciplineButton);
-            guna2GradientPanel2.Controls.Add(addPlaceOfLessonButton);
-            guna2GradientPanel2.CustomizableEdges = customizableEdges93;
-            guna2GradientPanel2.FillColor = Color.SlateBlue;
-            guna2GradientPanel2.FillColor2 = Color.DarkSeaGreen;
-            guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            guna2GradientPanel2.Location = new Point(8, 54);
-            guna2GradientPanel2.Name = "guna2GradientPanel2";
-            guna2GradientPanel2.ShadowDecoration.CustomizableEdges = customizableEdges94;
-            guna2GradientPanel2.Size = new Size(894, 244);
-            guna2GradientPanel2.TabIndex = 65;
-            // 
-            // addInfoLabel
-            // 
-            addInfoLabel.AutoSize = true;
-            addInfoLabel.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            addInfoLabel.ForeColor = Color.White;
-            addInfoLabel.Location = new Point(106, 193);
-            addInfoLabel.Name = "addInfoLabel";
-            addInfoLabel.Size = new Size(0, 40);
-            addInfoLabel.TabIndex = 38;
-            // 
-            // addGroupsTextBox
-            // 
-            addGroupsTextBox.Animated = true;
-            addGroupsTextBox.BackColor = Color.Transparent;
-            addGroupsTextBox.BorderColor = Color.DarkSlateBlue;
-            addGroupsTextBox.BorderRadius = 13;
-            addGroupsTextBox.BorderThickness = 2;
-            addGroupsTextBox.CustomizableEdges = customizableEdges81;
-            addGroupsTextBox.DefaultText = "";
-            addGroupsTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            addGroupsTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            addGroupsTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            addGroupsTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            addGroupsTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            addGroupsTextBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            addGroupsTextBox.ForeColor = Color.Black;
-            addGroupsTextBox.HoverState.BorderColor = Color.MediumSlateBlue;
-            addGroupsTextBox.HoverState.PlaceholderForeColor = Color.MediumSlateBlue;
-            addGroupsTextBox.IconLeftSize = new Size(35, 35);
-            addGroupsTextBox.Location = new Point(195, 4);
-            addGroupsTextBox.Margin = new Padding(4, 3, 4, 3);
-            addGroupsTextBox.Name = "addGroupsTextBox";
-            addGroupsTextBox.PasswordChar = '\0';
-            addGroupsTextBox.PlaceholderText = "Номер группы";
-            addGroupsTextBox.SelectedText = "";
-            addGroupsTextBox.ShadowDecoration.BorderRadius = 13;
-            addGroupsTextBox.ShadowDecoration.Color = Color.White;
-            addGroupsTextBox.ShadowDecoration.CustomizableEdges = customizableEdges82;
-            addGroupsTextBox.ShadowDecoration.Enabled = true;
-            addGroupsTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            addGroupsTextBox.Size = new Size(473, 56);
-            addGroupsTextBox.TabIndex = 32;
-            // 
-            // addDisciplineTextBox
-            // 
-            addDisciplineTextBox.Animated = true;
-            addDisciplineTextBox.BackColor = Color.Transparent;
-            addDisciplineTextBox.BorderColor = Color.DarkSlateBlue;
-            addDisciplineTextBox.BorderRadius = 13;
-            addDisciplineTextBox.BorderThickness = 2;
-            addDisciplineTextBox.CustomizableEdges = customizableEdges83;
-            addDisciplineTextBox.DefaultText = "";
-            addDisciplineTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            addDisciplineTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            addDisciplineTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            addDisciplineTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            addDisciplineTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            addDisciplineTextBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            addDisciplineTextBox.ForeColor = Color.Black;
-            addDisciplineTextBox.HoverState.BorderColor = Color.MediumSlateBlue;
-            addDisciplineTextBox.HoverState.PlaceholderForeColor = Color.MediumSlateBlue;
-            addDisciplineTextBox.IconLeftSize = new Size(35, 35);
-            addDisciplineTextBox.Location = new Point(195, 65);
-            addDisciplineTextBox.Margin = new Padding(4, 3, 4, 3);
-            addDisciplineTextBox.Name = "addDisciplineTextBox";
-            addDisciplineTextBox.PasswordChar = '\0';
-            addDisciplineTextBox.PlaceholderText = "Дисциплина";
-            addDisciplineTextBox.SelectedText = "";
-            addDisciplineTextBox.ShadowDecoration.BorderRadius = 13;
-            addDisciplineTextBox.ShadowDecoration.Color = Color.White;
-            addDisciplineTextBox.ShadowDecoration.CustomizableEdges = customizableEdges84;
-            addDisciplineTextBox.ShadowDecoration.Enabled = true;
-            addDisciplineTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            addDisciplineTextBox.Size = new Size(473, 56);
-            addDisciplineTextBox.TabIndex = 34;
-            // 
-            // addPlaceOfLessonTextBox
-            // 
-            addPlaceOfLessonTextBox.Animated = true;
-            addPlaceOfLessonTextBox.BackColor = Color.Transparent;
-            addPlaceOfLessonTextBox.BorderColor = Color.DarkSlateBlue;
-            addPlaceOfLessonTextBox.BorderRadius = 13;
-            addPlaceOfLessonTextBox.BorderThickness = 2;
-            addPlaceOfLessonTextBox.CustomizableEdges = customizableEdges85;
-            addPlaceOfLessonTextBox.DefaultText = "";
-            addPlaceOfLessonTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            addPlaceOfLessonTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            addPlaceOfLessonTextBox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            addPlaceOfLessonTextBox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            addPlaceOfLessonTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            addPlaceOfLessonTextBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            addPlaceOfLessonTextBox.ForeColor = Color.Black;
-            addPlaceOfLessonTextBox.HoverState.BorderColor = Color.MediumSlateBlue;
-            addPlaceOfLessonTextBox.HoverState.PlaceholderForeColor = Color.MediumSlateBlue;
-            addPlaceOfLessonTextBox.IconLeftSize = new Size(35, 35);
-            addPlaceOfLessonTextBox.Location = new Point(195, 126);
-            addPlaceOfLessonTextBox.Margin = new Padding(4, 3, 4, 3);
-            addPlaceOfLessonTextBox.Name = "addPlaceOfLessonTextBox";
-            addPlaceOfLessonTextBox.PasswordChar = '\0';
-            addPlaceOfLessonTextBox.PlaceholderText = "Место проведения, например 225, к.11";
-            addPlaceOfLessonTextBox.SelectedText = "";
-            addPlaceOfLessonTextBox.ShadowDecoration.BorderRadius = 13;
-            addPlaceOfLessonTextBox.ShadowDecoration.Color = Color.White;
-            addPlaceOfLessonTextBox.ShadowDecoration.CustomizableEdges = customizableEdges86;
-            addPlaceOfLessonTextBox.ShadowDecoration.Enabled = true;
-            addPlaceOfLessonTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            addPlaceOfLessonTextBox.Size = new Size(473, 56);
-            addPlaceOfLessonTextBox.TabIndex = 36;
-            // 
-            // addGroupButton
-            // 
-            addGroupButton.Animated = true;
-            addGroupButton.BackColor = Color.Transparent;
-            addGroupButton.BorderColor = Color.DarkSlateBlue;
-            addGroupButton.BorderRadius = 20;
-            addGroupButton.BorderThickness = 1;
-            addGroupButton.CustomizableEdges = customizableEdges87;
-            addGroupButton.DisabledState.BorderColor = Color.DarkGray;
-            addGroupButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            addGroupButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            addGroupButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            addGroupButton.FillColor = Color.White;
-            addGroupButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            addGroupButton.ForeColor = Color.White;
-            addGroupButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            addGroupButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            addGroupButton.HoverState.ForeColor = Color.GhostWhite;
-            addGroupButton.Image = Properties.Resources.plus;
-            addGroupButton.ImageSize = new Size(30, 30);
-            addGroupButton.Location = new Point(675, 7);
-            addGroupButton.Name = "addGroupButton";
-            addGroupButton.ShadowDecoration.BorderRadius = 20;
-            addGroupButton.ShadowDecoration.Color = Color.Navy;
-            addGroupButton.ShadowDecoration.CustomizableEdges = customizableEdges88;
-            addGroupButton.ShadowDecoration.Enabled = true;
-            addGroupButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            addGroupButton.Size = new Size(96, 56);
-            addGroupButton.TabIndex = 33;
-            addGroupButton.Click += addGroupButton_Click;
-            // 
-            // addDisciplineButton
-            // 
-            addDisciplineButton.Animated = true;
-            addDisciplineButton.BackColor = Color.Transparent;
-            addDisciplineButton.BorderColor = Color.DarkSlateBlue;
-            addDisciplineButton.BorderRadius = 20;
-            addDisciplineButton.BorderThickness = 1;
-            addDisciplineButton.CustomizableEdges = customizableEdges89;
-            addDisciplineButton.DisabledState.BorderColor = Color.DarkGray;
-            addDisciplineButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            addDisciplineButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            addDisciplineButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            addDisciplineButton.FillColor = Color.White;
-            addDisciplineButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            addDisciplineButton.ForeColor = Color.White;
-            addDisciplineButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            addDisciplineButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            addDisciplineButton.HoverState.ForeColor = Color.GhostWhite;
-            addDisciplineButton.Image = Properties.Resources.plus;
-            addDisciplineButton.ImageSize = new Size(30, 30);
-            addDisciplineButton.Location = new Point(675, 65);
-            addDisciplineButton.Name = "addDisciplineButton";
-            addDisciplineButton.ShadowDecoration.BorderRadius = 20;
-            addDisciplineButton.ShadowDecoration.Color = Color.Navy;
-            addDisciplineButton.ShadowDecoration.CustomizableEdges = customizableEdges90;
-            addDisciplineButton.ShadowDecoration.Enabled = true;
-            addDisciplineButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            addDisciplineButton.Size = new Size(96, 56);
-            addDisciplineButton.TabIndex = 35;
-            addDisciplineButton.Click += addDisciplineButton_Click;
-            // 
-            // addPlaceOfLessonButton
-            // 
-            addPlaceOfLessonButton.Animated = true;
-            addPlaceOfLessonButton.BackColor = Color.Transparent;
-            addPlaceOfLessonButton.BorderColor = Color.DarkSlateBlue;
-            addPlaceOfLessonButton.BorderRadius = 20;
-            addPlaceOfLessonButton.BorderThickness = 1;
-            addPlaceOfLessonButton.CustomizableEdges = customizableEdges91;
-            addPlaceOfLessonButton.DisabledState.BorderColor = Color.DarkGray;
-            addPlaceOfLessonButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            addPlaceOfLessonButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            addPlaceOfLessonButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            addPlaceOfLessonButton.FillColor = Color.White;
-            addPlaceOfLessonButton.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            addPlaceOfLessonButton.ForeColor = Color.White;
-            addPlaceOfLessonButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            addPlaceOfLessonButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            addPlaceOfLessonButton.HoverState.ForeColor = Color.GhostWhite;
-            addPlaceOfLessonButton.Image = Properties.Resources.plus;
-            addPlaceOfLessonButton.ImageSize = new Size(30, 30);
-            addPlaceOfLessonButton.Location = new Point(675, 126);
-            addPlaceOfLessonButton.Name = "addPlaceOfLessonButton";
-            addPlaceOfLessonButton.ShadowDecoration.BorderRadius = 20;
-            addPlaceOfLessonButton.ShadowDecoration.Color = Color.Navy;
-            addPlaceOfLessonButton.ShadowDecoration.CustomizableEdges = customizableEdges92;
-            addPlaceOfLessonButton.ShadowDecoration.Enabled = true;
-            addPlaceOfLessonButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            addPlaceOfLessonButton.Size = new Size(96, 56);
-            addPlaceOfLessonButton.TabIndex = 37;
-            addPlaceOfLessonButton.Click += addPlaceOfLessonButton_Click;
             // 
             // profileGroupBoxButton
             // 
@@ -2092,7 +2107,8 @@
             profileGroupBox.BorderColor = Color.DarkSlateBlue;
             profileGroupBox.BorderRadius = 6;
             profileGroupBox.BorderThickness = 2;
-            profileGroupBox.Controls.Add(openWorkloadButton);
+            profileGroupBox.Controls.Add(findScheduleErrorLabel);
+            profileGroupBox.Controls.Add(guna2GroupBox3);
             profileGroupBox.Controls.Add(openScheduleButton);
             profileGroupBox.Controls.Add(changePasswordGroupBox);
             profileGroupBox.Controls.Add(forgotPasswordLabelButton);
@@ -2106,16 +2122,70 @@
             profileGroupBox.Controls.Add(label2);
             profileGroupBox.Controls.Add(label1);
             profileGroupBox.CustomBorderColor = Color.MediumSlateBlue;
-            profileGroupBox.CustomizableEdges = customizableEdges119;
+            profileGroupBox.CustomizableEdges = customizableEdges125;
             profileGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
             profileGroupBox.ForeColor = Color.Black;
             profileGroupBox.Location = new Point(249, 67);
             profileGroupBox.Name = "profileGroupBox";
-            profileGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges120;
+            profileGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges126;
             profileGroupBox.Size = new Size(939, 621);
             profileGroupBox.TabIndex = 25;
             profileGroupBox.Text = "Личный кабинет";
             profileGroupBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // guna2GroupBox3
+            // 
+            guna2GroupBox3.BorderColor = Color.DarkSlateBlue;
+            guna2GroupBox3.BorderRadius = 20;
+            guna2GroupBox3.Controls.Add(findWorkloadErrorLabel);
+            guna2GroupBox3.Controls.Add(label18);
+            guna2GroupBox3.Controls.Add(label16);
+            guna2GroupBox3.Controls.Add(openWorkloadButton);
+            guna2GroupBox3.Controls.Add(yearNumericUpDown);
+            guna2GroupBox3.Controls.Add(monthComboBox);
+            guna2GroupBox3.CustomBorderColor = Color.SlateBlue;
+            guna2GroupBox3.CustomizableEdges = customizableEdges105;
+            guna2GroupBox3.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2GroupBox3.ForeColor = Color.Black;
+            guna2GroupBox3.Location = new Point(552, 317);
+            guna2GroupBox3.Name = "guna2GroupBox3";
+            guna2GroupBox3.ShadowDecoration.CustomizableEdges = customizableEdges106;
+            guna2GroupBox3.Size = new Size(375, 291);
+            guna2GroupBox3.TabIndex = 46;
+            guna2GroupBox3.Text = "Нагрузка";
+            guna2GroupBox3.TextAlign = HorizontalAlignment.Center;
+            // 
+            // findWorkloadErrorLabel
+            // 
+            findWorkloadErrorLabel.AutoSize = true;
+            findWorkloadErrorLabel.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            findWorkloadErrorLabel.ForeColor = Color.DarkRed;
+            findWorkloadErrorLabel.Location = new Point(29, 169);
+            findWorkloadErrorLabel.Name = "findWorkloadErrorLabel";
+            findWorkloadErrorLabel.Size = new Size(319, 36);
+            findWorkloadErrorLabel.TabIndex = 48;
+            findWorkloadErrorLabel.Text = "Нагрузка не найдена";
+            findWorkloadErrorLabel.Visible = false;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.Location = new Point(3, 53);
+            label18.Name = "label18";
+            label18.Size = new Size(79, 36);
+            label18.TabIndex = 47;
+            label18.Text = "Год:";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.Location = new Point(3, 118);
+            label16.Name = "label16";
+            label16.Size = new Size(111, 36);
+            label16.TabIndex = 46;
+            label16.Text = "Месяц:";
             // 
             // openWorkloadButton
             // 
@@ -2136,7 +2206,7 @@
             openWorkloadButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
             openWorkloadButton.HoverState.ForeColor = Color.GhostWhite;
             openWorkloadButton.ImageSize = new Size(30, 30);
-            openWorkloadButton.Location = new Point(683, 121);
+            openWorkloadButton.Location = new Point(69, 213);
             openWorkloadButton.Name = "openWorkloadButton";
             openWorkloadButton.ShadowDecoration.BorderRadius = 20;
             openWorkloadButton.ShadowDecoration.Color = Color.Navy;
@@ -2148,6 +2218,43 @@
             openWorkloadButton.Text = "Открыть нагрузку";
             openWorkloadButton.Click += openWorkloadButton_Click;
             // 
+            // yearNumericUpDown
+            // 
+            yearNumericUpDown.BackColor = Color.Transparent;
+            yearNumericUpDown.BorderColor = Color.DarkSlateBlue;
+            yearNumericUpDown.BorderRadius = 10;
+            yearNumericUpDown.CustomizableEdges = customizableEdges101;
+            yearNumericUpDown.Font = new Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            yearNumericUpDown.Location = new Point(152, 43);
+            yearNumericUpDown.Maximum = new decimal(new int[] { 2060, 0, 0, 0 });
+            yearNumericUpDown.Minimum = new decimal(new int[] { 2024, 0, 0, 0 });
+            yearNumericUpDown.Name = "yearNumericUpDown";
+            yearNumericUpDown.ShadowDecoration.CustomizableEdges = customizableEdges102;
+            yearNumericUpDown.Size = new Size(220, 56);
+            yearNumericUpDown.TabIndex = 45;
+            yearNumericUpDown.TextOffset = new Point(60, 0);
+            yearNumericUpDown.Value = new decimal(new int[] { 2024, 0, 0, 0 });
+            // 
+            // monthComboBox
+            // 
+            monthComboBox.BackColor = Color.Transparent;
+            monthComboBox.BorderColor = Color.DarkSlateBlue;
+            monthComboBox.BorderRadius = 10;
+            monthComboBox.CustomizableEdges = customizableEdges103;
+            monthComboBox.DrawMode = DrawMode.OwnerDrawFixed;
+            monthComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            monthComboBox.FocusedColor = Color.FromArgb(94, 148, 255);
+            monthComboBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            monthComboBox.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            monthComboBox.ForeColor = Color.DarkSlateBlue;
+            monthComboBox.ItemHeight = 50;
+            monthComboBox.Location = new Point(152, 110);
+            monthComboBox.Name = "monthComboBox";
+            monthComboBox.ShadowDecoration.CustomizableEdges = customizableEdges104;
+            monthComboBox.Size = new Size(220, 56);
+            monthComboBox.TabIndex = 44;
+            monthComboBox.TextAlign = HorizontalAlignment.Center;
+            // 
             // openScheduleButton
             // 
             openScheduleButton.Animated = true;
@@ -2155,7 +2262,7 @@
             openScheduleButton.BorderColor = Color.DarkSlateBlue;
             openScheduleButton.BorderRadius = 20;
             openScheduleButton.BorderThickness = 1;
-            openScheduleButton.CustomizableEdges = customizableEdges101;
+            openScheduleButton.CustomizableEdges = customizableEdges107;
             openScheduleButton.DisabledState.BorderColor = Color.DarkGray;
             openScheduleButton.DisabledState.CustomBorderColor = Color.DarkGray;
             openScheduleButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2167,11 +2274,11 @@
             openScheduleButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
             openScheduleButton.HoverState.ForeColor = Color.GhostWhite;
             openScheduleButton.ImageSize = new Size(30, 30);
-            openScheduleButton.Location = new Point(683, 43);
+            openScheduleButton.Location = new Point(621, 241);
             openScheduleButton.Name = "openScheduleButton";
             openScheduleButton.ShadowDecoration.BorderRadius = 20;
             openScheduleButton.ShadowDecoration.Color = Color.Navy;
-            openScheduleButton.ShadowDecoration.CustomizableEdges = customizableEdges102;
+            openScheduleButton.ShadowDecoration.CustomizableEdges = customizableEdges108;
             openScheduleButton.ShadowDecoration.Enabled = true;
             openScheduleButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             openScheduleButton.Size = new Size(240, 70);
@@ -2194,13 +2301,13 @@
             changePasswordGroupBox.Controls.Add(newPasswordTextBoxChange);
             changePasswordGroupBox.Controls.Add(changePasswordButton);
             changePasswordGroupBox.CustomBorderColor = Color.MediumSlateBlue;
-            changePasswordGroupBox.CustomizableEdges = customizableEdges117;
+            changePasswordGroupBox.CustomizableEdges = customizableEdges123;
             changePasswordGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
             changePasswordGroupBox.ForeColor = Color.Black;
             changePasswordGroupBox.Location = new Point(10, 317);
             changePasswordGroupBox.Name = "changePasswordGroupBox";
-            changePasswordGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges118;
-            changePasswordGroupBox.Size = new Size(440, 301);
+            changePasswordGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges124;
+            changePasswordGroupBox.Size = new Size(440, 291);
             changePasswordGroupBox.TabIndex = 34;
             changePasswordGroupBox.Text = "Сменить пароль";
             changePasswordGroupBox.TextAlign = HorizontalAlignment.Center;
@@ -2209,7 +2316,7 @@
             // changePasswoedGratsLabel
             // 
             changePasswoedGratsLabel.Font = new Font("Consolas", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            changePasswoedGratsLabel.ForeColor = Color.FromArgb(128, 255, 128);
+            changePasswoedGratsLabel.ForeColor = Color.DarkSeaGreen;
             changePasswoedGratsLabel.Location = new Point(57, 144);
             changePasswoedGratsLabel.Name = "changePasswoedGratsLabel";
             changePasswoedGratsLabel.Size = new Size(331, 66);
@@ -2226,7 +2333,7 @@
             hideChangeGroupBoxButton.BorderColor = Color.DarkSlateBlue;
             hideChangeGroupBoxButton.BorderRadius = 6;
             hideChangeGroupBoxButton.BorderThickness = 1;
-            hideChangeGroupBoxButton.CustomizableEdges = customizableEdges103;
+            hideChangeGroupBoxButton.CustomizableEdges = customizableEdges109;
             hideChangeGroupBoxButton.DisabledState.BorderColor = Color.DarkGray;
             hideChangeGroupBoxButton.DisabledState.CustomBorderColor = Color.DarkGray;
             hideChangeGroupBoxButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2239,7 +2346,7 @@
             hideChangeGroupBoxButton.Location = new Point(400, 0);
             hideChangeGroupBoxButton.Name = "hideChangeGroupBoxButton";
             hideChangeGroupBoxButton.ShadowDecoration.Color = Color.Navy;
-            hideChangeGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges104;
+            hideChangeGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges110;
             hideChangeGroupBoxButton.ShadowDecoration.Enabled = true;
             hideChangeGroupBoxButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             hideChangeGroupBoxButton.Size = new Size(40, 40);
@@ -2265,7 +2372,7 @@
             showHideOldPasswordButton.BorderColor = Color.White;
             showHideOldPasswordButton.BorderRadius = 20;
             showHideOldPasswordButton.BorderThickness = 1;
-            showHideOldPasswordButton.CustomizableEdges = customizableEdges105;
+            showHideOldPasswordButton.CustomizableEdges = customizableEdges111;
             showHideOldPasswordButton.DisabledState.BorderColor = Color.DarkGray;
             showHideOldPasswordButton.DisabledState.CustomBorderColor = Color.DarkGray;
             showHideOldPasswordButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2282,7 +2389,7 @@
             showHideOldPasswordButton.Name = "showHideOldPasswordButton";
             showHideOldPasswordButton.ShadowDecoration.BorderRadius = 20;
             showHideOldPasswordButton.ShadowDecoration.Color = Color.Navy;
-            showHideOldPasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges106;
+            showHideOldPasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges112;
             showHideOldPasswordButton.ShadowDecoration.Enabled = true;
             showHideOldPasswordButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             showHideOldPasswordButton.Size = new Size(46, 46);
@@ -2296,7 +2403,7 @@
             showHideNewPasswordButton.BorderColor = Color.White;
             showHideNewPasswordButton.BorderRadius = 20;
             showHideNewPasswordButton.BorderThickness = 1;
-            showHideNewPasswordButton.CustomizableEdges = customizableEdges107;
+            showHideNewPasswordButton.CustomizableEdges = customizableEdges113;
             showHideNewPasswordButton.DisabledState.BorderColor = Color.DarkGray;
             showHideNewPasswordButton.DisabledState.CustomBorderColor = Color.DarkGray;
             showHideNewPasswordButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2313,7 +2420,7 @@
             showHideNewPasswordButton.Name = "showHideNewPasswordButton";
             showHideNewPasswordButton.ShadowDecoration.BorderRadius = 20;
             showHideNewPasswordButton.ShadowDecoration.Color = Color.Navy;
-            showHideNewPasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges108;
+            showHideNewPasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges114;
             showHideNewPasswordButton.ShadowDecoration.Enabled = true;
             showHideNewPasswordButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             showHideNewPasswordButton.Size = new Size(46, 46);
@@ -2327,7 +2434,7 @@
             oldPasswordTextBoxChange.BorderColor = Color.DarkSlateBlue;
             oldPasswordTextBoxChange.BorderRadius = 13;
             oldPasswordTextBoxChange.BorderThickness = 2;
-            oldPasswordTextBoxChange.CustomizableEdges = customizableEdges109;
+            oldPasswordTextBoxChange.CustomizableEdges = customizableEdges115;
             oldPasswordTextBoxChange.DefaultText = "";
             oldPasswordTextBoxChange.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             oldPasswordTextBoxChange.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -2348,7 +2455,7 @@
             oldPasswordTextBoxChange.SelectedText = "";
             oldPasswordTextBoxChange.ShadowDecoration.BorderRadius = 13;
             oldPasswordTextBoxChange.ShadowDecoration.Color = Color.White;
-            oldPasswordTextBoxChange.ShadowDecoration.CustomizableEdges = customizableEdges110;
+            oldPasswordTextBoxChange.ShadowDecoration.CustomizableEdges = customizableEdges116;
             oldPasswordTextBoxChange.ShadowDecoration.Enabled = true;
             oldPasswordTextBoxChange.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             oldPasswordTextBoxChange.Size = new Size(366, 46);
@@ -2362,7 +2469,7 @@
             middlenameTextBox.BorderColor = Color.DarkSlateBlue;
             middlenameTextBox.BorderRadius = 13;
             middlenameTextBox.BorderThickness = 2;
-            middlenameTextBox.CustomizableEdges = customizableEdges111;
+            middlenameTextBox.CustomizableEdges = customizableEdges117;
             middlenameTextBox.DefaultText = "";
             middlenameTextBox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             middlenameTextBox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -2382,7 +2489,7 @@
             middlenameTextBox.SelectedText = "";
             middlenameTextBox.ShadowDecoration.BorderRadius = 13;
             middlenameTextBox.ShadowDecoration.Color = Color.White;
-            middlenameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges112;
+            middlenameTextBox.ShadowDecoration.CustomizableEdges = customizableEdges118;
             middlenameTextBox.ShadowDecoration.Enabled = true;
             middlenameTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             middlenameTextBox.Size = new Size(366, 46);
@@ -2397,7 +2504,7 @@
             newPasswordTextBoxChange.BorderColor = Color.DarkSlateBlue;
             newPasswordTextBoxChange.BorderRadius = 13;
             newPasswordTextBoxChange.BorderThickness = 2;
-            newPasswordTextBoxChange.CustomizableEdges = customizableEdges113;
+            newPasswordTextBoxChange.CustomizableEdges = customizableEdges119;
             newPasswordTextBoxChange.DefaultText = "";
             newPasswordTextBoxChange.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             newPasswordTextBoxChange.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -2418,7 +2525,7 @@
             newPasswordTextBoxChange.SelectedText = "";
             newPasswordTextBoxChange.ShadowDecoration.BorderRadius = 13;
             newPasswordTextBoxChange.ShadowDecoration.Color = Color.White;
-            newPasswordTextBoxChange.ShadowDecoration.CustomizableEdges = customizableEdges114;
+            newPasswordTextBoxChange.ShadowDecoration.CustomizableEdges = customizableEdges120;
             newPasswordTextBoxChange.ShadowDecoration.Enabled = true;
             newPasswordTextBoxChange.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             newPasswordTextBoxChange.Size = new Size(366, 46);
@@ -2432,7 +2539,7 @@
             changePasswordButton.BorderColor = Color.DarkSlateBlue;
             changePasswordButton.BorderRadius = 20;
             changePasswordButton.BorderThickness = 1;
-            changePasswordButton.CustomizableEdges = customizableEdges115;
+            changePasswordButton.CustomizableEdges = customizableEdges121;
             changePasswordButton.DisabledState.BorderColor = Color.DarkGray;
             changePasswordButton.DisabledState.CustomBorderColor = Color.DarkGray;
             changePasswordButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2448,7 +2555,7 @@
             changePasswordButton.Name = "changePasswordButton";
             changePasswordButton.ShadowDecoration.BorderRadius = 20;
             changePasswordButton.ShadowDecoration.Color = Color.White;
-            changePasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges116;
+            changePasswordButton.ShadowDecoration.CustomizableEdges = customizableEdges122;
             changePasswordButton.ShadowDecoration.Enabled = true;
             changePasswordButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             changePasswordButton.Size = new Size(240, 70);
@@ -2572,7 +2679,7 @@
             hideButton.BorderColor = Color.DarkSlateBlue;
             hideButton.BorderRadius = 6;
             hideButton.BorderThickness = 1;
-            hideButton.CustomizableEdges = customizableEdges121;
+            hideButton.CustomizableEdges = customizableEdges127;
             hideButton.DisabledState.BorderColor = Color.DarkGray;
             hideButton.DisabledState.CustomBorderColor = Color.DarkGray;
             hideButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2585,7 +2692,7 @@
             hideButton.Location = new Point(1111, 3);
             hideButton.Name = "hideButton";
             hideButton.ShadowDecoration.Color = Color.Navy;
-            hideButton.ShadowDecoration.CustomizableEdges = customizableEdges122;
+            hideButton.ShadowDecoration.CustomizableEdges = customizableEdges128;
             hideButton.ShadowDecoration.Enabled = true;
             hideButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             hideButton.Size = new Size(40, 40);
@@ -2600,7 +2707,7 @@
             closeButton.BorderColor = Color.DarkSlateBlue;
             closeButton.BorderRadius = 6;
             closeButton.BorderThickness = 1;
-            closeButton.CustomizableEdges = customizableEdges123;
+            closeButton.CustomizableEdges = customizableEdges129;
             closeButton.DisabledState.BorderColor = Color.DarkGray;
             closeButton.DisabledState.CustomBorderColor = Color.DarkGray;
             closeButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2613,7 +2720,7 @@
             closeButton.Location = new Point(1157, 3);
             closeButton.Name = "closeButton";
             closeButton.ShadowDecoration.Color = Color.Navy;
-            closeButton.ShadowDecoration.CustomizableEdges = customizableEdges124;
+            closeButton.ShadowDecoration.CustomizableEdges = customizableEdges130;
             closeButton.ShadowDecoration.Enabled = true;
             closeButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             closeButton.Size = new Size(40, 40);
@@ -2627,7 +2734,7 @@
             backButton.BorderColor = Color.DarkSlateBlue;
             backButton.BorderRadius = 20;
             backButton.BorderThickness = 1;
-            backButton.CustomizableEdges = customizableEdges125;
+            backButton.CustomizableEdges = customizableEdges131;
             backButton.DisabledState.BorderColor = Color.DarkGray;
             backButton.DisabledState.CustomBorderColor = Color.DarkGray;
             backButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -2643,7 +2750,7 @@
             backButton.Name = "backButton";
             backButton.ShadowDecoration.BorderRadius = 20;
             backButton.ShadowDecoration.Color = Color.Navy;
-            backButton.ShadowDecoration.CustomizableEdges = customizableEdges126;
+            backButton.ShadowDecoration.CustomizableEdges = customizableEdges132;
             backButton.ShadowDecoration.Enabled = true;
             backButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             backButton.Size = new Size(240, 70);
@@ -2671,6 +2778,18 @@
             // 
             diplomaBDContextBindingSource.DataSource = typeof(DiplomaBDContext);
             // 
+            // findScheduleErrorLabel
+            // 
+            findScheduleErrorLabel.AutoSize = true;
+            findScheduleErrorLabel.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            findScheduleErrorLabel.ForeColor = Color.DarkRed;
+            findScheduleErrorLabel.Location = new Point(573, 192);
+            findScheduleErrorLabel.Name = "findScheduleErrorLabel";
+            findScheduleErrorLabel.Size = new Size(351, 36);
+            findScheduleErrorLabel.TabIndex = 51;
+            findScheduleErrorLabel.Text = "Расписание не найдено";
+            findScheduleErrorLabel.Visible = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -2694,19 +2813,22 @@
             guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scheduleDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)lessonBindingSource).EndInit();
+            addInfoGroupBox.ResumeLayout(false);
+            guna2GradientPanel3.ResumeLayout(false);
+            guna2GradientPanel3.PerformLayout();
+            guna2GradientPanel2.ResumeLayout(false);
+            guna2GradientPanel2.PerformLayout();
             lessonGroupBox.ResumeLayout(false);
             deleteLessonPanel.ResumeLayout(false);
             deleteLessonPanel.PerformLayout();
             addLessonPanel.ResumeLayout(false);
             addLessonPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)weeksUpDown).EndInit();
-            addInfoGroupBox.ResumeLayout(false);
-            guna2GradientPanel3.ResumeLayout(false);
-            guna2GradientPanel3.PerformLayout();
-            guna2GradientPanel2.ResumeLayout(false);
-            guna2GradientPanel2.PerformLayout();
             profileGroupBox.ResumeLayout(false);
             profileGroupBox.PerformLayout();
+            guna2GroupBox3.ResumeLayout(false);
+            guna2GroupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)yearNumericUpDown).EndInit();
             changePasswordGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scheduleBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)placeOfLessonBindingSource).EndInit();
@@ -2844,5 +2966,12 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2Button fillScheduleExcelButton;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox monthComboBox;
+        private Guna.UI2.WinForms.Guna2NumericUpDown yearNumericUpDown;
+        private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
+        private Label findWorkloadErrorLabel;
+        private Label label18;
+        private Label label16;
+        private Label findScheduleErrorLabel;
     }
 }

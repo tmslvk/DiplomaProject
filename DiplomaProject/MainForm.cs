@@ -3,7 +3,9 @@ using DocumentFormat.OpenXml.Bibliography;
 using DocumentFormat.OpenXml.Spreadsheet;
 using Microsoft.Reporting.WinForms;
 using OfficeOpenXml;
+using OfficeOpenXml.Style;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.IO.Packaging;
@@ -36,6 +38,31 @@ namespace DiplomaProject
             DayOfWeek.Saturday
         };
 
+        public Dictionary<int, string> months = new Dictionary<int, string>()
+        {
+            {1, "Январь" },
+            {2, "Февраль" },
+            {3, "Март" },
+            {4, "Апрель" },
+            {5, "Май" },
+            {6, "Июнь" },
+            {7, "Июль" },
+            {8, "Август" },
+            {9, "Сентябрь" },
+            {10, "Октябрь" },
+            {11, "Ноябрь" },
+            {12, "Декабрь" }
+        };
+
+
+
+        public Dictionary<string, string> typeOfWeeks = new Dictionary<string, string>()
+        {
+            {"Еженедельно", ""},
+            {"Нечетная", "*"},
+            {"Четная", "**"},
+        };
+
         Dictionary<DayOfWeek, string> dayDictionary = new Dictionary<DayOfWeek, string>()
         {
             {DayOfWeek.Monday, "Понедельник" },
@@ -47,24 +74,25 @@ namespace DiplomaProject
 
         };
 
-        public List<string> typeOfLessons = new List<string>()
+        public Dictionary<string, string> typeOfLessons = new Dictionary<string, string>()
         {
-            "Лекции",
-            "Практич. и семинарские занятия",
-            "Лабораторные занятия",
-            "Курсовое проектирование",
-            "Консультации",
-            "Зачеты",
-            "Экзамены",
-            "Руководство аспирантами",
-            "Дипломное проектирование",
-            "ГЭК",
-            "Учебные и произв. практики",
-            "Руководство магистрантами",
-            "Контрольные работы и РГР"
+            {"Лекции", "ЛК"},
+            {"Практич. и семинарские занятия", "ПЗиСЗ"},
+            {"Лабораторные занятия", "ЛЗ"},
+            {"Курсовое проектирование", "КП"},
+            {"Консультации", "К"},
+            {"Зачеты", "ЗАЧ"},
+            {"Экзамены", "ЭКЗ" },
+            {"Руководство аспирантами", "РА" },
+            {"Дипломное проектирование", "ДП" },
+            {"ГЭК", "ГЭК" },
+            {"Учебные и произв. практики", "УиПП" },
+            {"Руководство магистрантами", "РМ" },
+            {"Контрольные работы и РГР", "КРиРГР" }
         };
 
         List<TimeSpan> timeOfLessons;
+        List<ExcelDocumentInfo> documentInfo;
         #endregion
 
         public MainForm(int id, DiplomaBDContext context)
@@ -73,8 +101,10 @@ namespace DiplomaProject
             this.db = context;
             this.userID = id;
             AddValuesBoot();
+            profileGroupBox.Show();
             idLabel.Text = userID.ToString();
             var user = GetUserById(userID);
+
             if (user != null)
             {
                 fullnameLabel.Text = user.Fullname;
@@ -85,6 +115,24 @@ namespace DiplomaProject
             FillSchedule(GetLessons());
             FillWorkloadView(SortWorkload());
             //RemoveExpiredLessons();
+        }
+
+        public string GetPathForExcelFiles()
+        {
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            // Проверяем, содержит ли путь к папке "bin"
+            int index = projectDirectory.LastIndexOf("bin", StringComparison.OrdinalIgnoreCase);
+            if (index >= 0)
+            {
+                // Удаляем подстроку "bin"
+                projectDirectory = projectDirectory.Remove(index, 3);
+
+                // Удаляем последний разделитель, если он был добавлен после удаления "bin"
+                projectDirectory = projectDirectory.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            }
+            string excelFilesPath = Path.Combine(projectDirectory, "ExcelFiles");
+            return excelFilesPath;
         }
         public void RemoveExpiredLessons()
         {
@@ -145,6 +193,7 @@ namespace DiplomaProject
         {
             scheduleGroupBox.Show();
             scheduleDataGridView.Refresh();
+            scheduleDataGridView.Update();
 
             lessonGroupBox.Hide();
             addInfoGroupBox.Hide();
@@ -154,6 +203,7 @@ namespace DiplomaProject
         private void lessonGroupBoxButton_Click(object sender, EventArgs e)
         {
             lessonGroupBox.Show();
+            scheduleDataGridView.Update();
 
             addInfoGroupBox.Hide();
             profileGroupBox.Hide();
@@ -164,6 +214,7 @@ namespace DiplomaProject
         private void workloadGroupBoxButton_Click(object sender, EventArgs e)
         {
             workloadGroupBox.Show();
+            workloadDataGridView.Update();
 
             scheduleGroupBox.Hide();
             profileGroupBox.Hide();
@@ -285,6 +336,7 @@ namespace DiplomaProject
         #region[AddValuesForComboBoxes]
         public void AddValuesBoot()
         {
+            AddMonthProfileGroupBox();
             AddUpdateDiscipline();
             AddUpdateGroup();
             AddUpdatePlace();
@@ -352,7 +404,7 @@ namespace DiplomaProject
             deleteInfoLabel.Text = $"Группа {deleteGroupComboBox.SelectedItem} была удалена";
             deleteGroupComboBox.Items.Clear();
             AddUpdateGroup();
-            
+
         }
 
         private void deleteDisciplineButton_Click(object sender, EventArgs e)
@@ -413,8 +465,17 @@ namespace DiplomaProject
             }
         }
         #endregion
-
+        //добавить валидации чучуть
         #region[AddValuesForComboBoxesDeleteAdd]
+
+        public void AddMonthProfileGroupBox()
+        {
+            foreach (var month in months.Values)
+            {
+                monthComboBox.Items.Add(month);
+            }
+        }
+
         public void AddLessonGroupComboBox()
         {
             List<Model.Group> groups = db.Groups.ToList();
@@ -669,7 +730,7 @@ namespace DiplomaProject
                 ||
                 backupLesson.ExpireDateTime > now && !backupLesson.IsNew);
         }
-
+        #region[WorkloadLogic]
         public void FillWorkloadView(List<Workload> workload)
         {
             workloadDataGridView.DataSource = workload;
@@ -703,7 +764,7 @@ namespace DiplomaProject
             scheduleDataGridView.DataSource = finalList;
         }
 
-        
+
 
         private void createFillingFromScheduleButton_Click(object sender, EventArgs e)
         {
@@ -773,15 +834,17 @@ namespace DiplomaProject
             db.Workloads.RemoveRange(oldWorloads);
             FillWorkLoadTable(lessons);
             FillWorkloadView(SortWorkload());
-            
+
             workloadGratsLabel.Text = "Нагрузка была успешно обновлена";
             workloadGratsLabel.Visible = true;
         }
+        #endregion
 
         #region[Schedule&Excel]
 
         public void CreateScheduleOnExcel()
         {
+            //закалить пояснения
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             ExcelPackage package = new ExcelPackage();
             ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Расписание");
@@ -790,6 +853,10 @@ namespace DiplomaProject
             int startCol = 2;
 
             worksheet.Cells[1, 1].Value = "Время \\ Дни";
+            worksheet.Cells[dayDictionary.Count + startCol, 1].Value = "*";
+            worksheet.Cells[dayDictionary.Count + startCol, 2].Value = "Нечетная";
+            worksheet.Cells[dayDictionary.Count + startCol + 1, 1].Value = "**";
+            worksheet.Cells[dayDictionary.Count + startCol + 1, 2].Value = "Четная";
             for (int i = 0; i < dayDictionary.Count; i++)
             {
                 worksheet.Cells[i + startCol, 1].Value = dayDictionary[dayOfWeeks[i]];
@@ -799,14 +866,14 @@ namespace DiplomaProject
                 }
             }
 
-            package.SaveAs(new FileInfo(schedulePath));
+            package.SaveAs(new FileInfo(GetFilePath(CreateFileNameSchedule(DateTime.Now.Year))));
         }
 
-        public void FillDataInExcel()
+        public void FillDataInExcelSchedule()
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-            ExcelPackage package = new ExcelPackage(schedulePath);
+            ExcelPackage package = new ExcelPackage(GetFilePath(CreateFileNameSchedule(DateTime.Now.Year)));
             List<Lesson> lessons = GetLessons(); // Здесь GetLessonsData() - ваш метод для получения данных из таблицы
             ExcelWorksheet worksheet = package.Workbook.Worksheets["Расписание"];
             int startRow = 2;
@@ -863,17 +930,25 @@ namespace DiplomaProject
                     {
                         worksheet.Cells[row, col].Value += Environment.NewLine;
                     }
+                    for (int i = 0; i < typeOfLessons.Count; i++)
+                    {
+                        for (int j = 0; j < typeOfWeeks.Count; j++)
+                        {
+                            if (lesson.TypeOfWeek == typeOfWeeks.ElementAt(j).Key && lesson.TypeOfLesson == typeOfLessons.ElementAt(i).Key)
+                            {
+                                worksheet.Cells[row, col].Value +=
+                                    $"{typeOfWeeks.ElementAt(j).Value}{typeOfLessons.ElementAt(i).Value}" + Environment.NewLine +
+                                    $"{lesson.Discipline}" + $" {lesson.PlaceOfLesson}" + $" {lesson.Group}";
+                            }
+                        }
+                    }
 
-                    worksheet.Cells[row, col].Value +=
-                        $"{lesson.TypeOfWeek}" + Environment.NewLine +
-                        $"{lesson.TypeOfLesson}" + Environment.NewLine +
-                        $"{lesson.Discipline}" + $" {lesson.PlaceOfLesson}" + $" {lesson.Group}";
                 }
             }
 
             package.Save();
         }
-        
+
         public List<Lesson> GetLessonsForTimeSpans()
         {
             return db.Lessons.Where(l => l.UserId == userID).ToList();
@@ -895,12 +970,12 @@ namespace DiplomaProject
         private void fillScheduleExcelButton_Click(object sender, EventArgs e)
         {
             firstFillingGratsLabel.Text = "";
-            FillDataInExcel();
+            FillDataInExcelSchedule();
             firstFillingGratsLabel.Text = "Файл Excel был успешно заполнен";
             firstFillingGratsLabel.Visible = true;
         }
         #endregion
-        
+
         #region[Workload&Excel]
         public void CreateTemplateWorkload()
         {
@@ -908,22 +983,85 @@ namespace DiplomaProject
             ExcelPackage package = new ExcelPackage();
             ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Нагрузка");
 
-            int startRow = 2;
+            int startRow = 4;
             int startCol = 2;
 
-            worksheet.Cells[1, 1].Value = "Дата \\ Типы занятий";
+            worksheet.Cells[3, 1].Value = "Дата";
+            worksheet.Cells[3, 1].Worksheet.Column(1).Width = 5.78;
+            worksheet.Cells[3, 1, 4, 1].Merge = true;
             for (int i = 0; i <= DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) - 1; i++)
             {
-                worksheet.Cells[i + startCol, 1].Value = i + 1;
-                worksheet.Cells[startRow + DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month), 1].Value = "Итого:";
-                worksheet.Cells[1, typeOfLessons.Count + startCol].Value = "Наименование дисциплины";
+                //заполнение дней
+                worksheet.Cells[i + startRow + 1, 1].Value = i + 1;
+                worksheet.Cells[i + startRow + 1, 1].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+                worksheet.Cells[startRow + DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + 1, 1].Value = "Итого:";
+                worksheet.Cells[startRow - 1, typeOfLessons.Count + startCol, startRow, typeOfLessons.Count + startCol].Merge = true;
+                worksheet.Cells[startRow - 1, typeOfLessons.Count + startCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                worksheet.Cells[startRow - 1, typeOfLessons.Count + startCol].Style.VerticalAlignment = ExcelVerticalAlignment.Center;
+                worksheet.Cells[startRow - 1, typeOfLessons.Count + startCol].Value = "Наименование дисциплины";
+                worksheet.Cells[startRow - 1, typeOfLessons.Count + startCol].Style.WrapText = true;
+                worksheet.Cells[startRow - 1, typeOfLessons.Count + startCol].Worksheet.Column(typeOfLessons.Count + startCol).Width = 14;
+                FillInfoInWorksheet(worksheet);
+
                 for (int j = 0; j < typeOfLessons.Count; j++)
                 {
-                    worksheet.Cells[1, j + startRow].Value = typeOfLessons[j].ToString();
+                    //worksheet.Cells[1, j + startRow].Value = typeOfLessons[j].ToString();
+                    worksheet.Cells[startRow, j + startCol].Value = typeOfLessons.ElementAt(j).Key;
+                    worksheet.Cells[startRow, j + startCol].Style.TextRotation = 90;
+                    worksheet.Cells[startRow, j + startCol].Worksheet.Row(startRow).Height = 95;
+                    worksheet.Cells[startRow, j + startCol].Worksheet.Column(j + startCol).Width = 5;
+                    worksheet.Cells[startRow, j + startCol].Style.WrapText = true;
                 }
             }
 
-            package.SaveAs(new FileInfo(workloadPath));
+            package.SaveAs(new FileInfo(GetFilePath(CreateFileNameWorkload(DateTime.Now.Year, DateTime.Now.Month))));
+        }
+
+        public void FillInfoInWorksheet(ExcelWorksheet worksheet)
+        {
+            this.documentInfo = FillListExcelDocumentInfo(worksheet);
+            for (int i = 0; i < documentInfo.Count; i++)
+            {
+                var temp = documentInfo[i];
+                if (i < 2)
+                {
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Center;
+                    worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Value = temp.infoText;
+                }
+                else if (i >= 2 && i < 5)
+                {
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+                    worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Value = temp.infoText;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2].Value = "-";
+                    worksheet.Cells[temp.toRow, worksheet.Dimension.Columns].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                }
+                else if(i == 5)
+                {
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+                    worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Value = temp.infoText;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow, temp.toCol + 4].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow, temp.toCol + 4].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                    worksheet.Cells[temp.toRow, worksheet.Dimension.Columns].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                }
+                else if(i > 5 && i < 8)
+                {
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+                    worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Value = temp.infoText;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow, temp.toCol + 5].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow,temp.toCol + 5].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2].Worksheet.Row(temp.fromRow).Height = 20;
+                }
+                else
+                {
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
+                    worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
+                    worksheet.Cells[temp.fromRow, temp.fromCol].Value = temp.infoText;
+                }
+            }
         }
 
         public List<WorkloadCell> GetWorkloadCells(List<Workload> workloads)
@@ -932,9 +1070,9 @@ namespace DiplomaProject
             {
                 cell.TypeOfLesson = wl.TypeOfLesson;
                 cell.Day = wl.Day;
-                
+
                 var hours = cell.Hours == null ? wl.Hours : cell.Hours + wl.Hours;
-                var disciplines = cell.Discipline == null ? wl.Disciplenes : cell.Discipline + ", " + wl.Disciplenes;
+                var disciplines = cell.Discipline == null || cell.Discipline == wl.Disciplenes ? wl.Disciplenes : cell.Discipline + ", " + wl.Disciplenes;
                 cell.Discipline = disciplines;
                 cell.Hours = hours;
                 return cell;
@@ -954,14 +1092,18 @@ namespace DiplomaProject
 
         public void FillDataInWorkload()
         {
-
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-            ExcelPackage package = new ExcelPackage(workloadPath);
+            ExcelPackage package = new ExcelPackage(GetFilePath(CreateFileNameWorkload(DateTime.Now.Year, DateTime.Now.Month)));
             List<Workload> workloads = GetWorkload();
             ExcelWorksheet worksheet = package.Workbook.Worksheets["Нагрузка"];
-            int startRow = 2;
+            int startRow = 5;
             int startCol = 2;
+
+            int startTableRow = 3;
+            int startTableCol = 1;
+            int endTableRow = 36;
+            int endTableCol = 15;
             Action clearRows = () =>
             {
                 for (int i = startRow; i <= worksheet.Dimension.Rows; i++)
@@ -978,7 +1120,7 @@ namespace DiplomaProject
                 var day = workload.Day;
                 for (int i = startRow; i <= worksheet.Dimension.Rows; i++)
                 {
-                    if (day.ToString() == worksheet.Cells[i, 1].Value.ToString())
+                    if (day.ToString() == worksheet.Cells[i, startCol - 1].Value.ToString())
                     {
                         return i;
                     }
@@ -992,7 +1134,7 @@ namespace DiplomaProject
                 var lessonType = workload.TypeOfLesson;
                 for (int j = startCol; j <= worksheet.Dimension.Columns; j++)
                 {
-                    if (lessonType.ToString() == worksheet.Cells[1, j].Value.ToString())
+                    if (lessonType.ToString() == worksheet.Cells[startRow - 1, j].Value.ToString())
                     {
                         return j;
                     }
@@ -1012,15 +1154,56 @@ namespace DiplomaProject
                 var row = getRow(cell);
                 worksheet.Cells[DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + startRow, col].Value = totalHours[cell.TypeOfLesson];
                 //Наименование дисциплины заполнение;
-                worksheet.Cells[row, typeOfLessons.Count + startCol].Value += $"{cell.Discipline}";
-                worksheet.Cells[DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + startRow, typeOfLessons.Count + startCol].Value = totalHours.Values.Sum();
+                worksheet.Cells[row, typeOfLessons.Count + startCol].Value = $"{cell.Discipline}";
+                worksheet.Cells[DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month) + startRow, typeOfLessons.Count + startCol].Value = "Всего: " + totalHours.Values.Sum();
                 if (col != -1 && row != -1)
                 {
                     worksheet.Cells[row, col].Value = cell.Hours;
                 }
             }
+            ExcelRange range = worksheet.Cells[startTableRow, startTableCol, endTableRow, endTableCol];
+            range.Style.Border.Top.Style = ExcelBorderStyle.Thin;
+            range.Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+            range.Style.Border.Left.Style = ExcelBorderStyle.Thin;
+            range.Style.Border.Right.Style = ExcelBorderStyle.Thin;
 
             package.Save();
+        }
+
+        public List<ExcelDocumentInfo> FillListExcelDocumentInfo(ExcelWorksheet worksheet)
+        {
+            int daysInMonth = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
+            return new List<ExcelDocumentInfo>()
+            {
+                new ExcelDocumentInfo() { infoText = "6. ВЫПОЛНЕНИЕ НАГРУЗКИ ПО МЕСЯЦАМ",fromCol = 1, fromRow = 1, toRow = 1, toCol = 15},
+                new ExcelDocumentInfo() { infoText = "Учебная работа в часах за месяц", fromCol = 2, fromRow = 3, toRow = 3, toCol = 1 + typeOfLessons.Count},
+                new ExcelDocumentInfo() { infoText = "Учебно-методическая", fromRow = daysInMonth + 7, fromCol = 1, toRow = daysInMonth + 7, toCol = 6 },
+                new ExcelDocumentInfo() { infoText = "Орагизационно-методическая", fromRow = daysInMonth + 8, fromCol = 1, toRow = daysInMonth + 8, toCol = 6 },
+                new ExcelDocumentInfo() { infoText = "Научно-исследовательская", fromRow =daysInMonth + 9, fromCol = 1, toRow = daysInMonth + 9, toCol = 6  },
+                new ExcelDocumentInfo() { infoText = "ВСЕГО выполнено работ за месяц", fromRow = daysInMonth + 10, fromCol = 1, toRow = daysInMonth + 10, toCol = 8  },
+                new ExcelDocumentInfo() { infoText = "Подпись преподавателя", fromRow = daysInMonth + 12, fromCol = 1, toRow = daysInMonth + 12, toCol = 6  },
+                new ExcelDocumentInfo() { infoText = "Заведующий кафедрой", fromRow = daysInMonth + 13, fromCol = 1, toRow = daysInMonth + 13, toCol = 6 }
+            };
+        }
+        public string GetFilePath(string fileName)
+        {
+            return Path.Combine(GetPathForExcelFiles(), fileName);
+        }
+
+        public string CreateFileNameSchedule(int year)
+        {
+            var user = GetUserById(userID);
+            string[] fullname = user.Fullname.Split(' ');
+            string firstLetterMiddleName = fullname.Length > 2 ? fullname[2].Substring(0, 1) : "";
+            return $"{fullname[0]}{fullname[1].Substring(0, 1)}{firstLetterMiddleName}-{year}-{schedulePath}";
+        }
+
+        public string CreateFileNameWorkload(int year, int month)
+        {
+            var user = GetUserById(userID);
+            string[] fullname = user.Fullname.Split(' ');
+            string firstLetterMiddleName = fullname.Length > 2 ? fullname[2].Substring(0, 1) : "";
+            return $"{fullname[0]}{fullname[1].Substring(0, 1)}{firstLetterMiddleName}-{year}-{month}-{workloadPath}";
         }
 
         private void createWorkloadTemplateButton_Click(object sender, EventArgs e)
@@ -1046,9 +1229,14 @@ namespace DiplomaProject
             ProcessStartInfo excel = new ProcessStartInfo();
             excel.UseShellExecute = true;
             excel.FileName = "EXCEL.EXE";
-            var directory = Directory.GetCurrentDirectory();
-            excel.Arguments = $"{directory}\\{schedulePath}";
-            Process.Start(excel);
+            var filePath = GetFilePath(CreateFileNameSchedule(DateTime.Now.Year));
+            excel.Arguments = $"{filePath}";
+            if (excel.Arguments != null)
+            {
+                Process.Start(excel);
+            }
+            findScheduleErrorLabel.Visible = true;
+            return;
         }
 
         private void openWorkloadButton_Click(object sender, EventArgs e)
@@ -1056,9 +1244,14 @@ namespace DiplomaProject
             ProcessStartInfo excel = new ProcessStartInfo();
             excel.UseShellExecute = true;
             excel.FileName = "EXCEL.EXE";
-            var directory = Directory.GetCurrentDirectory();
-            excel.Arguments = $"{directory}\\{workloadPath}";
-            Process.Start(excel);
+            var filePath = GetFilePath(CreateFileNameWorkload((int)yearNumericUpDown.Value, months.FirstOrDefault(m => m.Value == monthComboBox.SelectedItem.ToString()).Key));
+            excel.Arguments = $"{filePath}";
+            if (excel.Arguments != GetFilePath(""))
+            {
+                Process.Start(excel);
+            }
+            findWorkloadErrorLabel.Visible = true;
+            return;
         }
         #endregion
 
@@ -1075,6 +1268,15 @@ namespace DiplomaProject
         {
             public int Id { get; set; }
             public string Name { get; set; }
+        }
+
+        public class ExcelDocumentInfo
+        {
+            public int fromRow;
+            public int fromCol;
+            public int toRow;
+            public int toCol;
+            public string infoText;
         }
         #endregion
     }

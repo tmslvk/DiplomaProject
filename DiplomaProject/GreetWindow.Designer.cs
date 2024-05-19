@@ -46,6 +46,7 @@
             loginButton = new Guna.UI2.WinForms.Guna2Button();
             registrationButton = new Guna.UI2.WinForms.Guna2Button();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            label1 = new Label();
             guna2GradientPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,8 +54,9 @@
             // 
             guna2GradientPanel1.BackColor = Color.Transparent;
             guna2GradientPanel1.BorderColor = Color.DarkSlateBlue;
-            guna2GradientPanel1.BorderRadius = 6;
+            guna2GradientPanel1.BorderRadius = 20;
             guna2GradientPanel1.BorderThickness = 2;
+            guna2GradientPanel1.Controls.Add(label1);
             guna2GradientPanel1.Controls.Add(hideButton);
             guna2GradientPanel1.Controls.Add(closeButton);
             guna2GradientPanel1.Controls.Add(loginButton);
@@ -199,8 +201,22 @@
             // 
             // guna2Elipse1
             // 
-            guna2Elipse1.BorderRadius = 7;
+            guna2Elipse1.BorderRadius = 40;
             guna2Elipse1.TargetControl = this;
+            // 
+            // label1
+            // 
+            label1.AutoEllipsis = true;
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Consolas", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(22, 43);
+            label1.Name = "label1";
+            label1.RightToLeft = RightToLeft.No;
+            label1.Size = new Size(345, 62);
+            label1.TabIndex = 4;
+            label1.Text = "Индивидуальный план преподавателя";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // GreetWindow
             // 
@@ -227,5 +243,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button hideButton;
         private Guna.UI2.WinForms.Guna2Button closeButton;
+        private Label label1;
     }
 }
