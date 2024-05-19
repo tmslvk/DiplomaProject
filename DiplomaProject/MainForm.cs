@@ -157,6 +157,12 @@ namespace DiplomaProject
         {
             oldPasswordTextBoxChange.UseSystemPasswordChar = true;
             this.timeOfLessons = GetTimeOfLessons(GetLessonsForTimeSpans());
+            workloadGroupBox.Hide();
+            scheduleGroupBox.Hide();
+            addInfoGroupBox.Hide();
+            lessonGroupBox.Hide();
+            profileGroupBox.Show();
+
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -530,18 +536,14 @@ namespace DiplomaProject
             dayAddLessonComboBox.DisplayMember = "Name";
             dayAddLessonComboBox.ValueMember = "Id";
         }
-
         public void DeleteTimeGroupComboBox()
         {
-            List<Lesson> lessons = db.Lessons.ToList();
-            if (lessons != null)
+            var list = GetTimeOfLessons(db.Lessons.Where(l=>l.UserId == userID).ToList());
+            if (list != null)
             {
-                for (int i = 0; i < lessons.Count; i++)
+                for (int i = 0; i < list.Count; i++)
                 {
-                    if (lessons[i].UserId == userID)
-                    {
-                        timeDeleteLessonComboBox.Items.Add(lessons[i].TimeOfLesson);
-                    }
+                    timeDeleteLessonComboBox.Items.Add(list[i].ToString());
                 }
             }
         }

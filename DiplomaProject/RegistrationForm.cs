@@ -169,32 +169,32 @@ namespace DiplomaProject
         #region[Validators]
         private void lastnameTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (lastnameTextBox.Text != string.Empty && lastnameTextBox.Text.Length < 17 && lastnameTextBox.Text.Length > 1) { progressBar.Value += 10; }
+            if (lastnameTextBox.Text != string.Empty && lastnameTextBox.Text.Length < 17 && lastnameTextBox.Text.Length > 2) { progressBar.Value += 10; }
         }
 
         private void firstnameTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (firstnameTextBox.Text != string.Empty && firstnameTextBox.Text.Length < 17 && firstnameTextBox.Text.Length > 1) { progressBar.Value += 10; }
+            if (firstnameTextBox.Text != string.Empty && firstnameTextBox.Text.Length < 17 && firstnameTextBox.Text.Length > 2) { progressBar.Value += 10; }
         }
 
         private void middlenameTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (middlenameTextBox.Text != string.Empty && middlenameTextBox.Text.Length < 17 && middlenameTextBox.Text.Length > 1) { progressBar.Value += 10; }
+            if (middlenameTextBox.Text != string.Empty && middlenameTextBox.Text.Length < 17 && middlenameTextBox.Text.Length > 2) { progressBar.Value += 10; }
         }
 
         private void jobPostTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (jobPostTextBox.Text != string.Empty && jobPostTextBox.Text.Length < 17 && jobPostTextBox.Text.Length > 1) { progressBar.Value += 10; }
+            if (jobPostTextBox.Text != string.Empty && jobPostTextBox.Text.Length < 17 && jobPostTextBox.Text.Length > 4) { progressBar.Value += 10; }
         }
 
         private void departmentTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (departmentTextBox.Text != string.Empty && departmentTextBox.Text.Length < 17 && departmentTextBox.Text.Length > 1) { progressBar.Value += 10; }
+            if (departmentTextBox.Text != string.Empty && departmentTextBox.Text.Length < 17 && departmentTextBox.Text.Length > 2) { progressBar.Value += 10; }
         }
 
         private void universityTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (universityTextBox.Text != string.Empty && universityTextBox.Text.Length < 17 && universityTextBox.Text.Length > 1) { progressBar.Value += 10; }
+            if (universityTextBox.Text != string.Empty && universityTextBox.Text.Length < 17 && universityTextBox.Text.Length > 2) { progressBar.Value += 10; }
         }
 
         private void loginTextBox_Validating(object sender, CancelEventArgs e)
