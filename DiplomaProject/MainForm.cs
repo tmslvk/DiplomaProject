@@ -135,7 +135,7 @@ namespace DiplomaProject
             if (!IsValid(addDisciplineTextBox.Text))
             {
                 addDisciplineTextBox.BorderColor = System.Drawing.Color.Red;
-                addInfoLabel.Text = "Поле должно быть длиной от 4 до 36 символов";
+                addInfoLabel.Text = "Поле должно быть длиной от 2 до 36 символов";
                 addInfoLabel.Visible = true;
             }
             else { addDisciplineTextBox.BorderColor = System.Drawing.Color.Green; }
@@ -156,6 +156,11 @@ namespace DiplomaProject
         public bool IsValid(string s)
         {
             return s != null && s.Length > 4 && s.Length < 36;
+        }
+
+        public bool IsDisciplineValid(string discipline)
+        {
+            return discipline != null && discipline.Length > 2 && discipline.Length < 36;
         }
 
         private void timeAddLessonTextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -416,11 +421,16 @@ namespace DiplomaProject
                 User = GetUserById(userID),
                 Place = addPlaceOfLessonTextBox.Text
             };
-            db.PlaceOfLessons.Add(placeOfLesson);
-            db.SaveChanges();
-            deletePlaceOfLessonComboBox.Items.Clear();
-            AddUpdatePlace();
-            addInfoLabel.Text = $"Место занятия {placeOfLesson.Place} было добавлено";
+            if (IsValid(placeOfLesson.Place))
+            {
+                db.PlaceOfLessons.Add(placeOfLesson);
+                db.SaveChanges();
+                deletePlaceOfLessonComboBox.Items.Clear();
+                AddUpdatePlace();
+                addInfoLabel.Text = $"Место занятия {placeOfLesson.Place} было добавлено";
+            }
+            else { addInfoLabel.Text = $"Длина строки должна быть от 4 до 36 символов!"; }
+            
         }
 
         private void addDisciplineButton_Click(object sender, EventArgs e)
@@ -431,11 +441,16 @@ namespace DiplomaProject
                 User = GetUserById(userID),
                 NameOfDiscipline = addDisciplineTextBox.Text
             };
-            db.Disciplines.Add(discipline);
-            db.SaveChanges();
-            deleteDisciplineComboBox.Items.Clear();
-            AddUpdateDiscipline();
-            addInfoLabel.Text = $"Дисциплина {discipline.NameOfDiscipline} была добавлена";
+            if (IsDisciplineValid(discipline.NameOfDiscipline))
+            {
+                db.Disciplines.Add(discipline);
+                db.SaveChanges();
+                deleteDisciplineComboBox.Items.Clear();
+                AddUpdateDiscipline();
+                addInfoLabel.Text = $"Дисциплина {discipline.NameOfDiscipline} была добавлена";
+            }
+            else { addInfoLabel.Text = $"Длина строки должна быть от 2 до 36 символов!"; }
+
         }
 
         private void addGroupButton_Click(object sender, EventArgs e)
@@ -446,11 +461,15 @@ namespace DiplomaProject
                 User = GetUserById(userID),
                 GroupNumber = addGroupsTextBox.Text
             };
-            db.Groups.Add(group);
-            db.SaveChanges();
-            deleteGroupComboBox.Items.Clear();
-            AddUpdateGroup();
-            addInfoLabel.Text = $"Группа {group.GroupNumber} была добавлена";
+            if (IsValid(group.GroupNumber))
+            {
+                db.Groups.Add(group);
+                db.SaveChanges();
+                deleteGroupComboBox.Items.Clear();
+                AddUpdateGroup();
+                addInfoLabel.Text = $"Группа {group.GroupNumber} была добавлена";
+            }
+            else { addInfoLabel.Text = $"Длина строки должна быть от 4 до 36 символов!"; }
         }
         #endregion
 
@@ -527,7 +546,6 @@ namespace DiplomaProject
             }
         }
         #endregion
-        //добавить валидации чучуть
         #region[AddValuesForComboBoxesDeleteAdd]
 
         public void AddMonthProfileGroupBox()
