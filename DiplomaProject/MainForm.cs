@@ -116,7 +116,63 @@ namespace DiplomaProject
             FillWorkloadView(SortWorkload());
             //RemoveExpiredLessons();
         }
+        #region[Validators]
+        private void addGroupsTextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            addInfoLabel.Visible = true;
+            if (!IsValid(addGroupsTextBox.Text))
+            {
+                addGroupsTextBox.BorderColor = System.Drawing.Color.Red;
+                addInfoLabel.Text = "Поле должно быть длиной от 4 до 36 символов";
+                addInfoLabel.Visible = true;
+            }
+            else { addGroupsTextBox.BorderColor = System.Drawing.Color.Green; }
+        }
 
+        private void addDisciplineTextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            addInfoLabel.Visible = true;
+            if (!IsValid(addDisciplineTextBox.Text))
+            {
+                addDisciplineTextBox.BorderColor = System.Drawing.Color.Red;
+                addInfoLabel.Text = "Поле должно быть длиной от 4 до 36 символов";
+                addInfoLabel.Visible = true;
+            }
+            else { addDisciplineTextBox.BorderColor = System.Drawing.Color.Green; }
+        }
+
+        private void addPlaceOfLessonTextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            addInfoLabel.Visible = true;
+            if (!IsValid(addPlaceOfLessonTextBox.Text))
+            {
+                addPlaceOfLessonTextBox.BorderColor = System.Drawing.Color.Red;
+                addInfoLabel.Text = "Поле должно быть длиной от 4 до 36 символов";
+                addInfoLabel.Visible = true;
+            }
+            else { addPlaceOfLessonTextBox.BorderColor = System.Drawing.Color.Green; }
+        }
+
+        public bool IsValid(string s)
+        {
+            return s != null && s.Length > 4 && s.Length < 36;
+        }
+
+        private void timeAddLessonTextBox_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (!IsTimeValid(timeAddLessonTextBox.Text))
+            {
+                timeAddLessonTextBox.BorderColor = System.Drawing.Color.Red;
+            }
+            else { timeAddLessonTextBox.BorderColor = System.Drawing.Color.Green; }
+        }
+
+        public bool IsTimeValid(string time)
+        {
+            string pattern = @"^([01]?[0-9]|2[0-4]):[0-5][0-9]$";
+            return time != null && Regex.IsMatch(time, pattern);
+        }
+        #endregion
         public string GetPathForExcelFiles()
         {
             string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
@@ -538,7 +594,7 @@ namespace DiplomaProject
         }
         public void DeleteTimeGroupComboBox()
         {
-            var list = GetTimeOfLessons(db.Lessons.Where(l=>l.UserId == userID).ToList());
+            var list = GetTimeOfLessons(db.Lessons.Where(l => l.UserId == userID).ToList());
             if (list != null)
             {
                 for (int i = 0; i < list.Count; i++)
@@ -1039,7 +1095,7 @@ namespace DiplomaProject
                     worksheet.Cells[temp.fromRow, temp.toCol + 2].Value = "-";
                     worksheet.Cells[temp.toRow, worksheet.Dimension.Columns].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
                 }
-                else if(i == 5)
+                else if (i == 5)
                 {
                     worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
                     worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
@@ -1048,13 +1104,13 @@ namespace DiplomaProject
                     worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow, temp.toCol + 4].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
                     worksheet.Cells[temp.toRow, worksheet.Dimension.Columns].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
                 }
-                else if(i > 5 && i < 8)
+                else if (i > 5 && i < 8)
                 {
                     worksheet.Cells[temp.fromRow, temp.fromCol].Style.HorizontalAlignment = ExcelHorizontalAlignment.Left;
                     worksheet.Cells[temp.fromRow, temp.fromCol, temp.toRow, temp.toCol].Merge = true;
                     worksheet.Cells[temp.fromRow, temp.fromCol].Value = temp.infoText;
                     worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow, temp.toCol + 5].Merge = true;
-                    worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow,temp.toCol + 5].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                    worksheet.Cells[temp.fromRow, temp.toCol + 2, temp.fromRow, temp.toCol + 5].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
                     worksheet.Cells[temp.fromRow, temp.toCol + 2].Worksheet.Row(temp.fromRow).Height = 20;
                 }
                 else
@@ -1281,6 +1337,7 @@ namespace DiplomaProject
             public string infoText;
         }
         #endregion
+
     }
 
 }

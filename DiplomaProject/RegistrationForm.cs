@@ -227,11 +227,14 @@ namespace DiplomaProject
         private void loginTextBox_Validated(object sender, EventArgs e)
         {
         }
-
+        public bool IsLoginValid(string login)
+        {
+            return login != null && login.Length > 4 && login.Length < 17;
+        }
         private void loginTextBox_Validating(object sender, CancelEventArgs e)
         {
             loginErrorLabel.Visible = false;
-            if (!IsValid(loginTextBox.Text))
+            if (!IsLoginValid(loginTextBox.Text))
             {
                 loginTextBox.BorderColor = System.Drawing.Color.Red;
                 loginErrorLabel.Visible = true;

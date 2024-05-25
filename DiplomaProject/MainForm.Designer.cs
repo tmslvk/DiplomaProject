@@ -33,33 +33,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges134 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -78,6 +51,33 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -92,6 +92,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges93 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges94 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges67 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -130,8 +132,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges88 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges91 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges92 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges95 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges96 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges97 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -174,6 +174,23 @@
             idLabel = new Label();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             scheduleGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
+            addCommonInfoGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
+            addInfoGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
+            guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            deleteInfoLabel = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            deletePlaceButton = new Guna.UI2.WinForms.Guna2Button();
+            label8 = new Label();
+            deleteGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deleteDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
+            deleteDisciplineComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            deleteGroupButton = new Guna.UI2.WinForms.Guna2Button();
+            deletePlaceOfLessonComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            scheduleGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
+            guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            createTemplateOfScheduleButton = new Guna.UI2.WinForms.Guna2Button();
+            fillScheduleExcelButton = new Guna.UI2.WinForms.Guna2Button();
             workloadGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
             guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             fillWorkloadButton = new Guna.UI2.WinForms.Guna2Button();
@@ -189,10 +206,6 @@
             fillingBindingSource1 = new BindingSource(components);
             workloadGratsLabel = new Label();
             updateWorkloadButton = new Guna.UI2.WinForms.Guna2Button();
-            scheduleGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
-            guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            createTemplateOfScheduleButton = new Guna.UI2.WinForms.Guna2Button();
-            fillScheduleExcelButton = new Guna.UI2.WinForms.Guna2Button();
             firstFillingGratsLabel = new Label();
             createFillingFromScheduleButton = new Guna.UI2.WinForms.Guna2Button();
             scheduleDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -206,19 +219,6 @@
             userIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             userDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             lessonBindingSource = new BindingSource(components);
-            addCommonInfoGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
-            addInfoGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
-            guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            deleteInfoLabel = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            deletePlaceButton = new Guna.UI2.WinForms.Guna2Button();
-            label8 = new Label();
-            deleteGroupComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deleteDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
-            deleteDisciplineComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
-            deleteGroupButton = new Guna.UI2.WinForms.Guna2Button();
-            deletePlaceOfLessonComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             addInfoLabel = new Label();
             addGroupsTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -227,6 +227,7 @@
             addGroupButton = new Guna.UI2.WinForms.Guna2Button();
             addDisciplineButton = new Guna.UI2.WinForms.Guna2Button();
             addPlaceOfLessonButton = new Guna.UI2.WinForms.Guna2Button();
+            workloadGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
             lessonGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
             deleteLessonPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             deleteLessonButton = new Guna.UI2.WinForms.Guna2Button();
@@ -257,7 +258,6 @@
             label14 = new Label();
             groupAddLessonComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             searchResultTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            workloadGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
             lessonsGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
             profileGroupBoxButton = new Guna.UI2.WinForms.Guna2Button();
             profileGroupBox = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -300,16 +300,16 @@
             diplomaBDContextBindingSource = new BindingSource(components);
             findScheduleErrorLabel = new Label();
             guna2GradientPanel1.SuspendLayout();
+            addInfoGroupBox.SuspendLayout();
+            guna2GradientPanel3.SuspendLayout();
+            scheduleGroupBox.SuspendLayout();
+            guna2GroupBox1.SuspendLayout();
             workloadGroupBox.SuspendLayout();
             guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)workloadDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fillingBindingSource1).BeginInit();
-            scheduleGroupBox.SuspendLayout();
-            guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scheduleDataGridView).BeginInit();
             ((System.ComponentModel.ISupportInitialize)lessonBindingSource).BeginInit();
-            addInfoGroupBox.SuspendLayout();
-            guna2GradientPanel3.SuspendLayout();
             guna2GradientPanel2.SuspendLayout();
             lessonGroupBox.SuspendLayout();
             deleteLessonPanel.SuspendLayout();
@@ -394,541 +394,6 @@
             scheduleGroupBoxButton.TabIndex = 52;
             scheduleGroupBoxButton.Text = "Расписание";
             scheduleGroupBoxButton.Click += scheduleGroupBoxButton_Click;
-            // 
-            // workloadGroupBox
-            // 
-            workloadGroupBox.BorderColor = Color.DarkSlateBlue;
-            workloadGroupBox.BorderRadius = 6;
-            workloadGroupBox.BorderThickness = 2;
-            workloadGroupBox.Controls.Add(guna2GroupBox2);
-            workloadGroupBox.Controls.Add(workloadDataGridView);
-            workloadGroupBox.Controls.Add(workloadGratsLabel);
-            workloadGroupBox.Controls.Add(updateWorkloadButton);
-            workloadGroupBox.CustomBorderColor = Color.MediumSlateBlue;
-            workloadGroupBox.CustomizableEdges = customizableEdges11;
-            workloadGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            workloadGroupBox.ForeColor = Color.Black;
-            workloadGroupBox.Location = new Point(249, 67);
-            workloadGroupBox.Name = "workloadGroupBox";
-            workloadGroupBox.ShadowDecoration.Color = Color.Navy;
-            workloadGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            workloadGroupBox.Size = new Size(939, 621);
-            workloadGroupBox.TabIndex = 53;
-            workloadGroupBox.Text = "Нагрузка";
-            workloadGroupBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // guna2GroupBox2
-            // 
-            guna2GroupBox2.BorderColor = Color.SeaGreen;
-            guna2GroupBox2.BorderRadius = 20;
-            guna2GroupBox2.BorderThickness = 2;
-            guna2GroupBox2.Controls.Add(fillWorkloadButton);
-            guna2GroupBox2.Controls.Add(createWorkloadTemplateButton);
-            guna2GroupBox2.CustomBorderColor = Color.DarkSeaGreen;
-            guna2GroupBox2.CustomizableEdges = customizableEdges7;
-            guna2GroupBox2.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2GroupBox2.ForeColor = Color.White;
-            guna2GroupBox2.Location = new Point(275, 474);
-            guna2GroupBox2.Name = "guna2GroupBox2";
-            guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2GroupBox2.Size = new Size(657, 138);
-            guna2GroupBox2.TabIndex = 61;
-            guna2GroupBox2.Text = "Вывод нагрузки в файл Excel";
-            guna2GroupBox2.TextAlign = HorizontalAlignment.Center;
-            // 
-            // fillWorkloadButton
-            // 
-            fillWorkloadButton.Animated = true;
-            fillWorkloadButton.BackColor = Color.Transparent;
-            fillWorkloadButton.BorderColor = Color.DarkSlateBlue;
-            fillWorkloadButton.BorderRadius = 20;
-            fillWorkloadButton.BorderThickness = 1;
-            fillWorkloadButton.CustomizableEdges = customizableEdges3;
-            fillWorkloadButton.DisabledState.BorderColor = Color.DarkGray;
-            fillWorkloadButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            fillWorkloadButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            fillWorkloadButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            fillWorkloadButton.FillColor = Color.White;
-            fillWorkloadButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            fillWorkloadButton.ForeColor = Color.Black;
-            fillWorkloadButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            fillWorkloadButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            fillWorkloadButton.HoverState.ForeColor = Color.GhostWhite;
-            fillWorkloadButton.ImageSize = new Size(30, 30);
-            fillWorkloadButton.Location = new Point(338, 47);
-            fillWorkloadButton.Name = "fillWorkloadButton";
-            fillWorkloadButton.ShadowDecoration.BorderRadius = 20;
-            fillWorkloadButton.ShadowDecoration.Color = Color.Navy;
-            fillWorkloadButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            fillWorkloadButton.ShadowDecoration.Enabled = true;
-            fillWorkloadButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            fillWorkloadButton.Size = new Size(310, 83);
-            fillWorkloadButton.TabIndex = 60;
-            fillWorkloadButton.Text = "Заполнить нагрузку";
-            fillWorkloadButton.Click += fillWorkloadButton_Click;
-            // 
-            // createWorkloadTemplateButton
-            // 
-            createWorkloadTemplateButton.Animated = true;
-            createWorkloadTemplateButton.BackColor = Color.Transparent;
-            createWorkloadTemplateButton.BorderColor = Color.DarkSlateBlue;
-            createWorkloadTemplateButton.BorderRadius = 20;
-            createWorkloadTemplateButton.BorderThickness = 1;
-            createWorkloadTemplateButton.CustomizableEdges = customizableEdges5;
-            createWorkloadTemplateButton.DisabledState.BorderColor = Color.DarkGray;
-            createWorkloadTemplateButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            createWorkloadTemplateButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            createWorkloadTemplateButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            createWorkloadTemplateButton.FillColor = Color.White;
-            createWorkloadTemplateButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            createWorkloadTemplateButton.ForeColor = Color.Black;
-            createWorkloadTemplateButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            createWorkloadTemplateButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            createWorkloadTemplateButton.HoverState.ForeColor = Color.GhostWhite;
-            createWorkloadTemplateButton.ImageSize = new Size(30, 30);
-            createWorkloadTemplateButton.Location = new Point(12, 47);
-            createWorkloadTemplateButton.Name = "createWorkloadTemplateButton";
-            createWorkloadTemplateButton.ShadowDecoration.BorderRadius = 20;
-            createWorkloadTemplateButton.ShadowDecoration.Color = Color.Navy;
-            createWorkloadTemplateButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            createWorkloadTemplateButton.ShadowDecoration.Enabled = true;
-            createWorkloadTemplateButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            createWorkloadTemplateButton.Size = new Size(310, 83);
-            createWorkloadTemplateButton.TabIndex = 59;
-            createWorkloadTemplateButton.Text = "Создать шаблон нагрузки";
-            createWorkloadTemplateButton.Click += createWorkloadTemplateButton_Click;
-            // 
-            // workloadDataGridView
-            // 
-            dataGridViewCellStyle1.BackColor = Color.White;
-            workloadDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            workloadDataGridView.AutoGenerateColumns = false;
-            workloadDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle2.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            workloadDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            workloadDataGridView.ColumnHeadersHeight = 40;
-            workloadDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            workloadDataGridView.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn1, dayDataGridViewTextBoxColumn1, monthDataGridViewTextBoxColumn, yearDataGridViewTextBoxColumn, hoursDataGridViewTextBoxColumn, disciplenesDataGridViewTextBoxColumn, typeOfLessonDataGridViewTextBoxColumn1 });
-            workloadDataGridView.DataSource = fillingBindingSource1;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            workloadDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            workloadDataGridView.GridColor = Color.FromArgb(231, 229, 255);
-            workloadDataGridView.Location = new Point(3, 40);
-            workloadDataGridView.Name = "workloadDataGridView";
-            workloadDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            workloadDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            workloadDataGridView.RowHeadersVisible = false;
-            workloadDataGridView.RowHeadersWidth = 51;
-            workloadDataGridView.RowTemplate.Height = 40;
-            workloadDataGridView.RowTemplate.ReadOnly = true;
-            workloadDataGridView.Size = new Size(929, 376);
-            workloadDataGridView.TabIndex = 57;
-            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            workloadDataGridView.ThemeStyle.BackColor = Color.White;
-            workloadDataGridView.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            workloadDataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            workloadDataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Sunken;
-            workloadDataGridView.ThemeStyle.HeaderStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            workloadDataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            workloadDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            workloadDataGridView.ThemeStyle.HeaderStyle.Height = 40;
-            workloadDataGridView.ThemeStyle.ReadOnly = false;
-            workloadDataGridView.ThemeStyle.RowsStyle.BackColor = Color.White;
-            workloadDataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            workloadDataGridView.ThemeStyle.RowsStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            workloadDataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
-            workloadDataGridView.ThemeStyle.RowsStyle.Height = 40;
-            workloadDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            workloadDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            idDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            idDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dayDataGridViewTextBoxColumn1
-            // 
-            dayDataGridViewTextBoxColumn1.DataPropertyName = "Day";
-            dayDataGridViewTextBoxColumn1.HeaderText = "День";
-            dayDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dayDataGridViewTextBoxColumn1.Name = "dayDataGridViewTextBoxColumn1";
-            // 
-            // monthDataGridViewTextBoxColumn
-            // 
-            monthDataGridViewTextBoxColumn.DataPropertyName = "Month";
-            monthDataGridViewTextBoxColumn.HeaderText = "Месяц";
-            monthDataGridViewTextBoxColumn.MinimumWidth = 6;
-            monthDataGridViewTextBoxColumn.Name = "monthDataGridViewTextBoxColumn";
-            // 
-            // yearDataGridViewTextBoxColumn
-            // 
-            yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
-            yearDataGridViewTextBoxColumn.HeaderText = "Год";
-            yearDataGridViewTextBoxColumn.MinimumWidth = 6;
-            yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
-            // 
-            // hoursDataGridViewTextBoxColumn
-            // 
-            hoursDataGridViewTextBoxColumn.DataPropertyName = "Hours";
-            hoursDataGridViewTextBoxColumn.HeaderText = "Часы";
-            hoursDataGridViewTextBoxColumn.MinimumWidth = 6;
-            hoursDataGridViewTextBoxColumn.Name = "hoursDataGridViewTextBoxColumn";
-            // 
-            // disciplenesDataGridViewTextBoxColumn
-            // 
-            disciplenesDataGridViewTextBoxColumn.DataPropertyName = "Disciplenes";
-            disciplenesDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
-            disciplenesDataGridViewTextBoxColumn.MinimumWidth = 6;
-            disciplenesDataGridViewTextBoxColumn.Name = "disciplenesDataGridViewTextBoxColumn";
-            // 
-            // typeOfLessonDataGridViewTextBoxColumn1
-            // 
-            typeOfLessonDataGridViewTextBoxColumn1.DataPropertyName = "TypeOfLesson";
-            typeOfLessonDataGridViewTextBoxColumn1.HeaderText = "Занятие";
-            typeOfLessonDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            typeOfLessonDataGridViewTextBoxColumn1.Name = "typeOfLessonDataGridViewTextBoxColumn1";
-            // 
-            // fillingBindingSource1
-            // 
-            fillingBindingSource1.DataSource = typeof(Model.Workload);
-            // 
-            // workloadGratsLabel
-            // 
-            workloadGratsLabel.AutoSize = true;
-            workloadGratsLabel.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            workloadGratsLabel.ForeColor = Color.Green;
-            workloadGratsLabel.Location = new Point(114, 426);
-            workloadGratsLabel.Name = "workloadGratsLabel";
-            workloadGratsLabel.Size = new Size(0, 40);
-            workloadGratsLabel.TabIndex = 56;
-            workloadGratsLabel.Visible = false;
-            // 
-            // updateWorkloadButton
-            // 
-            updateWorkloadButton.Animated = true;
-            updateWorkloadButton.BackColor = Color.Transparent;
-            updateWorkloadButton.BorderColor = Color.DarkSlateBlue;
-            updateWorkloadButton.BorderRadius = 20;
-            updateWorkloadButton.BorderThickness = 1;
-            updateWorkloadButton.CustomizableEdges = customizableEdges9;
-            updateWorkloadButton.DisabledState.BorderColor = Color.DarkGray;
-            updateWorkloadButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            updateWorkloadButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            updateWorkloadButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            updateWorkloadButton.FillColor = Color.White;
-            updateWorkloadButton.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            updateWorkloadButton.ForeColor = Color.Black;
-            updateWorkloadButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            updateWorkloadButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            updateWorkloadButton.HoverState.ForeColor = Color.GhostWhite;
-            updateWorkloadButton.ImageSize = new Size(30, 30);
-            updateWorkloadButton.Location = new Point(9, 474);
-            updateWorkloadButton.Name = "updateWorkloadButton";
-            updateWorkloadButton.ShadowDecoration.BorderRadius = 20;
-            updateWorkloadButton.ShadowDecoration.Color = Color.Navy;
-            updateWorkloadButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            updateWorkloadButton.ShadowDecoration.Enabled = true;
-            updateWorkloadButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            updateWorkloadButton.Size = new Size(260, 138);
-            updateWorkloadButton.TabIndex = 55;
-            updateWorkloadButton.Text = "Обновить лист нагрузки";
-            updateWorkloadButton.Click += updateWorkloadButton_Click;
-            // 
-            // scheduleGroupBox
-            // 
-            scheduleGroupBox.BorderColor = Color.DarkSlateBlue;
-            scheduleGroupBox.BorderRadius = 6;
-            scheduleGroupBox.BorderThickness = 2;
-            scheduleGroupBox.Controls.Add(guna2GroupBox1);
-            scheduleGroupBox.Controls.Add(firstFillingGratsLabel);
-            scheduleGroupBox.Controls.Add(createFillingFromScheduleButton);
-            scheduleGroupBox.Controls.Add(scheduleDataGridView);
-            scheduleGroupBox.CustomBorderColor = Color.MediumSlateBlue;
-            scheduleGroupBox.CustomizableEdges = customizableEdges21;
-            scheduleGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            scheduleGroupBox.ForeColor = Color.Black;
-            scheduleGroupBox.Location = new Point(249, 67);
-            scheduleGroupBox.Name = "scheduleGroupBox";
-            scheduleGroupBox.ShadowDecoration.Color = Color.Navy;
-            scheduleGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            scheduleGroupBox.Size = new Size(939, 621);
-            scheduleGroupBox.TabIndex = 51;
-            scheduleGroupBox.Text = "Расписание";
-            scheduleGroupBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // guna2GroupBox1
-            // 
-            guna2GroupBox1.BorderColor = Color.SeaGreen;
-            guna2GroupBox1.BorderRadius = 20;
-            guna2GroupBox1.BorderThickness = 2;
-            guna2GroupBox1.Controls.Add(createTemplateOfScheduleButton);
-            guna2GroupBox1.Controls.Add(fillScheduleExcelButton);
-            guna2GroupBox1.CustomBorderColor = Color.DarkSeaGreen;
-            guna2GroupBox1.CustomizableEdges = customizableEdges17;
-            guna2GroupBox1.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            guna2GroupBox1.ForeColor = Color.White;
-            guna2GroupBox1.Location = new Point(232, 471);
-            guna2GroupBox1.Name = "guna2GroupBox1";
-            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2GroupBox1.Size = new Size(697, 144);
-            guna2GroupBox1.TabIndex = 57;
-            guna2GroupBox1.Text = "Вывод данных в файл Excel";
-            guna2GroupBox1.TextAlign = HorizontalAlignment.Center;
-            // 
-            // createTemplateOfScheduleButton
-            // 
-            createTemplateOfScheduleButton.Animated = true;
-            createTemplateOfScheduleButton.BackColor = Color.Transparent;
-            createTemplateOfScheduleButton.BorderColor = Color.DarkSlateBlue;
-            createTemplateOfScheduleButton.BorderRadius = 20;
-            createTemplateOfScheduleButton.BorderThickness = 1;
-            createTemplateOfScheduleButton.CustomizableEdges = customizableEdges13;
-            createTemplateOfScheduleButton.DisabledState.BorderColor = Color.DarkGray;
-            createTemplateOfScheduleButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            createTemplateOfScheduleButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            createTemplateOfScheduleButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            createTemplateOfScheduleButton.FillColor = Color.White;
-            createTemplateOfScheduleButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            createTemplateOfScheduleButton.ForeColor = Color.Black;
-            createTemplateOfScheduleButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            createTemplateOfScheduleButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            createTemplateOfScheduleButton.HoverState.ForeColor = Color.GhostWhite;
-            createTemplateOfScheduleButton.ImageSize = new Size(30, 30);
-            createTemplateOfScheduleButton.Location = new Point(12, 43);
-            createTemplateOfScheduleButton.Name = "createTemplateOfScheduleButton";
-            createTemplateOfScheduleButton.ShadowDecoration.BorderRadius = 20;
-            createTemplateOfScheduleButton.ShadowDecoration.Color = Color.Navy;
-            createTemplateOfScheduleButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            createTemplateOfScheduleButton.ShadowDecoration.Enabled = true;
-            createTemplateOfScheduleButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            createTemplateOfScheduleButton.Size = new Size(320, 90);
-            createTemplateOfScheduleButton.TabIndex = 55;
-            createTemplateOfScheduleButton.Text = "Создать шаблон расписания";
-            createTemplateOfScheduleButton.Click += createTemplateOfScheduleButton_Click;
-            // 
-            // fillScheduleExcelButton
-            // 
-            fillScheduleExcelButton.Animated = true;
-            fillScheduleExcelButton.BackColor = Color.Transparent;
-            fillScheduleExcelButton.BorderColor = Color.DarkSlateBlue;
-            fillScheduleExcelButton.BorderRadius = 20;
-            fillScheduleExcelButton.BorderThickness = 1;
-            fillScheduleExcelButton.CustomizableEdges = customizableEdges15;
-            fillScheduleExcelButton.DisabledState.BorderColor = Color.DarkGray;
-            fillScheduleExcelButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            fillScheduleExcelButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            fillScheduleExcelButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            fillScheduleExcelButton.FillColor = Color.White;
-            fillScheduleExcelButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            fillScheduleExcelButton.ForeColor = Color.Black;
-            fillScheduleExcelButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            fillScheduleExcelButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            fillScheduleExcelButton.HoverState.ForeColor = Color.GhostWhite;
-            fillScheduleExcelButton.ImageSize = new Size(30, 30);
-            fillScheduleExcelButton.Location = new Point(367, 43);
-            fillScheduleExcelButton.Name = "fillScheduleExcelButton";
-            fillScheduleExcelButton.ShadowDecoration.BorderRadius = 20;
-            fillScheduleExcelButton.ShadowDecoration.Color = Color.Navy;
-            fillScheduleExcelButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            fillScheduleExcelButton.ShadowDecoration.Enabled = true;
-            fillScheduleExcelButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            fillScheduleExcelButton.Size = new Size(320, 90);
-            fillScheduleExcelButton.TabIndex = 56;
-            fillScheduleExcelButton.Text = "Заполнить расписание";
-            fillScheduleExcelButton.Click += fillScheduleExcelButton_Click;
-            // 
-            // firstFillingGratsLabel
-            // 
-            firstFillingGratsLabel.AutoSize = true;
-            firstFillingGratsLabel.Font = new Font("Consolas", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            firstFillingGratsLabel.ForeColor = Color.Green;
-            firstFillingGratsLabel.Location = new Point(184, 431);
-            firstFillingGratsLabel.Name = "firstFillingGratsLabel";
-            firstFillingGratsLabel.Size = new Size(0, 34);
-            firstFillingGratsLabel.TabIndex = 54;
-            firstFillingGratsLabel.Visible = false;
-            // 
-            // createFillingFromScheduleButton
-            // 
-            createFillingFromScheduleButton.Animated = true;
-            createFillingFromScheduleButton.BackColor = Color.Transparent;
-            createFillingFromScheduleButton.BorderColor = Color.DarkSlateBlue;
-            createFillingFromScheduleButton.BorderRadius = 20;
-            createFillingFromScheduleButton.BorderThickness = 1;
-            createFillingFromScheduleButton.CustomizableEdges = customizableEdges19;
-            createFillingFromScheduleButton.DisabledState.BorderColor = Color.DarkGray;
-            createFillingFromScheduleButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            createFillingFromScheduleButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            createFillingFromScheduleButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            createFillingFromScheduleButton.FillColor = Color.White;
-            createFillingFromScheduleButton.Font = new Font("Consolas", 17F, FontStyle.Regular, GraphicsUnit.Point);
-            createFillingFromScheduleButton.ForeColor = Color.Black;
-            createFillingFromScheduleButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            createFillingFromScheduleButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            createFillingFromScheduleButton.HoverState.ForeColor = Color.GhostWhite;
-            createFillingFromScheduleButton.ImageSize = new Size(30, 30);
-            createFillingFromScheduleButton.Location = new Point(8, 471);
-            createFillingFromScheduleButton.Name = "createFillingFromScheduleButton";
-            createFillingFromScheduleButton.ShadowDecoration.BorderRadius = 20;
-            createFillingFromScheduleButton.ShadowDecoration.Color = Color.Navy;
-            createFillingFromScheduleButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            createFillingFromScheduleButton.ShadowDecoration.Enabled = true;
-            createFillingFromScheduleButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            createFillingFromScheduleButton.Size = new Size(218, 144);
-            createFillingFromScheduleButton.TabIndex = 53;
-            createFillingFromScheduleButton.Text = "Перенести на лист нагрузки";
-            createFillingFromScheduleButton.Click += createFillingFromScheduleButton_Click;
-            // 
-            // scheduleDataGridView
-            // 
-            dataGridViewCellStyle5.BackColor = Color.White;
-            scheduleDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            scheduleDataGridView.AutoGenerateColumns = false;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle6.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            scheduleDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            scheduleDataGridView.ColumnHeadersHeight = 48;
-            scheduleDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            scheduleDataGridView.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, dayDataGridViewTextBoxColumn, timeOfLessonDataGridViewTextBoxColumn, placeOfLessonDataGridViewTextBoxColumn, groupDataGridViewTextBoxColumn, typeOfLessonDataGridViewTextBoxColumn, disciplineDataGridViewTextBoxColumn, userIdDataGridViewTextBoxColumn, userDataGridViewTextBoxColumn });
-            scheduleDataGridView.DataSource = lessonBindingSource;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = Color.White;
-            dataGridViewCellStyle7.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
-            scheduleDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
-            scheduleDataGridView.GridColor = Color.FromArgb(231, 229, 255);
-            scheduleDataGridView.Location = new Point(8, 46);
-            scheduleDataGridView.Name = "scheduleDataGridView";
-            scheduleDataGridView.RowHeadersVisible = false;
-            scheduleDataGridView.RowHeadersWidth = 51;
-            scheduleDataGridView.RowTemplate.Height = 29;
-            scheduleDataGridView.Size = new Size(915, 377);
-            scheduleDataGridView.TabIndex = 0;
-            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
-            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
-            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
-            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
-            scheduleDataGridView.ThemeStyle.BackColor = Color.White;
-            scheduleDataGridView.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
-            scheduleDataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
-            scheduleDataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
-            scheduleDataGridView.ThemeStyle.HeaderStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            scheduleDataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
-            scheduleDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            scheduleDataGridView.ThemeStyle.HeaderStyle.Height = 48;
-            scheduleDataGridView.ThemeStyle.ReadOnly = false;
-            scheduleDataGridView.ThemeStyle.RowsStyle.BackColor = Color.White;
-            scheduleDataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            scheduleDataGridView.ThemeStyle.RowsStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            scheduleDataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
-            scheduleDataGridView.ThemeStyle.RowsStyle.Height = 29;
-            scheduleDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            scheduleDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // dayDataGridViewTextBoxColumn
-            // 
-            dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
-            dayDataGridViewTextBoxColumn.HeaderText = "День";
-            dayDataGridViewTextBoxColumn.MinimumWidth = 6;
-            dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
-            // 
-            // timeOfLessonDataGridViewTextBoxColumn
-            // 
-            timeOfLessonDataGridViewTextBoxColumn.DataPropertyName = "TimeOfLesson";
-            timeOfLessonDataGridViewTextBoxColumn.HeaderText = "Время";
-            timeOfLessonDataGridViewTextBoxColumn.MinimumWidth = 6;
-            timeOfLessonDataGridViewTextBoxColumn.Name = "timeOfLessonDataGridViewTextBoxColumn";
-            // 
-            // placeOfLessonDataGridViewTextBoxColumn
-            // 
-            placeOfLessonDataGridViewTextBoxColumn.DataPropertyName = "PlaceOfLesson";
-            placeOfLessonDataGridViewTextBoxColumn.HeaderText = "Аудитория";
-            placeOfLessonDataGridViewTextBoxColumn.MinimumWidth = 6;
-            placeOfLessonDataGridViewTextBoxColumn.Name = "placeOfLessonDataGridViewTextBoxColumn";
-            // 
-            // groupDataGridViewTextBoxColumn
-            // 
-            groupDataGridViewTextBoxColumn.DataPropertyName = "Group";
-            groupDataGridViewTextBoxColumn.HeaderText = "Группа";
-            groupDataGridViewTextBoxColumn.MinimumWidth = 6;
-            groupDataGridViewTextBoxColumn.Name = "groupDataGridViewTextBoxColumn";
-            // 
-            // typeOfLessonDataGridViewTextBoxColumn
-            // 
-            typeOfLessonDataGridViewTextBoxColumn.DataPropertyName = "TypeOfLesson";
-            typeOfLessonDataGridViewTextBoxColumn.HeaderText = "Занятие";
-            typeOfLessonDataGridViewTextBoxColumn.MinimumWidth = 6;
-            typeOfLessonDataGridViewTextBoxColumn.Name = "typeOfLessonDataGridViewTextBoxColumn";
-            // 
-            // disciplineDataGridViewTextBoxColumn
-            // 
-            disciplineDataGridViewTextBoxColumn.DataPropertyName = "Discipline";
-            disciplineDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
-            disciplineDataGridViewTextBoxColumn.MinimumWidth = 6;
-            disciplineDataGridViewTextBoxColumn.Name = "disciplineDataGridViewTextBoxColumn";
-            // 
-            // userIdDataGridViewTextBoxColumn
-            // 
-            userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
-            userIdDataGridViewTextBoxColumn.HeaderText = "UserId";
-            userIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
-            userIdDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // userDataGridViewTextBoxColumn
-            // 
-            userDataGridViewTextBoxColumn.DataPropertyName = "User";
-            userDataGridViewTextBoxColumn.HeaderText = "User";
-            userDataGridViewTextBoxColumn.MinimumWidth = 6;
-            userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
-            userDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // lessonBindingSource
-            // 
-            lessonBindingSource.DataSource = typeof(Model.Lesson);
             // 
             // addCommonInfoGroupBoxButton
             // 
@@ -1201,6 +666,541 @@
             deletePlaceOfLessonComboBox.Size = new Size(473, 56);
             deletePlaceOfLessonComboBox.TabIndex = 45;
             // 
+            // scheduleGroupBox
+            // 
+            scheduleGroupBox.BorderColor = Color.DarkSlateBlue;
+            scheduleGroupBox.BorderRadius = 6;
+            scheduleGroupBox.BorderThickness = 2;
+            scheduleGroupBox.Controls.Add(guna2GroupBox1);
+            scheduleGroupBox.Controls.Add(firstFillingGratsLabel);
+            scheduleGroupBox.Controls.Add(createFillingFromScheduleButton);
+            scheduleGroupBox.Controls.Add(scheduleDataGridView);
+            scheduleGroupBox.CustomBorderColor = Color.MediumSlateBlue;
+            scheduleGroupBox.CustomizableEdges = customizableEdges21;
+            scheduleGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            scheduleGroupBox.ForeColor = Color.Black;
+            scheduleGroupBox.Location = new Point(249, 67);
+            scheduleGroupBox.Name = "scheduleGroupBox";
+            scheduleGroupBox.ShadowDecoration.Color = Color.Navy;
+            scheduleGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            scheduleGroupBox.Size = new Size(939, 621);
+            scheduleGroupBox.TabIndex = 51;
+            scheduleGroupBox.Text = "Расписание";
+            scheduleGroupBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // guna2GroupBox1
+            // 
+            guna2GroupBox1.BorderColor = Color.SeaGreen;
+            guna2GroupBox1.BorderRadius = 20;
+            guna2GroupBox1.BorderThickness = 2;
+            guna2GroupBox1.Controls.Add(createTemplateOfScheduleButton);
+            guna2GroupBox1.Controls.Add(fillScheduleExcelButton);
+            guna2GroupBox1.CustomBorderColor = Color.DarkSeaGreen;
+            guna2GroupBox1.CustomizableEdges = customizableEdges17;
+            guna2GroupBox1.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2GroupBox1.ForeColor = Color.White;
+            guna2GroupBox1.Location = new Point(232, 471);
+            guna2GroupBox1.Name = "guna2GroupBox1";
+            guna2GroupBox1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            guna2GroupBox1.Size = new Size(697, 144);
+            guna2GroupBox1.TabIndex = 57;
+            guna2GroupBox1.Text = "Вывод данных в файл Excel";
+            guna2GroupBox1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // createTemplateOfScheduleButton
+            // 
+            createTemplateOfScheduleButton.Animated = true;
+            createTemplateOfScheduleButton.BackColor = Color.Transparent;
+            createTemplateOfScheduleButton.BorderColor = Color.DarkSlateBlue;
+            createTemplateOfScheduleButton.BorderRadius = 20;
+            createTemplateOfScheduleButton.BorderThickness = 1;
+            createTemplateOfScheduleButton.CustomizableEdges = customizableEdges13;
+            createTemplateOfScheduleButton.DisabledState.BorderColor = Color.DarkGray;
+            createTemplateOfScheduleButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            createTemplateOfScheduleButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            createTemplateOfScheduleButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            createTemplateOfScheduleButton.FillColor = Color.White;
+            createTemplateOfScheduleButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            createTemplateOfScheduleButton.ForeColor = Color.Black;
+            createTemplateOfScheduleButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            createTemplateOfScheduleButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            createTemplateOfScheduleButton.HoverState.ForeColor = Color.GhostWhite;
+            createTemplateOfScheduleButton.ImageSize = new Size(30, 30);
+            createTemplateOfScheduleButton.Location = new Point(12, 43);
+            createTemplateOfScheduleButton.Name = "createTemplateOfScheduleButton";
+            createTemplateOfScheduleButton.ShadowDecoration.BorderRadius = 20;
+            createTemplateOfScheduleButton.ShadowDecoration.Color = Color.Navy;
+            createTemplateOfScheduleButton.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            createTemplateOfScheduleButton.ShadowDecoration.Enabled = true;
+            createTemplateOfScheduleButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            createTemplateOfScheduleButton.Size = new Size(320, 90);
+            createTemplateOfScheduleButton.TabIndex = 55;
+            createTemplateOfScheduleButton.Text = "Создать шаблон расписания";
+            createTemplateOfScheduleButton.Click += createTemplateOfScheduleButton_Click;
+            // 
+            // fillScheduleExcelButton
+            // 
+            fillScheduleExcelButton.Animated = true;
+            fillScheduleExcelButton.BackColor = Color.Transparent;
+            fillScheduleExcelButton.BorderColor = Color.DarkSlateBlue;
+            fillScheduleExcelButton.BorderRadius = 20;
+            fillScheduleExcelButton.BorderThickness = 1;
+            fillScheduleExcelButton.CustomizableEdges = customizableEdges15;
+            fillScheduleExcelButton.DisabledState.BorderColor = Color.DarkGray;
+            fillScheduleExcelButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            fillScheduleExcelButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            fillScheduleExcelButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            fillScheduleExcelButton.FillColor = Color.White;
+            fillScheduleExcelButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            fillScheduleExcelButton.ForeColor = Color.Black;
+            fillScheduleExcelButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            fillScheduleExcelButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            fillScheduleExcelButton.HoverState.ForeColor = Color.GhostWhite;
+            fillScheduleExcelButton.ImageSize = new Size(30, 30);
+            fillScheduleExcelButton.Location = new Point(367, 43);
+            fillScheduleExcelButton.Name = "fillScheduleExcelButton";
+            fillScheduleExcelButton.ShadowDecoration.BorderRadius = 20;
+            fillScheduleExcelButton.ShadowDecoration.Color = Color.Navy;
+            fillScheduleExcelButton.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            fillScheduleExcelButton.ShadowDecoration.Enabled = true;
+            fillScheduleExcelButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            fillScheduleExcelButton.Size = new Size(320, 90);
+            fillScheduleExcelButton.TabIndex = 56;
+            fillScheduleExcelButton.Text = "Заполнить расписание";
+            fillScheduleExcelButton.Click += fillScheduleExcelButton_Click;
+            // 
+            // workloadGroupBox
+            // 
+            workloadGroupBox.BorderColor = Color.DarkSlateBlue;
+            workloadGroupBox.BorderRadius = 6;
+            workloadGroupBox.BorderThickness = 2;
+            workloadGroupBox.Controls.Add(guna2GroupBox2);
+            workloadGroupBox.Controls.Add(workloadDataGridView);
+            workloadGroupBox.Controls.Add(workloadGratsLabel);
+            workloadGroupBox.Controls.Add(updateWorkloadButton);
+            workloadGroupBox.CustomBorderColor = Color.MediumSlateBlue;
+            workloadGroupBox.CustomizableEdges = customizableEdges11;
+            workloadGroupBox.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            workloadGroupBox.ForeColor = Color.Black;
+            workloadGroupBox.Location = new Point(249, 67);
+            workloadGroupBox.Name = "workloadGroupBox";
+            workloadGroupBox.ShadowDecoration.Color = Color.Navy;
+            workloadGroupBox.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            workloadGroupBox.Size = new Size(939, 621);
+            workloadGroupBox.TabIndex = 53;
+            workloadGroupBox.Text = "Нагрузка";
+            workloadGroupBox.TextAlign = HorizontalAlignment.Center;
+            // 
+            // guna2GroupBox2
+            // 
+            guna2GroupBox2.BorderColor = Color.SeaGreen;
+            guna2GroupBox2.BorderRadius = 20;
+            guna2GroupBox2.BorderThickness = 2;
+            guna2GroupBox2.Controls.Add(fillWorkloadButton);
+            guna2GroupBox2.Controls.Add(createWorkloadTemplateButton);
+            guna2GroupBox2.CustomBorderColor = Color.DarkSeaGreen;
+            guna2GroupBox2.CustomizableEdges = customizableEdges7;
+            guna2GroupBox2.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2GroupBox2.ForeColor = Color.White;
+            guna2GroupBox2.Location = new Point(275, 474);
+            guna2GroupBox2.Name = "guna2GroupBox2";
+            guna2GroupBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            guna2GroupBox2.Size = new Size(657, 138);
+            guna2GroupBox2.TabIndex = 61;
+            guna2GroupBox2.Text = "Вывод нагрузки в файл Excel";
+            guna2GroupBox2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // fillWorkloadButton
+            // 
+            fillWorkloadButton.Animated = true;
+            fillWorkloadButton.BackColor = Color.Transparent;
+            fillWorkloadButton.BorderColor = Color.DarkSlateBlue;
+            fillWorkloadButton.BorderRadius = 20;
+            fillWorkloadButton.BorderThickness = 1;
+            fillWorkloadButton.CustomizableEdges = customizableEdges3;
+            fillWorkloadButton.DisabledState.BorderColor = Color.DarkGray;
+            fillWorkloadButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            fillWorkloadButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            fillWorkloadButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            fillWorkloadButton.FillColor = Color.White;
+            fillWorkloadButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            fillWorkloadButton.ForeColor = Color.Black;
+            fillWorkloadButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            fillWorkloadButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            fillWorkloadButton.HoverState.ForeColor = Color.GhostWhite;
+            fillWorkloadButton.ImageSize = new Size(30, 30);
+            fillWorkloadButton.Location = new Point(338, 47);
+            fillWorkloadButton.Name = "fillWorkloadButton";
+            fillWorkloadButton.ShadowDecoration.BorderRadius = 20;
+            fillWorkloadButton.ShadowDecoration.Color = Color.Navy;
+            fillWorkloadButton.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            fillWorkloadButton.ShadowDecoration.Enabled = true;
+            fillWorkloadButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            fillWorkloadButton.Size = new Size(310, 83);
+            fillWorkloadButton.TabIndex = 60;
+            fillWorkloadButton.Text = "Заполнить нагрузку";
+            fillWorkloadButton.Click += fillWorkloadButton_Click;
+            // 
+            // createWorkloadTemplateButton
+            // 
+            createWorkloadTemplateButton.Animated = true;
+            createWorkloadTemplateButton.BackColor = Color.Transparent;
+            createWorkloadTemplateButton.BorderColor = Color.DarkSlateBlue;
+            createWorkloadTemplateButton.BorderRadius = 20;
+            createWorkloadTemplateButton.BorderThickness = 1;
+            createWorkloadTemplateButton.CustomizableEdges = customizableEdges5;
+            createWorkloadTemplateButton.DisabledState.BorderColor = Color.DarkGray;
+            createWorkloadTemplateButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            createWorkloadTemplateButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            createWorkloadTemplateButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            createWorkloadTemplateButton.FillColor = Color.White;
+            createWorkloadTemplateButton.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            createWorkloadTemplateButton.ForeColor = Color.Black;
+            createWorkloadTemplateButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            createWorkloadTemplateButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            createWorkloadTemplateButton.HoverState.ForeColor = Color.GhostWhite;
+            createWorkloadTemplateButton.ImageSize = new Size(30, 30);
+            createWorkloadTemplateButton.Location = new Point(12, 47);
+            createWorkloadTemplateButton.Name = "createWorkloadTemplateButton";
+            createWorkloadTemplateButton.ShadowDecoration.BorderRadius = 20;
+            createWorkloadTemplateButton.ShadowDecoration.Color = Color.Navy;
+            createWorkloadTemplateButton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            createWorkloadTemplateButton.ShadowDecoration.Enabled = true;
+            createWorkloadTemplateButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            createWorkloadTemplateButton.Size = new Size(310, 83);
+            createWorkloadTemplateButton.TabIndex = 59;
+            createWorkloadTemplateButton.Text = "Создать шаблон нагрузки";
+            createWorkloadTemplateButton.Click += createWorkloadTemplateButton_Click;
+            // 
+            // workloadDataGridView
+            // 
+            dataGridViewCellStyle1.BackColor = Color.White;
+            workloadDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            workloadDataGridView.AutoGenerateColumns = false;
+            workloadDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            workloadDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            workloadDataGridView.ColumnHeadersHeight = 40;
+            workloadDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            workloadDataGridView.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn1, dayDataGridViewTextBoxColumn1, monthDataGridViewTextBoxColumn, yearDataGridViewTextBoxColumn, hoursDataGridViewTextBoxColumn, disciplenesDataGridViewTextBoxColumn, typeOfLessonDataGridViewTextBoxColumn1 });
+            workloadDataGridView.DataSource = fillingBindingSource1;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            workloadDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            workloadDataGridView.GridColor = Color.FromArgb(231, 229, 255);
+            workloadDataGridView.Location = new Point(3, 40);
+            workloadDataGridView.Name = "workloadDataGridView";
+            workloadDataGridView.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            workloadDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            workloadDataGridView.RowHeadersVisible = false;
+            workloadDataGridView.RowHeadersWidth = 51;
+            workloadDataGridView.RowTemplate.Height = 40;
+            workloadDataGridView.RowTemplate.ReadOnly = true;
+            workloadDataGridView.Size = new Size(929, 376);
+            workloadDataGridView.TabIndex = 57;
+            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            workloadDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            workloadDataGridView.ThemeStyle.BackColor = Color.White;
+            workloadDataGridView.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            workloadDataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            workloadDataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.Sunken;
+            workloadDataGridView.ThemeStyle.HeaderStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            workloadDataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            workloadDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            workloadDataGridView.ThemeStyle.HeaderStyle.Height = 40;
+            workloadDataGridView.ThemeStyle.ReadOnly = false;
+            workloadDataGridView.ThemeStyle.RowsStyle.BackColor = Color.White;
+            workloadDataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            workloadDataGridView.ThemeStyle.RowsStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            workloadDataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
+            workloadDataGridView.ThemeStyle.RowsStyle.Height = 40;
+            workloadDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            workloadDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            idDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            idDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dayDataGridViewTextBoxColumn1
+            // 
+            dayDataGridViewTextBoxColumn1.DataPropertyName = "Day";
+            dayDataGridViewTextBoxColumn1.HeaderText = "День";
+            dayDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dayDataGridViewTextBoxColumn1.Name = "dayDataGridViewTextBoxColumn1";
+            // 
+            // monthDataGridViewTextBoxColumn
+            // 
+            monthDataGridViewTextBoxColumn.DataPropertyName = "Month";
+            monthDataGridViewTextBoxColumn.HeaderText = "Месяц";
+            monthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            monthDataGridViewTextBoxColumn.Name = "monthDataGridViewTextBoxColumn";
+            // 
+            // yearDataGridViewTextBoxColumn
+            // 
+            yearDataGridViewTextBoxColumn.DataPropertyName = "Year";
+            yearDataGridViewTextBoxColumn.HeaderText = "Год";
+            yearDataGridViewTextBoxColumn.MinimumWidth = 6;
+            yearDataGridViewTextBoxColumn.Name = "yearDataGridViewTextBoxColumn";
+            // 
+            // hoursDataGridViewTextBoxColumn
+            // 
+            hoursDataGridViewTextBoxColumn.DataPropertyName = "Hours";
+            hoursDataGridViewTextBoxColumn.HeaderText = "Часы";
+            hoursDataGridViewTextBoxColumn.MinimumWidth = 6;
+            hoursDataGridViewTextBoxColumn.Name = "hoursDataGridViewTextBoxColumn";
+            // 
+            // disciplenesDataGridViewTextBoxColumn
+            // 
+            disciplenesDataGridViewTextBoxColumn.DataPropertyName = "Disciplenes";
+            disciplenesDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
+            disciplenesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            disciplenesDataGridViewTextBoxColumn.Name = "disciplenesDataGridViewTextBoxColumn";
+            // 
+            // typeOfLessonDataGridViewTextBoxColumn1
+            // 
+            typeOfLessonDataGridViewTextBoxColumn1.DataPropertyName = "TypeOfLesson";
+            typeOfLessonDataGridViewTextBoxColumn1.HeaderText = "Занятие";
+            typeOfLessonDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            typeOfLessonDataGridViewTextBoxColumn1.Name = "typeOfLessonDataGridViewTextBoxColumn1";
+            // 
+            // fillingBindingSource1
+            // 
+            fillingBindingSource1.DataSource = typeof(Model.Workload);
+            // 
+            // workloadGratsLabel
+            // 
+            workloadGratsLabel.AutoSize = true;
+            workloadGratsLabel.Font = new Font("Consolas", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            workloadGratsLabel.ForeColor = Color.Green;
+            workloadGratsLabel.Location = new Point(114, 426);
+            workloadGratsLabel.Name = "workloadGratsLabel";
+            workloadGratsLabel.Size = new Size(0, 40);
+            workloadGratsLabel.TabIndex = 56;
+            workloadGratsLabel.Visible = false;
+            // 
+            // updateWorkloadButton
+            // 
+            updateWorkloadButton.Animated = true;
+            updateWorkloadButton.BackColor = Color.Transparent;
+            updateWorkloadButton.BorderColor = Color.DarkSlateBlue;
+            updateWorkloadButton.BorderRadius = 20;
+            updateWorkloadButton.BorderThickness = 1;
+            updateWorkloadButton.CustomizableEdges = customizableEdges9;
+            updateWorkloadButton.DisabledState.BorderColor = Color.DarkGray;
+            updateWorkloadButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            updateWorkloadButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            updateWorkloadButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            updateWorkloadButton.FillColor = Color.White;
+            updateWorkloadButton.Font = new Font("Consolas", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            updateWorkloadButton.ForeColor = Color.Black;
+            updateWorkloadButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            updateWorkloadButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            updateWorkloadButton.HoverState.ForeColor = Color.GhostWhite;
+            updateWorkloadButton.ImageSize = new Size(30, 30);
+            updateWorkloadButton.Location = new Point(9, 474);
+            updateWorkloadButton.Name = "updateWorkloadButton";
+            updateWorkloadButton.ShadowDecoration.BorderRadius = 20;
+            updateWorkloadButton.ShadowDecoration.Color = Color.Navy;
+            updateWorkloadButton.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            updateWorkloadButton.ShadowDecoration.Enabled = true;
+            updateWorkloadButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            updateWorkloadButton.Size = new Size(260, 138);
+            updateWorkloadButton.TabIndex = 55;
+            updateWorkloadButton.Text = "Обновить лист нагрузки";
+            updateWorkloadButton.Click += updateWorkloadButton_Click;
+            // 
+            // firstFillingGratsLabel
+            // 
+            firstFillingGratsLabel.AutoSize = true;
+            firstFillingGratsLabel.Font = new Font("Consolas", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            firstFillingGratsLabel.ForeColor = Color.Green;
+            firstFillingGratsLabel.Location = new Point(184, 431);
+            firstFillingGratsLabel.Name = "firstFillingGratsLabel";
+            firstFillingGratsLabel.Size = new Size(0, 34);
+            firstFillingGratsLabel.TabIndex = 54;
+            firstFillingGratsLabel.Visible = false;
+            // 
+            // createFillingFromScheduleButton
+            // 
+            createFillingFromScheduleButton.Animated = true;
+            createFillingFromScheduleButton.BackColor = Color.Transparent;
+            createFillingFromScheduleButton.BorderColor = Color.DarkSlateBlue;
+            createFillingFromScheduleButton.BorderRadius = 20;
+            createFillingFromScheduleButton.BorderThickness = 1;
+            createFillingFromScheduleButton.CustomizableEdges = customizableEdges19;
+            createFillingFromScheduleButton.DisabledState.BorderColor = Color.DarkGray;
+            createFillingFromScheduleButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            createFillingFromScheduleButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            createFillingFromScheduleButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            createFillingFromScheduleButton.FillColor = Color.White;
+            createFillingFromScheduleButton.Font = new Font("Consolas", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            createFillingFromScheduleButton.ForeColor = Color.Black;
+            createFillingFromScheduleButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            createFillingFromScheduleButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            createFillingFromScheduleButton.HoverState.ForeColor = Color.GhostWhite;
+            createFillingFromScheduleButton.ImageSize = new Size(30, 30);
+            createFillingFromScheduleButton.Location = new Point(8, 471);
+            createFillingFromScheduleButton.Name = "createFillingFromScheduleButton";
+            createFillingFromScheduleButton.ShadowDecoration.BorderRadius = 20;
+            createFillingFromScheduleButton.ShadowDecoration.Color = Color.Navy;
+            createFillingFromScheduleButton.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            createFillingFromScheduleButton.ShadowDecoration.Enabled = true;
+            createFillingFromScheduleButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            createFillingFromScheduleButton.Size = new Size(218, 144);
+            createFillingFromScheduleButton.TabIndex = 53;
+            createFillingFromScheduleButton.Text = "Перенести на лист нагрузки";
+            createFillingFromScheduleButton.Click += createFillingFromScheduleButton_Click;
+            // 
+            // scheduleDataGridView
+            // 
+            dataGridViewCellStyle5.BackColor = Color.White;
+            scheduleDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            scheduleDataGridView.AutoGenerateColumns = false;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle6.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            scheduleDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            scheduleDataGridView.ColumnHeadersHeight = 48;
+            scheduleDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            scheduleDataGridView.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, dayDataGridViewTextBoxColumn, timeOfLessonDataGridViewTextBoxColumn, placeOfLessonDataGridViewTextBoxColumn, groupDataGridViewTextBoxColumn, typeOfLessonDataGridViewTextBoxColumn, disciplineDataGridViewTextBoxColumn, userIdDataGridViewTextBoxColumn, userDataGridViewTextBoxColumn });
+            scheduleDataGridView.DataSource = lessonBindingSource;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = Color.White;
+            dataGridViewCellStyle7.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.False;
+            scheduleDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
+            scheduleDataGridView.GridColor = Color.FromArgb(231, 229, 255);
+            scheduleDataGridView.Location = new Point(8, 46);
+            scheduleDataGridView.Name = "scheduleDataGridView";
+            scheduleDataGridView.RowHeadersVisible = false;
+            scheduleDataGridView.RowHeadersWidth = 51;
+            scheduleDataGridView.RowTemplate.Height = 29;
+            scheduleDataGridView.Size = new Size(915, 377);
+            scheduleDataGridView.TabIndex = 0;
+            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
+            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = Color.Empty;
+            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = Color.Empty;
+            scheduleDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = Color.Empty;
+            scheduleDataGridView.ThemeStyle.BackColor = Color.White;
+            scheduleDataGridView.ThemeStyle.GridColor = Color.FromArgb(231, 229, 255);
+            scheduleDataGridView.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(100, 88, 255);
+            scheduleDataGridView.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None;
+            scheduleDataGridView.ThemeStyle.HeaderStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            scheduleDataGridView.ThemeStyle.HeaderStyle.ForeColor = Color.White;
+            scheduleDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            scheduleDataGridView.ThemeStyle.HeaderStyle.Height = 48;
+            scheduleDataGridView.ThemeStyle.ReadOnly = false;
+            scheduleDataGridView.ThemeStyle.RowsStyle.BackColor = Color.White;
+            scheduleDataGridView.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            scheduleDataGridView.ThemeStyle.RowsStyle.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            scheduleDataGridView.ThemeStyle.RowsStyle.ForeColor = Color.Black;
+            scheduleDataGridView.ThemeStyle.RowsStyle.Height = 29;
+            scheduleDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            scheduleDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            idDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dayDataGridViewTextBoxColumn
+            // 
+            dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
+            dayDataGridViewTextBoxColumn.HeaderText = "День";
+            dayDataGridViewTextBoxColumn.MinimumWidth = 6;
+            dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
+            // 
+            // timeOfLessonDataGridViewTextBoxColumn
+            // 
+            timeOfLessonDataGridViewTextBoxColumn.DataPropertyName = "TimeOfLesson";
+            timeOfLessonDataGridViewTextBoxColumn.HeaderText = "Время";
+            timeOfLessonDataGridViewTextBoxColumn.MinimumWidth = 6;
+            timeOfLessonDataGridViewTextBoxColumn.Name = "timeOfLessonDataGridViewTextBoxColumn";
+            // 
+            // placeOfLessonDataGridViewTextBoxColumn
+            // 
+            placeOfLessonDataGridViewTextBoxColumn.DataPropertyName = "PlaceOfLesson";
+            placeOfLessonDataGridViewTextBoxColumn.HeaderText = "Аудитория";
+            placeOfLessonDataGridViewTextBoxColumn.MinimumWidth = 6;
+            placeOfLessonDataGridViewTextBoxColumn.Name = "placeOfLessonDataGridViewTextBoxColumn";
+            // 
+            // groupDataGridViewTextBoxColumn
+            // 
+            groupDataGridViewTextBoxColumn.DataPropertyName = "Group";
+            groupDataGridViewTextBoxColumn.HeaderText = "Группа";
+            groupDataGridViewTextBoxColumn.MinimumWidth = 6;
+            groupDataGridViewTextBoxColumn.Name = "groupDataGridViewTextBoxColumn";
+            // 
+            // typeOfLessonDataGridViewTextBoxColumn
+            // 
+            typeOfLessonDataGridViewTextBoxColumn.DataPropertyName = "TypeOfLesson";
+            typeOfLessonDataGridViewTextBoxColumn.HeaderText = "Занятие";
+            typeOfLessonDataGridViewTextBoxColumn.MinimumWidth = 6;
+            typeOfLessonDataGridViewTextBoxColumn.Name = "typeOfLessonDataGridViewTextBoxColumn";
+            // 
+            // disciplineDataGridViewTextBoxColumn
+            // 
+            disciplineDataGridViewTextBoxColumn.DataPropertyName = "Discipline";
+            disciplineDataGridViewTextBoxColumn.HeaderText = "Дисциплина";
+            disciplineDataGridViewTextBoxColumn.MinimumWidth = 6;
+            disciplineDataGridViewTextBoxColumn.Name = "disciplineDataGridViewTextBoxColumn";
+            // 
+            // userIdDataGridViewTextBoxColumn
+            // 
+            userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
+            userIdDataGridViewTextBoxColumn.HeaderText = "UserId";
+            userIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
+            userIdDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // userDataGridViewTextBoxColumn
+            // 
+            userDataGridViewTextBoxColumn.DataPropertyName = "User";
+            userDataGridViewTextBoxColumn.HeaderText = "User";
+            userDataGridViewTextBoxColumn.MinimumWidth = 6;
+            userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
+            userDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // lessonBindingSource
+            // 
+            lessonBindingSource.DataSource = typeof(Model.Lesson);
+            // 
             // guna2GradientPanel2
             // 
             guna2GradientPanel2.BorderColor = Color.DarkSlateBlue;
@@ -1265,6 +1265,7 @@
             addGroupsTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             addGroupsTextBox.Size = new Size(473, 56);
             addGroupsTextBox.TabIndex = 32;
+            addGroupsTextBox.Validating += addGroupsTextBox_Validating;
             // 
             // addDisciplineTextBox
             // 
@@ -1298,6 +1299,7 @@
             addDisciplineTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             addDisciplineTextBox.Size = new Size(473, 56);
             addDisciplineTextBox.TabIndex = 34;
+            addDisciplineTextBox.Validating += addDisciplineTextBox_Validating;
             // 
             // addPlaceOfLessonTextBox
             // 
@@ -1331,6 +1333,7 @@
             addPlaceOfLessonTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             addPlaceOfLessonTextBox.Size = new Size(473, 56);
             addPlaceOfLessonTextBox.TabIndex = 36;
+            addPlaceOfLessonTextBox.Validating += addPlaceOfLessonTextBox_Validating;
             // 
             // addGroupButton
             // 
@@ -1424,6 +1427,37 @@
             addPlaceOfLessonButton.Size = new Size(96, 56);
             addPlaceOfLessonButton.TabIndex = 37;
             addPlaceOfLessonButton.Click += addPlaceOfLessonButton_Click;
+            // 
+            // workloadGroupBoxButton
+            // 
+            workloadGroupBoxButton.Animated = true;
+            workloadGroupBoxButton.BackColor = Color.Transparent;
+            workloadGroupBoxButton.BorderColor = Color.DarkSlateBlue;
+            workloadGroupBoxButton.BorderRadius = 20;
+            workloadGroupBoxButton.BorderThickness = 1;
+            workloadGroupBoxButton.CustomizableEdges = customizableEdges55;
+            workloadGroupBoxButton.DisabledState.BorderColor = Color.DarkGray;
+            workloadGroupBoxButton.DisabledState.CustomBorderColor = Color.DarkGray;
+            workloadGroupBoxButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            workloadGroupBoxButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            workloadGroupBoxButton.FillColor = Color.White;
+            workloadGroupBoxButton.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            workloadGroupBoxButton.ForeColor = Color.Black;
+            workloadGroupBoxButton.HoverState.BorderColor = Color.MediumSlateBlue;
+            workloadGroupBoxButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
+            workloadGroupBoxButton.HoverState.ForeColor = Color.GhostWhite;
+            workloadGroupBoxButton.ImageSize = new Size(30, 30);
+            workloadGroupBoxButton.Location = new Point(3, 371);
+            workloadGroupBoxButton.Name = "workloadGroupBoxButton";
+            workloadGroupBoxButton.ShadowDecoration.BorderRadius = 20;
+            workloadGroupBoxButton.ShadowDecoration.Color = Color.Navy;
+            workloadGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            workloadGroupBoxButton.ShadowDecoration.Enabled = true;
+            workloadGroupBoxButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
+            workloadGroupBoxButton.Size = new Size(240, 70);
+            workloadGroupBoxButton.TabIndex = 28;
+            workloadGroupBoxButton.Text = "Нагрузка";
+            workloadGroupBoxButton.Click += workloadGroupBoxButton_Click;
             // 
             // lessonGroupBox
             // 
@@ -1748,6 +1782,7 @@
             timeAddLessonTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             timeAddLessonTextBox.Size = new Size(243, 36);
             timeAddLessonTextBox.TabIndex = 81;
+            timeAddLessonTextBox.Validating += timeAddLessonTextBox_Validating;
             // 
             // dayAddLessonComboBox
             // 
@@ -2008,37 +2043,6 @@
             searchResultTextBox.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
             searchResultTextBox.Size = new Size(437, 139);
             searchResultTextBox.TabIndex = 79;
-            // 
-            // workloadGroupBoxButton
-            // 
-            workloadGroupBoxButton.Animated = true;
-            workloadGroupBoxButton.BackColor = Color.Transparent;
-            workloadGroupBoxButton.BorderColor = Color.DarkSlateBlue;
-            workloadGroupBoxButton.BorderRadius = 20;
-            workloadGroupBoxButton.BorderThickness = 1;
-            workloadGroupBoxButton.CustomizableEdges = customizableEdges55;
-            workloadGroupBoxButton.DisabledState.BorderColor = Color.DarkGray;
-            workloadGroupBoxButton.DisabledState.CustomBorderColor = Color.DarkGray;
-            workloadGroupBoxButton.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            workloadGroupBoxButton.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            workloadGroupBoxButton.FillColor = Color.White;
-            workloadGroupBoxButton.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            workloadGroupBoxButton.ForeColor = Color.Black;
-            workloadGroupBoxButton.HoverState.BorderColor = Color.MediumSlateBlue;
-            workloadGroupBoxButton.HoverState.FillColor = Color.FromArgb(192, 255, 192);
-            workloadGroupBoxButton.HoverState.ForeColor = Color.GhostWhite;
-            workloadGroupBoxButton.ImageSize = new Size(30, 30);
-            workloadGroupBoxButton.Location = new Point(3, 371);
-            workloadGroupBoxButton.Name = "workloadGroupBoxButton";
-            workloadGroupBoxButton.ShadowDecoration.BorderRadius = 20;
-            workloadGroupBoxButton.ShadowDecoration.Color = Color.Navy;
-            workloadGroupBoxButton.ShadowDecoration.CustomizableEdges = customizableEdges56;
-            workloadGroupBoxButton.ShadowDecoration.Enabled = true;
-            workloadGroupBoxButton.ShadowDecoration.Shadow = new Padding(0, 0, 5, 5);
-            workloadGroupBoxButton.Size = new Size(240, 70);
-            workloadGroupBoxButton.TabIndex = 28;
-            workloadGroupBoxButton.Text = "Нагрузка";
-            workloadGroupBoxButton.Click += workloadGroupBoxButton_Click;
             // 
             // lessonsGroupBoxButton
             // 
@@ -2803,19 +2807,19 @@
             Text = "MainForm";
             Load += MainForm_Load;
             guna2GradientPanel1.ResumeLayout(false);
+            addInfoGroupBox.ResumeLayout(false);
+            guna2GradientPanel3.ResumeLayout(false);
+            guna2GradientPanel3.PerformLayout();
+            scheduleGroupBox.ResumeLayout(false);
+            scheduleGroupBox.PerformLayout();
+            guna2GroupBox1.ResumeLayout(false);
             workloadGroupBox.ResumeLayout(false);
             workloadGroupBox.PerformLayout();
             guna2GroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)workloadDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)fillingBindingSource1).EndInit();
-            scheduleGroupBox.ResumeLayout(false);
-            scheduleGroupBox.PerformLayout();
-            guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scheduleDataGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)lessonBindingSource).EndInit();
-            addInfoGroupBox.ResumeLayout(false);
-            guna2GradientPanel3.ResumeLayout(false);
-            guna2GradientPanel3.PerformLayout();
             guna2GradientPanel2.ResumeLayout(false);
             guna2GradientPanel2.PerformLayout();
             lessonGroupBox.ResumeLayout(false);
