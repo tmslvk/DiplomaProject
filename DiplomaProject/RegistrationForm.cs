@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DiplomaProject.Model;
+using DocumentFormat.OpenXml.Wordprocessing;
 
 namespace DiplomaProject
 {
@@ -25,6 +26,7 @@ namespace DiplomaProject
             InitializeComponent();
             DefaultHide();
         }
+
 
         #region[UpperBar]
         private void closeButton_Click(object sender, EventArgs e)
@@ -90,7 +92,7 @@ namespace DiplomaProject
             loginErrorLabel.Visible = false;
             if (!validator.IsMatch(passwordTextBox.Text))
             {
-                passwordTextBox.BorderColor = Color.Red;
+                passwordTextBox.BorderColor = System.Drawing.Color.Red;
                 errorPasswordLabel.Visible = true;
             }
             else
@@ -117,7 +119,7 @@ namespace DiplomaProject
                 else
                 {
                     loginErrorLabel.Visible = true;
-                    loginTextBox.BorderColor = Color.Red;
+                    loginTextBox.BorderColor = System.Drawing.Color.Red;
                 }
             }
         }
@@ -166,51 +168,159 @@ namespace DiplomaProject
             showHidePasswordButton.Hide();
         }
         #endregion
-        #region[Validators]
-        private void lastnameTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (lastnameTextBox.Text != string.Empty && lastnameTextBox.Text.Length < 17 && lastnameTextBox.Text.Length > 2) { progressBar.Value += 10; }
-        }
-
-        private void firstnameTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (firstnameTextBox.Text != string.Empty && firstnameTextBox.Text.Length < 17 && firstnameTextBox.Text.Length > 2) { progressBar.Value += 10; }
-        }
-
-        private void middlenameTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (middlenameTextBox.Text != string.Empty && middlenameTextBox.Text.Length < 17 && middlenameTextBox.Text.Length > 2) { progressBar.Value += 10; }
-        }
-
-        private void jobPostTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (jobPostTextBox.Text != string.Empty && jobPostTextBox.Text.Length < 17 && jobPostTextBox.Text.Length > 4) { progressBar.Value += 10; }
-        }
-
-        private void departmentTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (departmentTextBox.Text != string.Empty && departmentTextBox.Text.Length < 17 && departmentTextBox.Text.Length > 2) { progressBar.Value += 10; }
-        }
-
-        private void universityTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (universityTextBox.Text != string.Empty && universityTextBox.Text.Length < 17 && universityTextBox.Text.Length > 2) { progressBar.Value += 10; }
-        }
-
-        private void loginTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (loginTextBox.Text != string.Empty && loginTextBox.Text.Length < 17 && lastnameTextBox.Text.Length > 4) { progressBar.Value += 15; }
-        }
-
-        private void passwordTextBox_Validating(object sender, CancelEventArgs e)
-        {
-            if (validator.IsMatch(passwordTextBox.Text)) { progressBar.Value += 15; }
-        }
-        #endregion
 
         private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        #region[Validators]
+        public bool IsValid(string s)
+        {
+            return s != null && s.Length < 17 && s.Length > 2 && !ContainsSpecialSymbolsAndDigits(s);
+        }
+
+        public bool ContainsSpecialSymbolsAndDigits(string s)
+        {
+            foreach (char c in s)
+            {
+                if (char.IsDigit(c) || !char.IsLetterOrDigit(c))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void lastnameTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void lastnameTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            fieldErrorLabel.Visible = false;
+            if (!IsValid(lastnameTextBox.Text))
+            {
+                lastnameTextBox.BorderColor = System.Drawing.Color.Red;
+                fieldErrorLabel.Visible = true;
+            }
+            else { lastnameTextBox.BorderColor = System.Drawing.Color.Green;}
+            return;
+        }
+
+        private void firstnameTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void firstnameTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            fieldErrorLabel.Visible = false;
+            if (!IsValid(firstnameTextBox.Text))
+            {
+                firstnameTextBox.BorderColor = System.Drawing.Color.Red;
+                fieldErrorLabel.Visible = true;
+            }
+            else { firstnameTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+
+        private void loginTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void loginTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            loginErrorLabel.Visible = false;
+            if (!IsValid(loginTextBox.Text))
+            {
+                loginTextBox.BorderColor = System.Drawing.Color.Red;
+                loginErrorLabel.Visible = true;
+            }
+            else { loginTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+
+        private void passwordTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void passwordTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            errorPasswordLabel.Visible = false;
+            if (validator.IsMatch(passwordTextBox.Text))
+            {
+                passwordTextBox.BorderColor = System.Drawing.Color.Red;
+                errorPasswordLabel.Visible = true;
+            }
+            else { passwordTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+
+        private void departmentTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void departmentTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            fieldErrorLabel.Visible = false;
+            if (!IsValid(departmentTextBox.Text))
+            {
+                departmentTextBox.BorderColor = System.Drawing.Color.Red;
+                fieldErrorLabel.Visible = true;
+            }
+            else { departmentTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+
+        private void universityTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void universityTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            fieldErrorLabel.Visible = false;
+            if (!IsValid(universityTextBox.Text))
+            {
+                
+                universityTextBox.BorderColor = System.Drawing.Color.Red;
+                fieldErrorLabel.Visible = true;
+            }
+            else { universityTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+
+        private void middlenameTextBox_Validated(object sender, EventArgs e)
+        {
+        }
+
+        private void middlenameTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            fieldErrorLabel.Visible = false;
+            if (!IsValid(middlenameTextBox.Text))
+            {
+                middlenameTextBox.BorderColor = System.Drawing.Color.Red;
+                fieldErrorLabel.Visible = true;
+            }
+            else { middlenameTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+
+        private void jobPostTextBox_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jobPostTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            fieldErrorLabel.Visible = false;
+            if (!IsValid(jobPostTextBox.Text))
+            {
+                jobPostTextBox.BorderColor = System.Drawing.Color.Red;
+                fieldErrorLabel.Visible = true;
+            }
+            else { jobPostTextBox.BorderColor = System.Drawing.Color.Green; }
+            return;
+        }
+        #endregion
     }
 }
