@@ -905,7 +905,13 @@ namespace DiplomaProject
         {
             workloadGratsLabel.Text = "";
             List<Lesson> lessons = db.Lessons.Where(l => l.UserId == userID).ToList();
-
+            if (lessons == null)
+            {
+                firstFillingGratsLabel.Text = "Данные по расписанию не найдены!";
+                firstFillingGratsLabel.ForeColor = System.Drawing.Color.Red;
+                firstFillingGratsLabel.Visible = true;
+                return;
+            }
             var oldWorloads = db.Workloads.Where(w => lessons.Contains(w.Lesson)).ToList();
             db.Workloads.RemoveRange(oldWorloads);
             FillWorkLoadTable(lessons);
@@ -929,18 +935,21 @@ namespace DiplomaProject
             int startCol = 2;
 
             worksheet.Cells[1, 1].Value = "Время \\ Дни";
-            worksheet.Cells[dayDictionary.Count + startCol, 1].Value = "*";
-            worksheet.Cells[dayDictionary.Count + startCol, 2].Value = "Нечетная";
-            worksheet.Cells[dayDictionary.Count + startCol + 1, 1].Value = "**";
-            worksheet.Cells[dayDictionary.Count + startCol + 1, 2].Value = "Четная";
+            worksheet.Cells[dayDictionary.Count + startRow + 1, 1].Value = "*";
+            worksheet.Cells[dayDictionary.Count + startRow + 2, 1].Value = "**";
+            
+
             for (int i = 0; i < dayDictionary.Count; i++)
             {
                 worksheet.Cells[i + startCol, 1].Value = dayDictionary[dayOfWeeks[i]];
+                worksheet.Cells[1, 1].Worksheet.Rows.Height = 20;
+                worksheet.Cells[1, 1].Worksheet.Columns.Width = 10;
                 for (int j = 0; j < timeOfLessons.Count; j++)
                 {
-                    worksheet.Cells[1, j + startRow].Value = timeOfLessons[j].ToString();
+                    worksheet.Cells[1, j + startRow].Value = timeOfLessons[j].ToString();                    
                 }
             }
+            CreateBordersInSchedule(dayDictionary.Count + 2, 2 + timeOfLessons.Count, worksheet);
 
             package.SaveAs(new FileInfo(GetFilePath(CreateFileNameSchedule(DateTime.Now.Year))));
         }
@@ -951,6 +960,13 @@ namespace DiplomaProject
 
             ExcelPackage package = new ExcelPackage(GetFilePath(CreateFileNameSchedule(DateTime.Now.Year)));
             List<Lesson> lessons = GetLessons(); // Здесь GetLessonsData() - ваш метод для получения данных из таблицы
+            if(lessons == null)
+            {
+                firstFillingGratsLabel.Text = "Данные по расписанию не найдены!";
+                firstFillingGratsLabel.ForeColor = System.Drawing.Color.Red;
+                firstFillingGratsLabel.Visible = true;
+                return;
+            }
             ExcelWorksheet worksheet = package.Workbook.Worksheets["Расписание"];
             int startRow = 2;
             int startCol = 2;
@@ -993,7 +1009,12 @@ namespace DiplomaProject
                 return -1;
             };
 
-            clearRows();
+            clearRows(); 
+            worksheet.Cells[dayDictionary.Count + startRow + 2, 2].Value = "Четная";
+            worksheet.Cells[dayDictionary.Count + startRow + 1, 2].Value = "Нечетная";
+
+            worksheet.Cells[dayDictionary.Count + startRow + 2, 2].Worksheet.Rows.Height = 20;
+            worksheet.Cells[dayDictionary.Count + startRow + 1, 2].Worksheet.Rows.Height = 20;
 
             foreach (var lesson in lessons)
             {
@@ -1015,6 +1036,8 @@ namespace DiplomaProject
                                 worksheet.Cells[row, col].Value +=
                                     $"{typeOfWeeks.ElementAt(j).Value}{typeOfLessons.ElementAt(i).Value}" + Environment.NewLine +
                                     $"{lesson.Discipline}" + $" {lesson.PlaceOfLesson}" + $" {lesson.Group}";
+                                worksheet.Cells[row, col].Style.WrapText = true;
+                                worksheet.Cells[row, col].Worksheet.Rows.Height = 57;
                             }
                         }
                     }
@@ -1023,6 +1046,19 @@ namespace DiplomaProject
             }
 
             package.Save();
+        }
+        public void CreateBordersInSchedule(int row, int col, ExcelWorksheet worksheet)
+        {
+            for(int i = 1; i < row; i++)
+            {
+                for(int j = 1; j < col; j++)
+                {
+                    worksheet.Cells[i, j].Style.Border.Top.Style = ExcelBorderStyle.Thin;
+                    worksheet.Cells[i, j].Style.Border.Bottom.Style = ExcelBorderStyle.Thin;
+                    worksheet.Cells[i, j].Style.Border.Left.Style = ExcelBorderStyle.Thin;
+                    worksheet.Cells[i, j].Style.Border.Right.Style = ExcelBorderStyle.Thin;
+                }
+            }
         }
 
         public List<Lesson> GetLessonsForTimeSpans()
@@ -1046,6 +1082,7 @@ namespace DiplomaProject
         private void fillScheduleExcelButton_Click(object sender, EventArgs e)
         {
             firstFillingGratsLabel.Text = "";
+            firstFillingGratsLabel.ForeColor = System.Drawing.Color.Green;
             FillDataInExcelSchedule();
             firstFillingGratsLabel.Text = "Файл Excel был успешно заполнен";
             firstFillingGratsLabel.Visible = true;
@@ -1172,6 +1209,13 @@ namespace DiplomaProject
 
             ExcelPackage package = new ExcelPackage(GetFilePath(CreateFileNameWorkload(DateTime.Now.Year, DateTime.Now.Month)));
             List<Workload> workloads = GetWorkload();
+            if(workloads == null)
+            {
+                workloadGratsLabel.Text = "Данные по нагрузке не найдены!";
+                workloadGratsLabel.ForeColor = System.Drawing.Color.Red;
+                workloadGratsLabel.Visible = true;
+                return;
+            }
             ExcelWorksheet worksheet = package.Workbook.Worksheets["Нагрузка"];
             int startRow = 5;
             int startCol = 2;
@@ -1293,6 +1337,7 @@ namespace DiplomaProject
         private void fillWorkloadButton_Click(object sender, EventArgs e)
         {
             workloadGratsLabel.Text = "";
+            workloadGratsLabel.ForeColor = System.Drawing.Color.Green;
             FillDataInWorkload();
             workloadGratsLabel.Text = "Перенос данных в файл Excel был успешен";
             workloadGratsLabel.Visible = true;
@@ -1326,6 +1371,7 @@ namespace DiplomaProject
             {
                 Process.Start(excel);
             }
+            
             findWorkloadErrorLabel.Visible = true;
             return;
         }
