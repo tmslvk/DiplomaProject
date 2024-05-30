@@ -74,7 +74,7 @@ namespace DiplomaProject
         }
         public bool CheckPassword(string password)
         {
-            var user = db.Users.FirstOrDefault(u => u.Password == password);
+            var user = db.Users.FirstOrDefault(u => u.Password == password && u.Id == FindIdByLogin());
             return user != null;
         }
 

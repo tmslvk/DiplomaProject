@@ -7,6 +7,7 @@ using OfficeOpenXml.Style;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Diagnostics;
 using System.IO.Packaging;
 using System.Security.Cryptography.X509Certificates;
@@ -123,7 +124,13 @@ namespace DiplomaProject
             if (!IsValid(addGroupsTextBox.Text))
             {
                 addGroupsTextBox.BorderColor = System.Drawing.Color.Red;
-                addInfoLabel.Text = "Поле должно быть длиной от 4 до 36 символов";
+                addInfoLabel.Text = "Поле должно быть длиной 4-36 символов";
+                addInfoLabel.Visible = true;
+            }
+            else if (IsSameGroups(addGroupsTextBox.Text))
+            {
+                addGroupsTextBox.BorderColor = System.Drawing.Color.Red;
+                addInfoLabel.Text = $"Группа {addGroupsTextBox.Text} уже существует!";
                 addInfoLabel.Visible = true;
             }
             else { addGroupsTextBox.BorderColor = System.Drawing.Color.Green; }
@@ -135,7 +142,13 @@ namespace DiplomaProject
             if (!IsValid(addDisciplineTextBox.Text))
             {
                 addDisciplineTextBox.BorderColor = System.Drawing.Color.Red;
-                addInfoLabel.Text = "Поле должно быть длиной от 2 до 36 символов";
+                addInfoLabel.Text = "Поле должно быть длиной 2-36 символов";
+                addInfoLabel.Visible = true;
+            }
+            else if (IsSameDiscipline(addDisciplineTextBox.Text))
+            {
+                addDisciplineTextBox.BorderColor = System.Drawing.Color.Red;
+                addInfoLabel.Text = $"Дисциплина {addDisciplineTextBox.Text} уже существует!";
                 addInfoLabel.Visible = true;
             }
             else { addDisciplineTextBox.BorderColor = System.Drawing.Color.Green; }
@@ -147,7 +160,13 @@ namespace DiplomaProject
             if (!IsValid(addPlaceOfLessonTextBox.Text))
             {
                 addPlaceOfLessonTextBox.BorderColor = System.Drawing.Color.Red;
-                addInfoLabel.Text = "Поле должно быть длиной от 4 до 36 символов";
+                addInfoLabel.Text = "Поле должно быть длиной 4-36 символов";
+                addInfoLabel.Visible = true;
+            }
+            else if (IsSamePlace(addPlaceOfLessonTextBox.Text))
+            {
+                addPlaceOfLessonTextBox.BorderColor = System.Drawing.Color.Red;
+                addInfoLabel.Text = $"Место занятия {addPlaceOfLessonTextBox.Text} уже существует";
                 addInfoLabel.Visible = true;
             }
             else { addPlaceOfLessonTextBox.BorderColor = System.Drawing.Color.Green; }
@@ -156,6 +175,19 @@ namespace DiplomaProject
         public bool IsValid(string s)
         {
             return s != null && s.Length > 4 && s.Length < 36;
+        }
+
+        public bool IsSameGroups(string group)
+        {
+            return db.Groups.Any(g => g.GroupNumber == group);
+        }
+        public bool IsSameDiscipline(string discipline)
+        {
+            return db.Disciplines.Any(g => g.NameOfDiscipline == discipline);
+        }
+        public bool IsSamePlace(string place)
+        {
+            return db.PlaceOfLessons.Any(g => g.Place == place);
         }
 
         public bool IsDisciplineValid(string discipline)
@@ -365,6 +397,10 @@ namespace DiplomaProject
                         db.SaveChanges();
                     }
                     changePasswoedGratsLabel.Visible = true;
+                    Thread.Sleep(1000);
+                    LoginForm loginForm = new LoginForm();
+                    this.Hide();
+                    loginForm.Show();
                     return;
                 }
                 else if (user.Password != oldPasswordTextBoxChange.Text)
@@ -421,7 +457,7 @@ namespace DiplomaProject
                 User = GetUserById(userID),
                 Place = addPlaceOfLessonTextBox.Text
             };
-            if (IsValid(placeOfLesson.Place))
+            if (IsValid(placeOfLesson.Place) && !IsSamePlace(placeOfLesson.Place))
             {
                 db.PlaceOfLessons.Add(placeOfLesson);
                 db.SaveChanges();
@@ -429,7 +465,7 @@ namespace DiplomaProject
                 AddUpdatePlace();
                 addInfoLabel.Text = $"Место занятия {placeOfLesson.Place} было добавлено";
             }
-            else { addInfoLabel.Text = $"Длина строки должна быть от 4 до 36 символов!"; }
+            else { addInfoLabel.Text = $"Некорректные данные или данные уже существуют!"; }
             
         }
 
@@ -441,7 +477,7 @@ namespace DiplomaProject
                 User = GetUserById(userID),
                 NameOfDiscipline = addDisciplineTextBox.Text
             };
-            if (IsDisciplineValid(discipline.NameOfDiscipline))
+            if (IsDisciplineValid(discipline.NameOfDiscipline) && !IsSameDiscipline(discipline.NameOfDiscipline))
             {
                 db.Disciplines.Add(discipline);
                 db.SaveChanges();
@@ -449,7 +485,7 @@ namespace DiplomaProject
                 AddUpdateDiscipline();
                 addInfoLabel.Text = $"Дисциплина {discipline.NameOfDiscipline} была добавлена";
             }
-            else { addInfoLabel.Text = $"Длина строки должна быть от 2 до 36 символов!"; }
+            else { addInfoLabel.Text = $"Некорректные данные или данные уже существуют!"; }
 
         }
 
@@ -461,7 +497,7 @@ namespace DiplomaProject
                 User = GetUserById(userID),
                 GroupNumber = addGroupsTextBox.Text
             };
-            if (IsValid(group.GroupNumber))
+            if (IsValid(group.GroupNumber) && !IsSameGroups(group.GroupNumber))
             {
                 db.Groups.Add(group);
                 db.SaveChanges();
@@ -469,7 +505,7 @@ namespace DiplomaProject
                 AddUpdateGroup();
                 addInfoLabel.Text = $"Группа {group.GroupNumber} была добавлена";
             }
-            else { addInfoLabel.Text = $"Длина строки должна быть от 4 до 36 символов!"; }
+            else { addInfoLabel.Text = $"Некорректные данные или данные уже существуют!"; }
         }
         #endregion
 
